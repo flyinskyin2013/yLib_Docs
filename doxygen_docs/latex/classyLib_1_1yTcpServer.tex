@@ -1,0 +1,245 @@
+\hypertarget{classyLib_1_1yTcpServer}{}\doxysection{y\+Lib\+::y\+Tcp\+Server Class Reference}
+\label{classyLib_1_1yTcpServer}\index{yLib::yTcpServer@{yLib::yTcpServer}}
+
+
+{\ttfamily \#include $<$ytcpserver.\+h$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Tcp\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classyLib_1_1yTcpServer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yTcpServer_a70723c37f3ae0b8eec591ff82314fa35}{y\+Tcp\+Server}} (void)
+\item 
+\mbox{\hyperlink{classyLib_1_1yTcpServer_aea496c2cb207681643952c07a44d7895}{y\+Tcp\+Server}} (uint64\+\_\+t max\+\_\+client\+\_\+num\+\_\+, int socket\+\_\+flags\+\_\+=0, bool is\+\_\+block\+\_\+=true)
+\item 
+\mbox{\hyperlink{classyLib_1_1yTcpServer_aa4415a0ad3c2b8c81a3905f93a9fa4c2}{$\sim$y\+Tcp\+Server}} ()
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yTcpServer_a0bd236d8ea74230be5ab5b7d7f317be2}{socket\+\_\+is\+\_\+ready}} (void)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yTcpServer_a02eccf431a1d9510e25588ad115a5e16}{bind}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&ip\+\_\+, int32\+\_\+t port\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yTcpServer_a9e2619368b3dbf1052c90ca911dd472d}{start\+\_\+epoll\+\_\+thread}} (\mbox{\hyperlink{namespaceyLib_afa870c39fb0ec1128be02b0928119a1a}{On\+Client\+Connect\+CB}} con\+\_\+cb\+\_\+, \mbox{\hyperlink{namespaceyLib_a483405f6626361307bbebc2bb5e589a7}{On\+Client\+Disconnect\+CB}} discon\+\_\+cb\+\_\+, uint64\+\_\+t max\+\_\+listen\+\_\+num=5)
+\item 
+int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yTcpServer_ade0752c76853507a46940e35d5af3517}{read}} (void $\ast$buffer\+\_\+, size\+\_\+t count\+\_\+, uint64\+\_\+t client\+\_\+fd\+\_\+=0)
+\item 
+int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yTcpServer_af087ea57cad5acacf0c7d7c70478751c}{write}} (const void $\ast$buffer\+\_\+, size\+\_\+t count\+\_\+, uint64\+\_\+t client\+\_\+fd\+\_\+=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::unordered\+\_\+map$<$ uint64\+\_\+t, struct sockaddr\+\_\+in $>$ \mbox{\hyperlink{classyLib_1_1yTcpServer_a8a71bdb1aa0a6878ec0e4109a228b556}{y\+Tcp\+Server\+Socket\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yTcpServer_a139cb1202cdc24e122d758f46b3b8e03}{get\+\_\+available\+\_\+client\+\_\+id}} (void)
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yTcpServer_a7e0c556a0fe28703f9e0970d7467efe8}{set\+\_\+available\+\_\+client\+\_\+id}} (uint64\+\_\+t client\+\_\+id\+\_\+)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yTcpServer_a110e0c7beb79860cce2f03f9110bac0c}{epoll\+\_\+thread\+\_\+context}} (\mbox{\hyperlink{namespaceyLib_afa870c39fb0ec1128be02b0928119a1a}{On\+Client\+Connect\+CB}} con\+\_\+cb\+\_\+, \mbox{\hyperlink{namespaceyLib_a483405f6626361307bbebc2bb5e589a7}{On\+Client\+Disconnect\+CB}} discon\+\_\+cb\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ uint64\+\_\+t, struct sockaddr\+\_\+in $>$ \mbox{\hyperlink{classyLib_1_1yTcpServer_a53b63a9c213a00ccad0b8b25f39f0f1e}{client\+\_\+info\+\_\+map}}
+\item 
+std\+::unique\+\_\+ptr$<$ std\+::thread $>$ \mbox{\hyperlink{classyLib_1_1yTcpServer_a965eede866b5b8e848b42bed3e2ac78e}{epoll\+\_\+thread\+\_\+ptr}}
+\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{classyLib_1_1yTcpServer_ae241f0b620c964e5800df049cbb41f21}{used\+\_\+client\+\_\+id\+\_\+bitmap}}
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yTcpServer_aa9c767c4a5395f1e5751850a9bb3a7a4}{epoll\+\_\+thread\+\_\+is\+\_\+continue}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a8a71bdb1aa0a6878ec0e4109a228b556}\label{classyLib_1_1yTcpServer_a8a71bdb1aa0a6878ec0e4109a228b556}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!yTcpServerSocketMap@{yTcpServerSocketMap}}
+\index{yTcpServerSocketMap@{yTcpServerSocketMap}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{yTcpServerSocketMap}{yTcpServerSocketMap}}
+{\footnotesize\ttfamily typedef std\+::unordered\+\_\+map$<$uint64\+\_\+t, struct sockaddr\+\_\+in$>$ \mbox{\hyperlink{classyLib_1_1yTcpServer_a8a71bdb1aa0a6878ec0e4109a228b556}{y\+Lib\+::y\+Tcp\+Server\+::y\+Tcp\+Server\+Socket\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a70723c37f3ae0b8eec591ff82314fa35}\label{classyLib_1_1yTcpServer_a70723c37f3ae0b8eec591ff82314fa35}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!yTcpServer@{yTcpServer}}
+\index{yTcpServer@{yTcpServer}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{yTcpServer()}{yTcpServer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily y\+Tcp\+Server\+::y\+Tcp\+Server (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_aea496c2cb207681643952c07a44d7895}\label{classyLib_1_1yTcpServer_aea496c2cb207681643952c07a44d7895}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!yTcpServer@{yTcpServer}}
+\index{yTcpServer@{yTcpServer}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{yTcpServer()}{yTcpServer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily y\+Tcp\+Server\+::y\+Tcp\+Server (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{max\+\_\+client\+\_\+num\+\_\+,  }\item[{int}]{socket\+\_\+flags\+\_\+ = {\ttfamily 0},  }\item[{bool}]{is\+\_\+block\+\_\+ = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_aa4415a0ad3c2b8c81a3905f93a9fa4c2}\label{classyLib_1_1yTcpServer_aa4415a0ad3c2b8c81a3905f93a9fa4c2}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!````~yTcpServer@{$\sim$yTcpServer}}
+\index{````~yTcpServer@{$\sim$yTcpServer}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{$\sim$yTcpServer()}{~yTcpServer()}}
+{\footnotesize\ttfamily y\+Tcp\+Server\+::$\sim$y\+Tcp\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a02eccf431a1d9510e25588ad115a5e16}\label{classyLib_1_1yTcpServer_a02eccf431a1d9510e25588ad115a5e16}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!bind@{bind}}
+\index{bind@{bind}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Tcp\+Server\+::bind (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{ip\+\_\+,  }\item[{int32\+\_\+t}]{port\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+@description\+: bind ip and port 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a46989c254ebb55384b1b3753bb881f73}{y\+Lib\+::y\+Abstract\+Socket}}.
+
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a110e0c7beb79860cce2f03f9110bac0c}\label{classyLib_1_1yTcpServer_a110e0c7beb79860cce2f03f9110bac0c}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!epoll\_thread\_context@{epoll\_thread\_context}}
+\index{epoll\_thread\_context@{epoll\_thread\_context}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{epoll\_thread\_context()}{epoll\_thread\_context()}}
+{\footnotesize\ttfamily void y\+Tcp\+Server\+::epoll\+\_\+thread\+\_\+context (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceyLib_afa870c39fb0ec1128be02b0928119a1a}{On\+Client\+Connect\+CB}}}]{con\+\_\+cb\+\_\+,  }\item[{\mbox{\hyperlink{namespaceyLib_a483405f6626361307bbebc2bb5e589a7}{On\+Client\+Disconnect\+CB}}}]{discon\+\_\+cb\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a139cb1202cdc24e122d758f46b3b8e03}\label{classyLib_1_1yTcpServer_a139cb1202cdc24e122d758f46b3b8e03}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!get\_available\_client\_id@{get\_available\_client\_id}}
+\index{get\_available\_client\_id@{get\_available\_client\_id}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{get\_available\_client\_id()}{get\_available\_client\_id()}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Tcp\+Server\+::get\+\_\+available\+\_\+client\+\_\+id (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_ade0752c76853507a46940e35d5af3517}\label{classyLib_1_1yTcpServer_ade0752c76853507a46940e35d5af3517}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!read@{read}}
+\index{read@{read}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Tcp\+Server\+::read (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer\+\_\+,  }\item[{size\+\_\+t}]{count\+\_\+,  }\item[{uint64\+\_\+t}]{client\+\_\+fd\+\_\+ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} =-\/1\+: a error occurred. =-\/2\+: no data to read.\+The file descriptor fd refers to a socket and has been marked nonblocking (O\+\_\+\+N\+O\+N\+B\+L\+O\+CK) = 0\+: client maybe close. \begin{quote}
+0\+: read n bytes. \end{quote}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a7e0c556a0fe28703f9e0970d7467efe8}\label{classyLib_1_1yTcpServer_a7e0c556a0fe28703f9e0970d7467efe8}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!set\_available\_client\_id@{set\_available\_client\_id}}
+\index{set\_available\_client\_id@{set\_available\_client\_id}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{set\_available\_client\_id()}{set\_available\_client\_id()}}
+{\footnotesize\ttfamily bool y\+Tcp\+Server\+::set\+\_\+available\+\_\+client\+\_\+id (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{client\+\_\+id\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a0bd236d8ea74230be5ab5b7d7f317be2}\label{classyLib_1_1yTcpServer_a0bd236d8ea74230be5ab5b7d7f317be2}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!socket\_is\_ready@{socket\_is\_ready}}
+\index{socket\_is\_ready@{socket\_is\_ready}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{socket\_is\_ready()}{socket\_is\_ready()}}
+{\footnotesize\ttfamily bool y\+Tcp\+Server\+::socket\+\_\+is\+\_\+ready (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+@description\+: Check socket(), \mbox{\hyperlink{classyLib_1_1yTcpServer_a02eccf431a1d9510e25588ad115a5e16}{bind()}}, listen(), accept() and so on. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a26d05836b67627fa767aceee6d7de599}{y\+Lib\+::y\+Abstract\+Socket}}.
+
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a9e2619368b3dbf1052c90ca911dd472d}\label{classyLib_1_1yTcpServer_a9e2619368b3dbf1052c90ca911dd472d}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!start\_epoll\_thread@{start\_epoll\_thread}}
+\index{start\_epoll\_thread@{start\_epoll\_thread}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{start\_epoll\_thread()}{start\_epoll\_thread()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Tcp\+Server\+::start\+\_\+epoll\+\_\+thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceyLib_afa870c39fb0ec1128be02b0928119a1a}{On\+Client\+Connect\+CB}}}]{con\+\_\+cb\+\_\+,  }\item[{\mbox{\hyperlink{namespaceyLib_a483405f6626361307bbebc2bb5e589a7}{On\+Client\+Disconnect\+CB}}}]{discon\+\_\+cb\+\_\+,  }\item[{uint64\+\_\+t}]{max\+\_\+listen\+\_\+num = {\ttfamily 5} }\end{DoxyParamCaption})}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_af087ea57cad5acacf0c7d7c70478751c}\label{classyLib_1_1yTcpServer_af087ea57cad5acacf0c7d7c70478751c}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!write@{write}}
+\index{write@{write}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Tcp\+Server\+::write (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer\+\_\+,  }\item[{size\+\_\+t}]{count\+\_\+,  }\item[{uint64\+\_\+t}]{client\+\_\+fd\+\_\+ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} =-\/1\+: a error occurred. $>$=0\+: write n bytes. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a53b63a9c213a00ccad0b8b25f39f0f1e}\label{classyLib_1_1yTcpServer_a53b63a9c213a00ccad0b8b25f39f0f1e}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!client\_info\_map@{client\_info\_map}}
+\index{client\_info\_map@{client\_info\_map}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{client\_info\_map}{client\_info\_map}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$uint64\+\_\+t, struct sockaddr\+\_\+in$>$ y\+Lib\+::y\+Tcp\+Server\+::client\+\_\+info\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_aa9c767c4a5395f1e5751850a9bb3a7a4}\label{classyLib_1_1yTcpServer_aa9c767c4a5395f1e5751850a9bb3a7a4}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!epoll\_thread\_is\_continue@{epoll\_thread\_is\_continue}}
+\index{epoll\_thread\_is\_continue@{epoll\_thread\_is\_continue}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{epoll\_thread\_is\_continue}{epoll\_thread\_is\_continue}}
+{\footnotesize\ttfamily bool y\+Lib\+::y\+Tcp\+Server\+::epoll\+\_\+thread\+\_\+is\+\_\+continue\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_a965eede866b5b8e848b42bed3e2ac78e}\label{classyLib_1_1yTcpServer_a965eede866b5b8e848b42bed3e2ac78e}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!epoll\_thread\_ptr@{epoll\_thread\_ptr}}
+\index{epoll\_thread\_ptr@{epoll\_thread\_ptr}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{epoll\_thread\_ptr}{epoll\_thread\_ptr}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$std\+::thread$>$ y\+Lib\+::y\+Tcp\+Server\+::epoll\+\_\+thread\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yTcpServer_ae241f0b620c964e5800df049cbb41f21}\label{classyLib_1_1yTcpServer_ae241f0b620c964e5800df049cbb41f21}} 
+\index{yLib::yTcpServer@{yLib::yTcpServer}!used\_client\_id\_bitmap@{used\_client\_id\_bitmap}}
+\index{used\_client\_id\_bitmap@{used\_client\_id\_bitmap}!yLib::yTcpServer@{yLib::yTcpServer}}
+\doxysubsubsection{\texorpdfstring{used\_client\_id\_bitmap}{used\_client\_id\_bitmap}}
+{\footnotesize\ttfamily std\+::vector$<$uint32\+\_\+t$>$ y\+Lib\+::y\+Tcp\+Server\+::used\+\_\+client\+\_\+id\+\_\+bitmap\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/network/\mbox{\hyperlink{ytcpserver_8h}{ytcpserver.\+h}}\item 
+/home/sky/y\+Lib/src/network/\mbox{\hyperlink{ytcpserver_8cpp}{ytcpserver.\+cpp}}\end{DoxyCompactItemize}

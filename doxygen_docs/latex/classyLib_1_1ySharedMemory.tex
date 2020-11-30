@@ -1,0 +1,91 @@
+\hypertarget{classyLib_1_1ySharedMemory}{}\doxysection{y\+Lib\+::y\+Shared\+Memory Class Reference}
+\label{classyLib_1_1ySharedMemory}\index{yLib::ySharedMemory@{yLib::ySharedMemory}}
+
+
+{\ttfamily \#include $<$ysharedmemory.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1ySharedMemory_a8449c7068dfe5fadcddad58719a61d92}{y\+Shared\+Memory}} ()
+\item 
+\mbox{\hyperlink{classyLib_1_1ySharedMemory_ad5e5332d05d208d09356dceab295798a}{$\sim$y\+Shared\+Memory}} ()
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classyLib_1_1ySharedMemory_ae93dc46801fcd1cd305f810be5c67c28}{Init\+Shared\+Memory}} (uint32\+\_\+t mem\+\_\+key, uint64\+\_\+t mem\+\_\+size, std\+::\+\_\+\+S\+T\+D\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+ mem\+\_\+name=\char`\"{}Defaulty\+Shared\+Memory\char`\"{})
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classyLib_1_1ySharedMemory_aba904b467a0f405776ce2c0909b0f880}{Attache\+Shared\+Memory}} (void $\ast$$\ast$shm\+\_\+addr)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classyLib_1_1ySharedMemory_a07577fc3a1088b61973dcd735d365777}{Detache\+Shared\+Memory}} (void $\ast$shm\+\_\+addr)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{classyLib_1_1ySharedMemory_ae73ac010be971779b71f5353eee569e6}{Destroy\+Shared\+Memory}} (void)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classyLib_1_1ySharedMemory_a2d5c29ef0cc87cf4c464316288a8b5b2}{shm\+\_\+is\+\_\+ready}} = false
+\item 
+int \mbox{\hyperlink{classyLib_1_1ySharedMemory_a9563e839c7e90333c49337068bd281c3}{cur\+\_\+shm\+\_\+id}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_a8449c7068dfe5fadcddad58719a61d92}\label{classyLib_1_1ySharedMemory_a8449c7068dfe5fadcddad58719a61d92}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!ySharedMemory@{ySharedMemory}}
+\index{ySharedMemory@{ySharedMemory}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{ySharedMemory()}{ySharedMemory()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Shared\+Memory\+::y\+Shared\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_ad5e5332d05d208d09356dceab295798a}\label{classyLib_1_1ySharedMemory_ad5e5332d05d208d09356dceab295798a}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!````~ySharedMemory@{$\sim$ySharedMemory}}
+\index{````~ySharedMemory@{$\sim$ySharedMemory}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{$\sim$ySharedMemory()}{~ySharedMemory()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Shared\+Memory\+::$\sim$y\+Shared\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_aba904b467a0f405776ce2c0909b0f880}\label{classyLib_1_1ySharedMemory_aba904b467a0f405776ce2c0909b0f880}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!AttacheSharedMemory@{AttacheSharedMemory}}
+\index{AttacheSharedMemory@{AttacheSharedMemory}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{AttacheSharedMemory()}{AttacheSharedMemory()}}
+{\footnotesize\ttfamily uint32\+\_\+t y\+Lib\+::y\+Shared\+Memory\+::\+Attache\+Shared\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$$\ast$}]{shm\+\_\+addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_ae73ac010be971779b71f5353eee569e6}\label{classyLib_1_1ySharedMemory_ae73ac010be971779b71f5353eee569e6}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!DestroySharedMemory@{DestroySharedMemory}}
+\index{DestroySharedMemory@{DestroySharedMemory}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{DestroySharedMemory()}{DestroySharedMemory()}}
+{\footnotesize\ttfamily uint32\+\_\+t y\+Lib\+::y\+Shared\+Memory\+::\+Destroy\+Shared\+Memory (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_a07577fc3a1088b61973dcd735d365777}\label{classyLib_1_1ySharedMemory_a07577fc3a1088b61973dcd735d365777}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!DetacheSharedMemory@{DetacheSharedMemory}}
+\index{DetacheSharedMemory@{DetacheSharedMemory}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{DetacheSharedMemory()}{DetacheSharedMemory()}}
+{\footnotesize\ttfamily uint32\+\_\+t y\+Lib\+::y\+Shared\+Memory\+::\+Detache\+Shared\+Memory (\begin{DoxyParamCaption}\item[{void $\ast$}]{shm\+\_\+addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_ae93dc46801fcd1cd305f810be5c67c28}\label{classyLib_1_1ySharedMemory_ae93dc46801fcd1cd305f810be5c67c28}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!InitSharedMemory@{InitSharedMemory}}
+\index{InitSharedMemory@{InitSharedMemory}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{InitSharedMemory()}{InitSharedMemory()}}
+{\footnotesize\ttfamily uint32\+\_\+t y\+Lib\+::y\+Shared\+Memory\+::\+Init\+Shared\+Memory (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{mem\+\_\+key,  }\item[{uint64\+\_\+t}]{mem\+\_\+size,  }\item[{std\+::\+\_\+\+S\+T\+D\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+}]{mem\+\_\+name = {\ttfamily \char`\"{}DefaultySharedMemory\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_a9563e839c7e90333c49337068bd281c3}\label{classyLib_1_1ySharedMemory_a9563e839c7e90333c49337068bd281c3}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!cur\_shm\_id@{cur\_shm\_id}}
+\index{cur\_shm\_id@{cur\_shm\_id}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{cur\_shm\_id}{cur\_shm\_id}}
+{\footnotesize\ttfamily int y\+Lib\+::y\+Shared\+Memory\+::cur\+\_\+shm\+\_\+id = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1ySharedMemory_a2d5c29ef0cc87cf4c464316288a8b5b2}\label{classyLib_1_1ySharedMemory_a2d5c29ef0cc87cf4c464316288a8b5b2}} 
+\index{yLib::ySharedMemory@{yLib::ySharedMemory}!shm\_is\_ready@{shm\_is\_ready}}
+\index{shm\_is\_ready@{shm\_is\_ready}!yLib::ySharedMemory@{yLib::ySharedMemory}}
+\doxysubsubsection{\texorpdfstring{shm\_is\_ready}{shm\_is\_ready}}
+{\footnotesize\ttfamily bool y\+Lib\+::y\+Shared\+Memory\+::shm\+\_\+is\+\_\+ready = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/ipc/\mbox{\hyperlink{ysharedmemory_8hpp}{ysharedmemory.\+hpp}}\item 
+/home/sky/y\+Lib/src/ipc/\mbox{\hyperlink{ysharedmemory_8cpp}{ysharedmemory.\+cpp}}\end{DoxyCompactItemize}

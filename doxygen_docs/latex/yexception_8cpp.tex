@@ -1,0 +1,40 @@
+\hypertarget{yexception_8cpp}{}\doxysection{/home/sky/y\+Lib/src/core/yexception.cpp File Reference}
+\label{yexception_8cpp}\index{/home/sky/yLib/src/core/yexception.cpp@{/home/sky/yLib/src/core/yexception.cpp}}
+{\ttfamily \#include \char`\"{}core/yexception.\+hpp\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{yexception_8cpp_ad8892aa65a2d3d432574e744aa208bab}{R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON}}(exception\+\_\+id,  exception\+\_\+msg)~    \{exception\+\_\+id, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}(exception\+\_\+msg)\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{structyLib_1_1yExceptionTable}{y\+Lib\+::y\+Exception\+Table}} \mbox{\hyperlink{yexception_8cpp_a32322708f497de3b1666514fb1415184}{g\+\_\+yexception\+\_\+table}} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{yexception_8cpp_ad8892aa65a2d3d432574e744aa208bab}\label{yexception_8cpp_ad8892aa65a2d3d432574e744aa208bab}} 
+\index{yexception.cpp@{yexception.cpp}!REGISTER\_EXCEPTION@{REGISTER\_EXCEPTION}}
+\index{REGISTER\_EXCEPTION@{REGISTER\_EXCEPTION}!yexception.cpp@{yexception.cpp}}
+\doxysubsubsection{\texorpdfstring{REGISTER\_EXCEPTION}{REGISTER\_EXCEPTION}}
+{\footnotesize\ttfamily \#define R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+E\+X\+C\+E\+P\+T\+I\+ON(\begin{DoxyParamCaption}\item[{}]{exception\+\_\+id,  }\item[{}]{exception\+\_\+msg }\end{DoxyParamCaption})~    \{exception\+\_\+id, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}(exception\+\_\+msg)\}}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{yexception_8cpp_a32322708f497de3b1666514fb1415184}\label{yexception_8cpp_a32322708f497de3b1666514fb1415184}} 
+\index{yexception.cpp@{yexception.cpp}!g\_yexception\_table@{g\_yexception\_table}}
+\index{g\_yexception\_table@{g\_yexception\_table}!yexception.cpp@{yexception.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_yexception\_table}{g\_yexception\_table}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structyLib_1_1yExceptionTable}{y\+Lib\+::y\+Exception\+Table}} g\+\_\+yexception\+\_\+table\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \{ \mbox{\hyperlink{namespaceyLib_ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555}{yLib::yExceptionIdx::IDX\_RESERVE\_EXCEPTION}} , \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std::string}}( \textcolor{stringliteral}{"{}Reserved exception of yLib."{}} )\},}
+\DoxyCodeLine{    \{ \mbox{\hyperlink{namespaceyLib_ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0}{yLib::yExceptionIdx::IDX\_YBASIC\_EXCEPTION}} , \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std::string}}( \textcolor{stringliteral}{"{}Basic exception of yLib."{}} )\},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

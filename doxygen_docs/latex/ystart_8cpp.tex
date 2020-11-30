@@ -1,0 +1,63 @@
+\hypertarget{ystart_8cpp}{}\doxysection{/home/sky/y\+Lib/examples/\+Program\+Frame\+Examples/ystart.cpp File Reference}
+\label{ystart_8cpp}\index{/home/sky/yLib/examples/ProgramFrameExamples/ystart.cpp@{/home/sky/yLib/examples/ProgramFrameExamples/ystart.cpp}}
+{\ttfamily \#include \char`\"{}ystart.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ystart_8cpp_aabc064b17e82d897cfe939e4bcf44ed2}{y\+Create\+Thread}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&name, pthread\+\_\+attr\+\_\+t $\ast$attr, \mbox{\hyperlink{ystart_8hpp_ac4d1d0002b8fc15edd83cf2d0998911e}{Thread\+Routine}} routine, void $\ast$param)
+\item 
+void \mbox{\hyperlink{ystart_8cpp_a7c43a615989fa67739adae744eb63c27}{y\+Clean\+Thread}} (void)
+\item 
+void $\ast$ \mbox{\hyperlink{ystart_8cpp_a966187042b76d328e6526e2dec9a3385}{test\+\_\+thread}} (void $\ast$arg)
+\item 
+void \mbox{\hyperlink{ystart_8cpp_ab568e52f126f695d96ffc779b71cb303}{ystart}} (\mbox{\hyperlink{classyStartParam}{y\+Start\+Param}} \&param)
+\item 
+int \mbox{\hyperlink{ystart_8cpp_a5d37a8757cb5e3e4154e7f9b5994cebc}{ystart\+\_\+test}} (void $\ast$param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classyThread}{y\+Thread}} $>$ \mbox{\hyperlink{ystart_8cpp_ab1051f636ad34a736191ba7b2d3a4cc0}{g\+\_\+thread\+\_\+vector}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ystart_8cpp_a966187042b76d328e6526e2dec9a3385}\label{ystart_8cpp_a966187042b76d328e6526e2dec9a3385}} 
+\index{ystart.cpp@{ystart.cpp}!test\_thread@{test\_thread}}
+\index{test\_thread@{test\_thread}!ystart.cpp@{ystart.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_thread()}{test\_thread()}}
+{\footnotesize\ttfamily void$\ast$ test\+\_\+thread (\begin{DoxyParamCaption}\item[{void $\ast$}]{arg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ystart_8cpp_a7c43a615989fa67739adae744eb63c27}\label{ystart_8cpp_a7c43a615989fa67739adae744eb63c27}} 
+\index{ystart.cpp@{ystart.cpp}!yCleanThread@{yCleanThread}}
+\index{yCleanThread@{yCleanThread}!ystart.cpp@{ystart.cpp}}
+\doxysubsubsection{\texorpdfstring{yCleanThread()}{yCleanThread()}}
+{\footnotesize\ttfamily void y\+Clean\+Thread (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ystart_8cpp_aabc064b17e82d897cfe939e4bcf44ed2}\label{ystart_8cpp_aabc064b17e82d897cfe939e4bcf44ed2}} 
+\index{ystart.cpp@{ystart.cpp}!yCreateThread@{yCreateThread}}
+\index{yCreateThread@{yCreateThread}!ystart.cpp@{ystart.cpp}}
+\doxysubsubsection{\texorpdfstring{yCreateThread()}{yCreateThread()}}
+{\footnotesize\ttfamily void y\+Create\+Thread (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{name,  }\item[{pthread\+\_\+attr\+\_\+t $\ast$}]{attr,  }\item[{\mbox{\hyperlink{ystart_8hpp_ac4d1d0002b8fc15edd83cf2d0998911e}{Thread\+Routine}}}]{routine,  }\item[{void $\ast$}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ystart_8cpp_ab568e52f126f695d96ffc779b71cb303}\label{ystart_8cpp_ab568e52f126f695d96ffc779b71cb303}} 
+\index{ystart.cpp@{ystart.cpp}!ystart@{ystart}}
+\index{ystart@{ystart}!ystart.cpp@{ystart.cpp}}
+\doxysubsubsection{\texorpdfstring{ystart()}{ystart()}}
+{\footnotesize\ttfamily void ystart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyStartParam}{y\+Start\+Param}} \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ystart_8cpp_a5d37a8757cb5e3e4154e7f9b5994cebc}\label{ystart_8cpp_a5d37a8757cb5e3e4154e7f9b5994cebc}} 
+\index{ystart.cpp@{ystart.cpp}!ystart\_test@{ystart\_test}}
+\index{ystart\_test@{ystart\_test}!ystart.cpp@{ystart.cpp}}
+\doxysubsubsection{\texorpdfstring{ystart\_test()}{ystart\_test()}}
+{\footnotesize\ttfamily int ystart\+\_\+test (\begin{DoxyParamCaption}\item[{void $\ast$}]{param }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ystart_8cpp_ab1051f636ad34a736191ba7b2d3a4cc0}\label{ystart_8cpp_ab1051f636ad34a736191ba7b2d3a4cc0}} 
+\index{ystart.cpp@{ystart.cpp}!g\_thread\_vector@{g\_thread\_vector}}
+\index{g\_thread\_vector@{g\_thread\_vector}!ystart.cpp@{ystart.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_thread\_vector}{g\_thread\_vector}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classyThread}{y\+Thread}}$>$ g\+\_\+thread\+\_\+vector}
+

@@ -1,0 +1,105 @@
+\hypertarget{ymain_8cpp}{}\doxysection{/home/sky/y\+Lib/examples/\+Program\+Frame\+Examples/ymain.cpp File Reference}
+\label{ymain_8cpp}\index{/home/sky/yLib/examples/ProgramFrameExamples/ymain.cpp@{/home/sky/yLib/examples/ProgramFrameExamples/ymain.cpp}}
+{\ttfamily \#include $<$signal.\+h$>$}\newline
+{\ttfamily \#include $<$stddef.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include $<$errno.\+h$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include \char`\"{}ylib.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ystart.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{ymain_8cpp_a299b0701d37f1359e9049365fde74b36}{y\+Default\+Signal\+Handler}} (int sig\+\_\+)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{ymain_8cpp_a6b0f9fe8d77542abd985181c1380b830}{y\+Signal\+Process}} (void)
+\item 
+static void \mbox{\hyperlink{ymain_8cpp_ac3b319085762ed8d16e3795cbb701741}{y\+Usage}} (void)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{ymain_8cpp_a94654b90595e8cf5c4f1be6e00b48c65}{y\+Main\+Argument\+Parse}} (int argc\+\_\+, char $\ast$const argv\+\_\+\mbox{[}$\,$\mbox{]}, bool enable\+\_\+long\+\_\+opt\+\_\+=true)
+\item 
+int \mbox{\hyperlink{ymain_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ymain_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{ymain_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{ymain.cpp@{ymain.cpp}!main@{main}}
+\index{main@{main}!ymain.cpp@{ymain.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+@description\+: main function. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ymain_8cpp_a299b0701d37f1359e9049365fde74b36}\label{ymain_8cpp_a299b0701d37f1359e9049365fde74b36}} 
+\index{ymain.cpp@{ymain.cpp}!yDefaultSignalHandler@{yDefaultSignalHandler}}
+\index{yDefaultSignalHandler@{yDefaultSignalHandler}!ymain.cpp@{ymain.cpp}}
+\doxysubsubsection{\texorpdfstring{yDefaultSignalHandler()}{yDefaultSignalHandler()}}
+{\footnotesize\ttfamily static void y\+Default\+Signal\+Handler (\begin{DoxyParamCaption}\item[{int}]{sig\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@description\+: Our default handler of signal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & sig\+\_\+ \+: The num of signal.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ymain_8cpp_a94654b90595e8cf5c4f1be6e00b48c65}\label{ymain_8cpp_a94654b90595e8cf5c4f1be6e00b48c65}} 
+\index{ymain.cpp@{ymain.cpp}!yMainArgumentParse@{yMainArgumentParse}}
+\index{yMainArgumentParse@{yMainArgumentParse}!ymain.cpp@{ymain.cpp}}
+\doxysubsubsection{\texorpdfstring{yMainArgumentParse()}{yMainArgumentParse()}}
+{\footnotesize\ttfamily static int8\+\_\+t y\+Main\+Argument\+Parse (\begin{DoxyParamCaption}\item[{int}]{argc\+\_\+,  }\item[{char $\ast$const}]{argv\+\_\+\mbox{[}$\,$\mbox{]},  }\item[{bool}]{enable\+\_\+long\+\_\+opt\+\_\+ = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@description\+: Parse the arguments of \mbox{\hyperlink{ymain_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & argc\+\_\+\+: The num pf argument. argv\+\_\+\+: The pointer-\/array of argument. enable\+\_\+long\+\_\+opt\+\_\+\+: Is enable long-\/option\textquotesingle{} support.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} int8\+\_\+t\+: 0 success. -\/1 failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ymain_8cpp_a6b0f9fe8d77542abd985181c1380b830}\label{ymain_8cpp_a6b0f9fe8d77542abd985181c1380b830}} 
+\index{ymain.cpp@{ymain.cpp}!ySignalProcess@{ySignalProcess}}
+\index{ySignalProcess@{ySignalProcess}!ymain.cpp@{ymain.cpp}}
+\doxysubsubsection{\texorpdfstring{ySignalProcess()}{ySignalProcess()}}
+{\footnotesize\ttfamily static int8\+\_\+t y\+Signal\+Process (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@description\+: Register handler of signal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & void\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} int8\+\_\+t\+: 0 success. -\/1 failed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ymain_8cpp_ac3b319085762ed8d16e3795cbb701741}\label{ymain_8cpp_ac3b319085762ed8d16e3795cbb701741}} 
+\index{ymain.cpp@{ymain.cpp}!yUsage@{yUsage}}
+\index{yUsage@{yUsage}!ymain.cpp@{ymain.cpp}}
+\doxysubsubsection{\texorpdfstring{yUsage()}{yUsage()}}
+{\footnotesize\ttfamily static void y\+Usage (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+@description\+: Example Usage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & void\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} void 
+\end{DoxyReturn}

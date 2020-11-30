@@ -1,0 +1,138 @@
+\hypertarget{classyLib_1_1yUdpServer}{}\doxysection{y\+Lib\+::y\+Udp\+Server Class Reference}
+\label{classyLib_1_1yUdpServer}\index{yLib::yUdpServer@{yLib::yUdpServer}}
+
+
+{\ttfamily \#include $<$yudpserver.\+h$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Udp\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classyLib_1_1yUdpServer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yUdpServer_a459299ec79b9165dcfda17d573ed8441}{y\+Udp\+Server}} (void)
+\item 
+\mbox{\hyperlink{classyLib_1_1yUdpServer_af0970ef727514c525d1d2f92eea10b09}{y\+Udp\+Server}} (uint64\+\_\+t max\+\_\+client\+\_\+num\+\_\+, int socket\+\_\+flags\+\_\+=0, bool is\+\_\+block\+\_\+=true)
+\item 
+\mbox{\hyperlink{classyLib_1_1yUdpServer_aef6ec9a62a6e56b24faab6c762e9a9fa}{$\sim$y\+Udp\+Server}} ()
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yUdpServer_a0898c84f7e4deb97ee282506e71cc73e}{socket\+\_\+is\+\_\+ready}} (void)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yUdpServer_a3720c0a00a4948bc6a6d73fd2b7aad92}{bind}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&ip\+\_\+, int32\+\_\+t port\+\_\+)
+\item 
+int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yUdpServer_a5b5cc91781263513d2370b8372e812f1}{sendto}} (const void $\ast$buffer\+\_\+, uint64\+\_\+t size\+\_\+to\+\_\+send\+\_\+, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&client\+\_\+ip\+\_\+, uint64\+\_\+t client\+\_\+port\+\_\+=0, int flags\+\_\+=0)
+\item 
+int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yUdpServer_ae29afec8c262c25d5568f9973096e488}{recvfrom}} (void $\ast$buffer\+\_\+, uint64\+\_\+t size\+\_\+to\+\_\+read\+\_\+, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&client\+\_\+ip\+\_\+, uint64\+\_\+t \&client\+\_\+port\+\_\+, int flags\+\_\+=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ struct sockaddr\+\_\+in $>$ \mbox{\hyperlink{classyLib_1_1yUdpServer_a5ffb9c3c38716be7501989b7f153b4b8}{client\+\_\+socket\+\_\+addr\+\_\+vec}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_a459299ec79b9165dcfda17d573ed8441}\label{classyLib_1_1yUdpServer_a459299ec79b9165dcfda17d573ed8441}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!yUdpServer@{yUdpServer}}
+\index{yUdpServer@{yUdpServer}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{yUdpServer()}{yUdpServer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily y\+Udp\+Server\+::y\+Udp\+Server (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_af0970ef727514c525d1d2f92eea10b09}\label{classyLib_1_1yUdpServer_af0970ef727514c525d1d2f92eea10b09}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!yUdpServer@{yUdpServer}}
+\index{yUdpServer@{yUdpServer}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{yUdpServer()}{yUdpServer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily y\+Udp\+Server\+::y\+Udp\+Server (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{max\+\_\+client\+\_\+num\+\_\+,  }\item[{int}]{socket\+\_\+flags\+\_\+ = {\ttfamily 0},  }\item[{bool}]{is\+\_\+block\+\_\+ = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_aef6ec9a62a6e56b24faab6c762e9a9fa}\label{classyLib_1_1yUdpServer_aef6ec9a62a6e56b24faab6c762e9a9fa}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!````~yUdpServer@{$\sim$yUdpServer}}
+\index{````~yUdpServer@{$\sim$yUdpServer}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{$\sim$yUdpServer()}{~yUdpServer()}}
+{\footnotesize\ttfamily y\+Udp\+Server\+::$\sim$y\+Udp\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_a3720c0a00a4948bc6a6d73fd2b7aad92}\label{classyLib_1_1yUdpServer_a3720c0a00a4948bc6a6d73fd2b7aad92}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!bind@{bind}}
+\index{bind@{bind}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Udp\+Server\+::bind (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{ip\+\_\+,  }\item[{int32\+\_\+t}]{port\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+@description\+: bind ip and port 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a46989c254ebb55384b1b3753bb881f73}{y\+Lib\+::y\+Abstract\+Socket}}.
+
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_ae29afec8c262c25d5568f9973096e488}\label{classyLib_1_1yUdpServer_ae29afec8c262c25d5568f9973096e488}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!recvfrom@{recvfrom}}
+\index{recvfrom@{recvfrom}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{recvfrom()}{recvfrom()}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Udp\+Server\+::recvfrom (\begin{DoxyParamCaption}\item[{void $\ast$}]{buffer\+\_\+,  }\item[{uint64\+\_\+t}]{size\+\_\+to\+\_\+read\+\_\+,  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{client\+\_\+ip\+\_\+,  }\item[{uint64\+\_\+t \&}]{client\+\_\+port\+\_\+,  }\item[{int}]{flags\+\_\+ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_a5b5cc91781263513d2370b8372e812f1}\label{classyLib_1_1yUdpServer_a5b5cc91781263513d2370b8372e812f1}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!sendto@{sendto}}
+\index{sendto@{sendto}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{sendto()}{sendto()}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Udp\+Server\+::sendto (\begin{DoxyParamCaption}\item[{const void $\ast$}]{buffer\+\_\+,  }\item[{uint64\+\_\+t}]{size\+\_\+to\+\_\+send\+\_\+,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{client\+\_\+ip\+\_\+,  }\item[{uint64\+\_\+t}]{client\+\_\+port\+\_\+ = {\ttfamily 0},  }\item[{int}]{flags\+\_\+ = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_a0898c84f7e4deb97ee282506e71cc73e}\label{classyLib_1_1yUdpServer_a0898c84f7e4deb97ee282506e71cc73e}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!socket\_is\_ready@{socket\_is\_ready}}
+\index{socket\_is\_ready@{socket\_is\_ready}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{socket\_is\_ready()}{socket\_is\_ready()}}
+{\footnotesize\ttfamily bool y\+Udp\+Server\+::socket\+\_\+is\+\_\+ready (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+@description\+: Check socket(), \mbox{\hyperlink{classyLib_1_1yUdpServer_a3720c0a00a4948bc6a6d73fd2b7aad92}{bind()}}, listen(), accept() and so on. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a26d05836b67627fa767aceee6d7de599}{y\+Lib\+::y\+Abstract\+Socket}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yUdpServer_a5ffb9c3c38716be7501989b7f153b4b8}\label{classyLib_1_1yUdpServer_a5ffb9c3c38716be7501989b7f153b4b8}} 
+\index{yLib::yUdpServer@{yLib::yUdpServer}!client\_socket\_addr\_vec@{client\_socket\_addr\_vec}}
+\index{client\_socket\_addr\_vec@{client\_socket\_addr\_vec}!yLib::yUdpServer@{yLib::yUdpServer}}
+\doxysubsubsection{\texorpdfstring{client\_socket\_addr\_vec}{client\_socket\_addr\_vec}}
+{\footnotesize\ttfamily std\+::vector$<$struct sockaddr\+\_\+in$>$ y\+Lib\+::y\+Udp\+Server\+::client\+\_\+socket\+\_\+addr\+\_\+vec\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/network/\mbox{\hyperlink{yudpserver_8h}{yudpserver.\+h}}\item 
+/home/sky/y\+Lib/src/network/\mbox{\hyperlink{yudpserver_8cpp}{yudpserver.\+cpp}}\end{DoxyCompactItemize}

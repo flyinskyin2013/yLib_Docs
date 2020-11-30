@@ -1,0 +1,107 @@
+\hypertarget{yhttp_8cpp}{}\doxysection{/home/sky/y\+Lib/src/utility/yhttp.cpp File Reference}
+\label{yhttp_8cpp}\index{/home/sky/yLib/src/utility/yhttp.cpp@{/home/sky/yLib/src/utility/yhttp.cpp}}
+{\ttfamily \#include \char`\"{}utility/yhttp.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utility/ylog.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}curl/curl.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{yhttp_8cpp_aafabd99b57672d73f6129435258cd292}{\+\_\+\+\_\+little\+\_\+endian\+\_\+uint32\+\_\+to\+\_\+buf\+\_\+\+\_\+}} (uint8\+\_\+t $\ast$buf\+\_\+, uint32\+\_\+t len\+\_\+)
+\item 
+static void \mbox{\hyperlink{yhttp_8cpp_a6eb5e4fb13cd9366d56647a73a4cf68a}{\+\_\+\+\_\+little\+\_\+endian\+\_\+buf\+\_\+to\+\_\+uint32\+\_\+\+\_\+}} (uint8\+\_\+t $\ast$buf\+\_\+, uint32\+\_\+t $\ast$len\+\_\+)
+\item 
+static size\+\_\+t \mbox{\hyperlink{yhttp_8cpp_a80f827734050d9928eea0c9f70b7a8ad}{write\+\_\+callback}} (char $\ast$buffer\+\_\+, size\+\_\+t size\+\_\+, size\+\_\+t nmemb\+\_\+, void $\ast$userdata\+\_\+)
+\item 
+static int \mbox{\hyperlink{yhttp_8cpp_a6ebea7ec4cffeadfd972a2ff3caf127e}{Progress\+Callback}} (void $\ast$clientp, double dltotal, double dlnow, double ultotal, double ulnow)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_afc99434a559992c0fd6b3703aaabffc5}{\+\_\+\+\_\+yhttp\+\_\+check\+\_\+protocol\+\_\+type\+\_\+\+\_\+}} (const y\+Lib\+::y\+Http\+Request\+Param \&request\+\_\+param\+\_\+)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_ac2177fd7bfb0ef9a2fdc21c50dbce0a2}{\+\_\+\+\_\+yhttp\+\_\+create\+\_\+http\+\_\+handle\+\_\+\+\_\+}} (C\+U\+RL $\ast$$\ast$ptr\+\_\+http\+\_\+handle)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_a0e2bb912503163511d0a5126ed2e556c}{\+\_\+\+\_\+yhttp\+\_\+parse\+\_\+set\+\_\+http\+\_\+header\+\_\+\+\_\+}} (C\+U\+RL $\ast$ptr\+\_\+http\+\_\+handle, const y\+Lib\+::y\+Http\+Request\+Param \&request\+\_\+param\+\_\+, curl\+\_\+slist $\ast$http\+\_\+headers)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_a7b6b23380864436388205405579bd9a0}{\+\_\+\+\_\+yhttp\+\_\+parse\+\_\+set\+\_\+http\+\_\+url\+\_\+\+\_\+}} (C\+U\+RL $\ast$ptr\+\_\+http\+\_\+handle, const y\+Lib\+::y\+Http\+Request\+Param \&request\+\_\+param\+\_\+)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_aeb63c52234334d7f5d610e571997e23c}{\+\_\+\+\_\+yhttp\+\_\+set\+\_\+response\+\_\+callback\+\_\+buffer\+\_\+\+\_\+}} (C\+U\+RL $\ast$ptr\+\_\+http\+\_\+handle, uint8\+\_\+t $\ast$data\+\_\+buffer\+\_\+ptr\+\_\+, uint32\+\_\+t buffer\+\_\+len\+\_\+)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_aa9e71be92fc99bfb74556c3a3b8bc9ea}{\+\_\+\+\_\+yhttp\+\_\+start\+\_\+http\+\_\+session\+\_\+\+\_\+}} (C\+U\+RL $\ast$ptr\+\_\+http\+\_\+handle)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_a757cb082788307338adf030a41021528}{\+\_\+\+\_\+yhttp\+\_\+process\+\_\+http\+\_\+response\+\_\+\+\_\+}} (C\+U\+RL $\ast$ptr\+\_\+http\+\_\+handle, uint8\+\_\+t $\ast$data\+\_\+buffer\+\_\+ptr\+\_\+, y\+Lib\+::y\+Http\+Response\+Info \&response\+\_\+info\+\_\+)
+\item 
+static int8\+\_\+t \mbox{\hyperlink{yhttp_8cpp_aee4ced40a19846784889a0a5430b562b}{\+\_\+\+\_\+yhttp\+\_\+cleanup\+\_\+\+\_\+}} (C\+U\+RL $\ast$ptr\+\_\+http\+\_\+handle\+\_\+, struct curl\+\_\+slist $\ast$http\+\_\+headers\+\_\+, uint8\+\_\+t $\ast$data\+\_\+buffer\+\_\+ptr\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{yhttp_8cpp_a6eb5e4fb13cd9366d56647a73a4cf68a}\label{yhttp_8cpp_a6eb5e4fb13cd9366d56647a73a4cf68a}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_little\_endian\_buf\_to\_uint32\_\_@{\_\_little\_endian\_buf\_to\_uint32\_\_}}
+\index{\_\_little\_endian\_buf\_to\_uint32\_\_@{\_\_little\_endian\_buf\_to\_uint32\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_little\_endian\_buf\_to\_uint32\_\_()}{\_\_little\_endian\_buf\_to\_uint32\_\_()}}
+{\footnotesize\ttfamily static void \+\_\+\+\_\+little\+\_\+endian\+\_\+buf\+\_\+to\+\_\+uint32\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buf\+\_\+,  }\item[{uint32\+\_\+t $\ast$}]{len\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_aafabd99b57672d73f6129435258cd292}\label{yhttp_8cpp_aafabd99b57672d73f6129435258cd292}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_little\_endian\_uint32\_to\_buf\_\_@{\_\_little\_endian\_uint32\_to\_buf\_\_}}
+\index{\_\_little\_endian\_uint32\_to\_buf\_\_@{\_\_little\_endian\_uint32\_to\_buf\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_little\_endian\_uint32\_to\_buf\_\_()}{\_\_little\_endian\_uint32\_to\_buf\_\_()}}
+{\footnotesize\ttfamily static void \+\_\+\+\_\+little\+\_\+endian\+\_\+uint32\+\_\+to\+\_\+buf\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{buf\+\_\+,  }\item[{uint32\+\_\+t}]{len\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_afc99434a559992c0fd6b3703aaabffc5}\label{yhttp_8cpp_afc99434a559992c0fd6b3703aaabffc5}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_check\_protocol\_type\_\_@{\_\_yhttp\_check\_protocol\_type\_\_}}
+\index{\_\_yhttp\_check\_protocol\_type\_\_@{\_\_yhttp\_check\_protocol\_type\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_check\_protocol\_type\_\_()}{\_\_yhttp\_check\_protocol\_type\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+check\+\_\+protocol\+\_\+type\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{const y\+Lib\+::y\+Http\+Request\+Param \&}]{request\+\_\+param\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_aee4ced40a19846784889a0a5430b562b}\label{yhttp_8cpp_aee4ced40a19846784889a0a5430b562b}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_cleanup\_\_@{\_\_yhttp\_cleanup\_\_}}
+\index{\_\_yhttp\_cleanup\_\_@{\_\_yhttp\_cleanup\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_cleanup\_\_()}{\_\_yhttp\_cleanup\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+cleanup\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{C\+U\+RL $\ast$}]{ptr\+\_\+http\+\_\+handle\+\_\+,  }\item[{struct curl\+\_\+slist $\ast$}]{http\+\_\+headers\+\_\+,  }\item[{uint8\+\_\+t $\ast$}]{data\+\_\+buffer\+\_\+ptr\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_ac2177fd7bfb0ef9a2fdc21c50dbce0a2}\label{yhttp_8cpp_ac2177fd7bfb0ef9a2fdc21c50dbce0a2}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_create\_http\_handle\_\_@{\_\_yhttp\_create\_http\_handle\_\_}}
+\index{\_\_yhttp\_create\_http\_handle\_\_@{\_\_yhttp\_create\_http\_handle\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_create\_http\_handle\_\_()}{\_\_yhttp\_create\_http\_handle\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+create\+\_\+http\+\_\+handle\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{C\+U\+RL $\ast$$\ast$}]{ptr\+\_\+http\+\_\+handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_a0e2bb912503163511d0a5126ed2e556c}\label{yhttp_8cpp_a0e2bb912503163511d0a5126ed2e556c}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_parse\_set\_http\_header\_\_@{\_\_yhttp\_parse\_set\_http\_header\_\_}}
+\index{\_\_yhttp\_parse\_set\_http\_header\_\_@{\_\_yhttp\_parse\_set\_http\_header\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_parse\_set\_http\_header\_\_()}{\_\_yhttp\_parse\_set\_http\_header\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+parse\+\_\+set\+\_\+http\+\_\+header\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{C\+U\+RL $\ast$}]{ptr\+\_\+http\+\_\+handle,  }\item[{const y\+Lib\+::y\+Http\+Request\+Param \&}]{request\+\_\+param\+\_\+,  }\item[{curl\+\_\+slist $\ast$}]{http\+\_\+headers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_a7b6b23380864436388205405579bd9a0}\label{yhttp_8cpp_a7b6b23380864436388205405579bd9a0}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_parse\_set\_http\_url\_\_@{\_\_yhttp\_parse\_set\_http\_url\_\_}}
+\index{\_\_yhttp\_parse\_set\_http\_url\_\_@{\_\_yhttp\_parse\_set\_http\_url\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_parse\_set\_http\_url\_\_()}{\_\_yhttp\_parse\_set\_http\_url\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+parse\+\_\+set\+\_\+http\+\_\+url\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{C\+U\+RL $\ast$}]{ptr\+\_\+http\+\_\+handle,  }\item[{const y\+Lib\+::y\+Http\+Request\+Param \&}]{request\+\_\+param\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_a757cb082788307338adf030a41021528}\label{yhttp_8cpp_a757cb082788307338adf030a41021528}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_process\_http\_response\_\_@{\_\_yhttp\_process\_http\_response\_\_}}
+\index{\_\_yhttp\_process\_http\_response\_\_@{\_\_yhttp\_process\_http\_response\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_process\_http\_response\_\_()}{\_\_yhttp\_process\_http\_response\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+process\+\_\+http\+\_\+response\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{C\+U\+RL $\ast$}]{ptr\+\_\+http\+\_\+handle,  }\item[{uint8\+\_\+t $\ast$}]{data\+\_\+buffer\+\_\+ptr\+\_\+,  }\item[{y\+Lib\+::y\+Http\+Response\+Info \&}]{response\+\_\+info\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_aeb63c52234334d7f5d610e571997e23c}\label{yhttp_8cpp_aeb63c52234334d7f5d610e571997e23c}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_set\_response\_callback\_buffer\_\_@{\_\_yhttp\_set\_response\_callback\_buffer\_\_}}
+\index{\_\_yhttp\_set\_response\_callback\_buffer\_\_@{\_\_yhttp\_set\_response\_callback\_buffer\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_set\_response\_callback\_buffer\_\_()}{\_\_yhttp\_set\_response\_callback\_buffer\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+set\+\_\+response\+\_\+callback\+\_\+buffer\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{C\+U\+RL $\ast$}]{ptr\+\_\+http\+\_\+handle,  }\item[{uint8\+\_\+t $\ast$}]{data\+\_\+buffer\+\_\+ptr\+\_\+,  }\item[{uint32\+\_\+t}]{buffer\+\_\+len\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_aa9e71be92fc99bfb74556c3a3b8bc9ea}\label{yhttp_8cpp_aa9e71be92fc99bfb74556c3a3b8bc9ea}} 
+\index{yhttp.cpp@{yhttp.cpp}!\_\_yhttp\_start\_http\_session\_\_@{\_\_yhttp\_start\_http\_session\_\_}}
+\index{\_\_yhttp\_start\_http\_session\_\_@{\_\_yhttp\_start\_http\_session\_\_}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{\_\_yhttp\_start\_http\_session\_\_()}{\_\_yhttp\_start\_http\_session\_\_()}}
+{\footnotesize\ttfamily static int8\+\_\+t \+\_\+\+\_\+yhttp\+\_\+start\+\_\+http\+\_\+session\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{C\+U\+RL $\ast$}]{ptr\+\_\+http\+\_\+handle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_a6ebea7ec4cffeadfd972a2ff3caf127e}\label{yhttp_8cpp_a6ebea7ec4cffeadfd972a2ff3caf127e}} 
+\index{yhttp.cpp@{yhttp.cpp}!ProgressCallback@{ProgressCallback}}
+\index{ProgressCallback@{ProgressCallback}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{ProgressCallback()}{ProgressCallback()}}
+{\footnotesize\ttfamily static int Progress\+Callback (\begin{DoxyParamCaption}\item[{void $\ast$}]{clientp,  }\item[{double}]{dltotal,  }\item[{double}]{dlnow,  }\item[{double}]{ultotal,  }\item[{double}]{ulnow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{yhttp_8cpp_a80f827734050d9928eea0c9f70b7a8ad}\label{yhttp_8cpp_a80f827734050d9928eea0c9f70b7a8ad}} 
+\index{yhttp.cpp@{yhttp.cpp}!write\_callback@{write\_callback}}
+\index{write\_callback@{write\_callback}!yhttp.cpp@{yhttp.cpp}}
+\doxysubsubsection{\texorpdfstring{write\_callback()}{write\_callback()}}
+{\footnotesize\ttfamily static size\+\_\+t write\+\_\+callback (\begin{DoxyParamCaption}\item[{char $\ast$}]{buffer\+\_\+,  }\item[{size\+\_\+t}]{size\+\_\+,  }\item[{size\+\_\+t}]{nmemb\+\_\+,  }\item[{void $\ast$}]{userdata\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+

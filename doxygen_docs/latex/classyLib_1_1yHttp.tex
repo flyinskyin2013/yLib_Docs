@@ -1,0 +1,90 @@
+\hypertarget{classyLib_1_1yHttp}{}\doxysection{y\+Lib\+::y\+Http Class Reference}
+\label{classyLib_1_1yHttp}\index{yLib::yHttp@{yLib::yHttp}}
+
+
+{\ttfamily \#include $<$yhttp.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Http\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yHttp}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yHttp_a30f8cce5bf74b4a44c5ee41de7c833cb}{y\+Http}} () noexcept
+\item 
+\mbox{\hyperlink{classyLib_1_1yHttp_a6f210a2e10f8fa53da542b22de4f3b7f}{$\sim$y\+Http}} () noexcept
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yHttp_a2c2ca50c6ac8d6893478857d03587556}{y\+Http\+Get}} (const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&request\+\_\+param\+\_\+, \mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&response\+\_\+info\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yHttp_ac559483a9647e580dce71fed66dabbaa}{y\+Http\+Post\+Default}} (const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&request\+\_\+param\+\_\+, \mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&response\+\_\+info\+\_\+, std\+::vector$<$ \mbox{\hyperlink{structyHttpPostUrlencodedItem}{y\+Http\+Post\+Urlencoded\+Item}} $>$ \&form\+\_\+kv\+\_\+vec\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yHttp_a6ce13e2972d68be00235c7a613abfa48}{y\+Http\+Post\+Json}} (const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&request\+\_\+param\+\_\+, \mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&response\+\_\+info\+\_\+, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&json\+\_\+str\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yHttp_a3f491c10d7cd73dcde63b64f33878209}{y\+Http\+Post\+Multi\+Part}} (const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&request\+\_\+param\+\_\+, \mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&response\+\_\+info\+\_\+, std\+::vector$<$ \mbox{\hyperlink{structyHttpPostMultiPartItem}{y\+Http\+Post\+Multi\+Part\+Item}} $>$ \&form\+\_\+multi\+\_\+part\+\_\+vec\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yHttp_aca4d596a090aea322d77c4d16b650808}{yhttp\+\_\+is\+\_\+init\+\_\+ok}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yHttp_a30f8cce5bf74b4a44c5ee41de7c833cb}\label{classyLib_1_1yHttp_a30f8cce5bf74b4a44c5ee41de7c833cb}} 
+\index{yLib::yHttp@{yLib::yHttp}!yHttp@{yHttp}}
+\index{yHttp@{yHttp}!yLib::yHttp@{yLib::yHttp}}
+\doxysubsubsection{\texorpdfstring{yHttp()}{yHttp()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Http\+::y\+Http (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\mbox{\Hypertarget{classyLib_1_1yHttp_a6f210a2e10f8fa53da542b22de4f3b7f}\label{classyLib_1_1yHttp_a6f210a2e10f8fa53da542b22de4f3b7f}} 
+\index{yLib::yHttp@{yLib::yHttp}!````~yHttp@{$\sim$yHttp}}
+\index{````~yHttp@{$\sim$yHttp}!yLib::yHttp@{yLib::yHttp}}
+\doxysubsubsection{\texorpdfstring{$\sim$yHttp()}{~yHttp()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Http\+::$\sim$y\+Http (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yHttp_a2c2ca50c6ac8d6893478857d03587556}\label{classyLib_1_1yHttp_a2c2ca50c6ac8d6893478857d03587556}} 
+\index{yLib::yHttp@{yLib::yHttp}!yHttpGet@{yHttpGet}}
+\index{yHttpGet@{yHttpGet}!yLib::yHttp@{yLib::yHttp}}
+\doxysubsubsection{\texorpdfstring{yHttpGet()}{yHttpGet()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Http\+::y\+Http\+Get (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&}]{request\+\_\+param\+\_\+,  }\item[{\mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&}]{response\+\_\+info\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yHttp_ac559483a9647e580dce71fed66dabbaa}\label{classyLib_1_1yHttp_ac559483a9647e580dce71fed66dabbaa}} 
+\index{yLib::yHttp@{yLib::yHttp}!yHttpPostDefault@{yHttpPostDefault}}
+\index{yHttpPostDefault@{yHttpPostDefault}!yLib::yHttp@{yLib::yHttp}}
+\doxysubsubsection{\texorpdfstring{yHttpPostDefault()}{yHttpPostDefault()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Http\+::y\+Http\+Post\+Default (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&}]{request\+\_\+param\+\_\+,  }\item[{\mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&}]{response\+\_\+info\+\_\+,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structyHttpPostUrlencodedItem}{y\+Http\+Post\+Urlencoded\+Item}} $>$ \&}]{form\+\_\+kv\+\_\+vec\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yHttp_a6ce13e2972d68be00235c7a613abfa48}\label{classyLib_1_1yHttp_a6ce13e2972d68be00235c7a613abfa48}} 
+\index{yLib::yHttp@{yLib::yHttp}!yHttpPostJson@{yHttpPostJson}}
+\index{yHttpPostJson@{yHttpPostJson}!yLib::yHttp@{yLib::yHttp}}
+\doxysubsubsection{\texorpdfstring{yHttpPostJson()}{yHttpPostJson()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Http\+::y\+Http\+Post\+Json (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&}]{request\+\_\+param\+\_\+,  }\item[{\mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&}]{response\+\_\+info\+\_\+,  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{json\+\_\+str\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yHttp_a3f491c10d7cd73dcde63b64f33878209}\label{classyLib_1_1yHttp_a3f491c10d7cd73dcde63b64f33878209}} 
+\index{yLib::yHttp@{yLib::yHttp}!yHttpPostMultiPart@{yHttpPostMultiPart}}
+\index{yHttpPostMultiPart@{yHttpPostMultiPart}!yLib::yHttp@{yLib::yHttp}}
+\doxysubsubsection{\texorpdfstring{yHttpPostMultiPart()}{yHttpPostMultiPart()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Http\+::y\+Http\+Post\+Multi\+Part (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structyHttpRequestParam}{y\+Http\+Request\+Param}} \&}]{request\+\_\+param\+\_\+,  }\item[{\mbox{\hyperlink{structyHttpResponseInfo}{y\+Http\+Response\+Info}} \&}]{response\+\_\+info\+\_\+,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structyHttpPostMultiPartItem}{y\+Http\+Post\+Multi\+Part\+Item}} $>$ \&}]{form\+\_\+multi\+\_\+part\+\_\+vec\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yHttp_aca4d596a090aea322d77c4d16b650808}\label{classyLib_1_1yHttp_aca4d596a090aea322d77c4d16b650808}} 
+\index{yLib::yHttp@{yLib::yHttp}!yhttp\_is\_init\_ok@{yhttp\_is\_init\_ok}}
+\index{yhttp\_is\_init\_ok@{yhttp\_is\_init\_ok}!yLib::yHttp@{yLib::yHttp}}
+\doxysubsubsection{\texorpdfstring{yhttp\_is\_init\_ok}{yhttp\_is\_init\_ok}}
+{\footnotesize\ttfamily bool y\+Lib\+::y\+Http\+::yhttp\+\_\+is\+\_\+init\+\_\+ok = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/utility/\mbox{\hyperlink{yhttp_8hpp}{yhttp.\+hpp}}\item 
+/home/sky/y\+Lib/src/utility/\mbox{\hyperlink{yhttp_8cpp}{yhttp.\+cpp}}\end{DoxyCompactItemize}

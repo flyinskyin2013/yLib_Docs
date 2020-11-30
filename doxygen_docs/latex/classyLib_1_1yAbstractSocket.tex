@@ -1,0 +1,176 @@
+\hypertarget{classyLib_1_1yAbstractSocket}{}\doxysection{y\+Lib\+::y\+Abstract\+Socket Class Reference}
+\label{classyLib_1_1yAbstractSocket}\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+
+
+{\ttfamily \#include $<$yabstractsocket.\+h$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Abstract\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.093923cm]{classyLib_1_1yAbstractSocket}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yAbstractSocket_a08557e761b0a335f108d3b54376f7680}{$\sim$y\+Abstract\+Socket}} ()
+\item 
+int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yAbstractSocket_ad59cba5fb67c19c0b526369623570fb1}{close}} (int64\+\_\+t fd\+\_\+)
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yAbstractSocket_af343dc1de87399fa73d25af51be7ed28}{socket\+\_\+is\+\_\+valid}} (void)
+\item 
+virtual bool \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a26d05836b67627fa767aceee6d7de599}{socket\+\_\+is\+\_\+ready}} (void)=0
+\item 
+virtual int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a46989c254ebb55384b1b3753bb881f73}{bind}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&ip\+\_\+, int32\+\_\+t port\+\_\+)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yAbstractSocket_ab31ee04339a6a7c259927977a4415c3d}{y\+Abstract\+Socket}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a0e215a3b815f683f2f0591ec72a0fa73}{get\+\_\+ip\+\_\+from\+\_\+binary}} (uint64\+\_\+t ip\+\_\+)
+\item 
+static uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yAbstractSocket_acc2d807cc84ad5dd10a11d46a90729f8}{get\+\_\+port\+\_\+from\+\_\+binary}} (uint64\+\_\+t port\+\_\+)
+\item 
+static int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a4932fcf2319ac33136362a2ac8f95382}{translate\+\_\+ip\+\_\+to\+\_\+binary}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&ip\+\_\+)
+\item 
+static uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yAbstractSocket_ade7d017e69d1fc3c297a62171adcb1f7}{translate\+\_\+port\+\_\+to\+\_\+binary}} (uint64\+\_\+t port\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int64\+\_\+t \mbox{\hyperlink{classyLib_1_1yAbstractSocket_adc2bfeb1f4d0067103e82eab019b558d}{socket\+\_\+fd}}
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a7010d3c8c4d18f9db3082e5fc515697d}{is\+\_\+bind\+\_\+success}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_ab31ee04339a6a7c259927977a4415c3d}\label{classyLib_1_1yAbstractSocket_ab31ee04339a6a7c259927977a4415c3d}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!yAbstractSocket@{yAbstractSocket}}
+\index{yAbstractSocket@{yAbstractSocket}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{yAbstractSocket()}{yAbstractSocket()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Abstract\+Socket\+::y\+Abstract\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_a08557e761b0a335f108d3b54376f7680}\label{classyLib_1_1yAbstractSocket_a08557e761b0a335f108d3b54376f7680}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!````~yAbstractSocket@{$\sim$yAbstractSocket}}
+\index{````~yAbstractSocket@{$\sim$yAbstractSocket}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{$\sim$yAbstractSocket()}{~yAbstractSocket()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Abstract\+Socket\+::$\sim$y\+Abstract\+Socket (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_a46989c254ebb55384b1b3753bb881f73}\label{classyLib_1_1yAbstractSocket_a46989c254ebb55384b1b3753bb881f73}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!bind@{bind}}
+\index{bind@{bind}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily virtual int8\+\_\+t y\+Lib\+::y\+Abstract\+Socket\+::bind (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{ip\+\_\+,  }\item[{int32\+\_\+t}]{port\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+@description\+: tcp server \& udp server 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyLib_1_1yUdpSocket_afc919911b7b7fe8234ba48a19376f2ca}{y\+Lib\+::y\+Udp\+Socket}}, \mbox{\hyperlink{classyLib_1_1yUdpServer_a3720c0a00a4948bc6a6d73fd2b7aad92}{y\+Lib\+::y\+Udp\+Server}}, \mbox{\hyperlink{classyLib_1_1yTcpSocket_a36d147b5d939e79ac22ec2ae008d3451}{y\+Lib\+::y\+Tcp\+Socket}}, and \mbox{\hyperlink{classyLib_1_1yTcpServer_a02eccf431a1d9510e25588ad115a5e16}{y\+Lib\+::y\+Tcp\+Server}}.
+
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_ad59cba5fb67c19c0b526369623570fb1}\label{classyLib_1_1yAbstractSocket_ad59cba5fb67c19c0b526369623570fb1}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!close@{close}}
+\index{close@{close}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Lib\+::y\+Abstract\+Socket\+::close (\begin{DoxyParamCaption}\item[{int64\+\_\+t}]{fd\+\_\+ }\end{DoxyParamCaption})}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_a0e215a3b815f683f2f0591ec72a0fa73}\label{classyLib_1_1yAbstractSocket_a0e215a3b815f683f2f0591ec72a0fa73}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!get\_ip\_from\_binary@{get\_ip\_from\_binary}}
+\index{get\_ip\_from\_binary@{get\_ip\_from\_binary}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{get\_ip\_from\_binary()}{get\_ip\_from\_binary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} y\+Lib\+::y\+Abstract\+Socket\+::get\+\_\+ip\+\_\+from\+\_\+binary (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{ip\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_acc2d807cc84ad5dd10a11d46a90729f8}\label{classyLib_1_1yAbstractSocket_acc2d807cc84ad5dd10a11d46a90729f8}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!get\_port\_from\_binary@{get\_port\_from\_binary}}
+\index{get\_port\_from\_binary@{get\_port\_from\_binary}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{get\_port\_from\_binary()}{get\_port\_from\_binary()}}
+{\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Abstract\+Socket\+::get\+\_\+port\+\_\+from\+\_\+binary (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{port\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_a26d05836b67627fa767aceee6d7de599}\label{classyLib_1_1yAbstractSocket_a26d05836b67627fa767aceee6d7de599}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!socket\_is\_ready@{socket\_is\_ready}}
+\index{socket\_is\_ready@{socket\_is\_ready}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{socket\_is\_ready()}{socket\_is\_ready()}}
+{\footnotesize\ttfamily virtual bool y\+Lib\+::y\+Abstract\+Socket\+::socket\+\_\+is\+\_\+ready (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [pure virtual]}}
+
+@description\+: Check socket(), \mbox{\hyperlink{classyLib_1_1yAbstractSocket_a46989c254ebb55384b1b3753bb881f73}{bind()}}, listen(), accept() and cd so on. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classyLib_1_1yUdpSocket_aea8cda8af55e6a004bc9c18e043c0a62}{y\+Lib\+::y\+Udp\+Socket}}, \mbox{\hyperlink{classyLib_1_1yUdpServer_a0898c84f7e4deb97ee282506e71cc73e}{y\+Lib\+::y\+Udp\+Server}}, \mbox{\hyperlink{classyLib_1_1yTcpSocket_ad6dc6cb92393c2e11d8957dcf624746c}{y\+Lib\+::y\+Tcp\+Socket}}, and \mbox{\hyperlink{classyLib_1_1yTcpServer_a0bd236d8ea74230be5ab5b7d7f317be2}{y\+Lib\+::y\+Tcp\+Server}}.
+
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_af343dc1de87399fa73d25af51be7ed28}\label{classyLib_1_1yAbstractSocket_af343dc1de87399fa73d25af51be7ed28}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!socket\_is\_valid@{socket\_is\_valid}}
+\index{socket\_is\_valid@{socket\_is\_valid}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{socket\_is\_valid()}{socket\_is\_valid()}}
+{\footnotesize\ttfamily bool y\+Lib\+::y\+Abstract\+Socket\+::socket\+\_\+is\+\_\+valid (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: Check socket() 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} \href{http://isocpp.org/wiki/faq/inline-functions\#inline-member-fns}{\texttt{ http\+://isocpp.\+org/wiki/faq/inline-\/functions\#inline-\/member-\/fns}} Inline funciton defines must put in header-\/file. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_a4932fcf2319ac33136362a2ac8f95382}\label{classyLib_1_1yAbstractSocket_a4932fcf2319ac33136362a2ac8f95382}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!translate\_ip\_to\_binary@{translate\_ip\_to\_binary}}
+\index{translate\_ip\_to\_binary@{translate\_ip\_to\_binary}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{translate\_ip\_to\_binary()}{translate\_ip\_to\_binary()}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Lib\+::y\+Abstract\+Socket\+::translate\+\_\+ip\+\_\+to\+\_\+binary (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{ip\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_ade7d017e69d1fc3c297a62171adcb1f7}\label{classyLib_1_1yAbstractSocket_ade7d017e69d1fc3c297a62171adcb1f7}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!translate\_port\_to\_binary@{translate\_port\_to\_binary}}
+\index{translate\_port\_to\_binary@{translate\_port\_to\_binary}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{translate\_port\_to\_binary()}{translate\_port\_to\_binary()}}
+{\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Abstract\+Socket\+::translate\+\_\+port\+\_\+to\+\_\+binary (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{port\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_a7010d3c8c4d18f9db3082e5fc515697d}\label{classyLib_1_1yAbstractSocket_a7010d3c8c4d18f9db3082e5fc515697d}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!is\_bind\_success@{is\_bind\_success}}
+\index{is\_bind\_success@{is\_bind\_success}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{is\_bind\_success}{is\_bind\_success}}
+{\footnotesize\ttfamily bool y\+Lib\+::y\+Abstract\+Socket\+::is\+\_\+bind\+\_\+success\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classyLib_1_1yAbstractSocket_adc2bfeb1f4d0067103e82eab019b558d}\label{classyLib_1_1yAbstractSocket_adc2bfeb1f4d0067103e82eab019b558d}} 
+\index{yLib::yAbstractSocket@{yLib::yAbstractSocket}!socket\_fd@{socket\_fd}}
+\index{socket\_fd@{socket\_fd}!yLib::yAbstractSocket@{yLib::yAbstractSocket}}
+\doxysubsubsection{\texorpdfstring{socket\_fd}{socket\_fd}}
+{\footnotesize\ttfamily int64\+\_\+t y\+Lib\+::y\+Abstract\+Socket\+::socket\+\_\+fd\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/network/\mbox{\hyperlink{yabstractsocket_8h}{yabstractsocket.\+h}}\item 
+/home/sky/y\+Lib/src/network/\mbox{\hyperlink{yabstractsocket_8cpp}{yabstractsocket.\+cpp}}\end{DoxyCompactItemize}

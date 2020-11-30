@@ -1,0 +1,248 @@
+\hypertarget{classyLib_1_1yStack}{}\doxysection{y\+Lib\+::y\+Stack$<$ T, Alloc $>$ Class Template Reference}
+\label{classyLib_1_1yStack}\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+
+
+{\ttfamily \#include $<$ystack.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Stack$<$ T, Alloc $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yStack}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yStack_ae42a0d6a7050200c020540d31d620145}{y\+Stack}} (void)
+\item 
+\mbox{\hyperlink{classyLib_1_1yStack_af374900e9bd41a0b86d3be7cb3df69c1}{y\+Stack}} (uint64\+\_\+t size\+\_\+)
+\item 
+\mbox{\hyperlink{classyLib_1_1yStack_a77c0aa42debd075050e6c4a69b521bd4}{$\sim$y\+Stack}} (void)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_a1253c54846df0af7ec47264f3e01d358}{push}} (T \&lval\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_afb696706440f46f00a834622b658ae3e}{push}} (T \&\&rval\+\_\+)
+\item 
+T \& \mbox{\hyperlink{classyLib_1_1yStack_a3d6035f2e8038582f0329780d0c53ce9}{front}} (void) const
+\item 
+T \& \mbox{\hyperlink{classyLib_1_1yStack_a04399df9b597d40dcf141840e5ed4832}{tail}} (void) const
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_acc5a64d98a570a8502a2929e62d74f8d}{pop}} (void)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_abe5a9374463c2ed6957b19391f08599b}{get\+\_\+size}} (void) const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_aa43c9588d487441e6065b8e92412433e}{get\+\_\+capacity}} (void) const
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_a064ec429272ff8a3bd359deaf7760058}{resize\+\_\+capacity}} (uint64\+\_\+t new\+\_\+cap\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_a0d5d72f32871bd4462815a249edeaf90}{capacity}} = 0
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack_acb4484af701904a67e628b846190e1a4}{cur\+\_\+size}} = 0
+\item 
+T $\ast$ \mbox{\hyperlink{classyLib_1_1yStack_a1edf66c29ffdf824355f27eaa29a8a5e}{stack\+\_\+head}} = nullptr
+\item 
+T \mbox{\hyperlink{classyLib_1_1yStack_a5831e5c991b140faade083a3782ad88a}{Null\+Obj}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yStack_ae42a0d6a7050200c020540d31d620145}\label{classyLib_1_1yStack_ae42a0d6a7050200c020540d31d620145}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!yStack@{yStack}}
+\index{yStack@{yStack}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yStack()}{yStack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::\mbox{\hyperlink{classyLib_1_1yStack}{y\+Stack}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: create a stack with 32 $\ast$ sizeof(\+T)-\/bytes\textquotesingle{}s capacity. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_af374900e9bd41a0b86d3be7cb3df69c1}\label{classyLib_1_1yStack_af374900e9bd41a0b86d3be7cb3df69c1}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!yStack@{yStack}}
+\index{yStack@{yStack}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yStack()}{yStack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::\mbox{\hyperlink{classyLib_1_1yStack}{y\+Stack}} (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{size\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & size\+\_\+ is the current capacity of stack. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_a77c0aa42debd075050e6c4a69b521bd4}\label{classyLib_1_1yStack_a77c0aa42debd075050e6c4a69b521bd4}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!````~yStack@{$\sim$yStack}}
+\index{````~yStack@{$\sim$yStack}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$yStack()}{~yStack()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::$\sim$\mbox{\hyperlink{classyLib_1_1yStack}{y\+Stack}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yStack_a3d6035f2e8038582f0329780d0c53ce9}\label{classyLib_1_1yStack_a3d6035f2e8038582f0329780d0c53ce9}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!front@{front}}
+\index{front@{front}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T\& \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::front (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_aa43c9588d487441e6065b8e92412433e}\label{classyLib_1_1yStack_aa43c9588d487441e6065b8e92412433e}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!get\_capacity@{get\_capacity}}
+\index{get\_capacity@{get\_capacity}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{get\_capacity()}{get\_capacity()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::get\+\_\+capacity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: get the capacity of stack. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_abe5a9374463c2ed6957b19391f08599b}\label{classyLib_1_1yStack_abe5a9374463c2ed6957b19391f08599b}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::get\+\_\+size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: get the current size of stack. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_acc5a64d98a570a8502a2929e62d74f8d}\label{classyLib_1_1yStack_acc5a64d98a570a8502a2929e62d74f8d}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!pop@{pop}}
+\index{pop@{pop}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::pop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_afb696706440f46f00a834622b658ae3e}\label{classyLib_1_1yStack_afb696706440f46f00a834622b658ae3e}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!push@{push}}
+\index{push@{push}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::push (\begin{DoxyParamCaption}\item[{T \&\&}]{rval\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_a1253c54846df0af7ec47264f3e01d358}\label{classyLib_1_1yStack_a1253c54846df0af7ec47264f3e01d358}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!push@{push}}
+\index{push@{push}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::push (\begin{DoxyParamCaption}\item[{T \&}]{lval\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_a064ec429272ff8a3bd359deaf7760058}\label{classyLib_1_1yStack_a064ec429272ff8a3bd359deaf7760058}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!resize\_capacity@{resize\_capacity}}
+\index{resize\_capacity@{resize\_capacity}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{resize\_capacity()}{resize\_capacity()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::resize\+\_\+capacity (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{new\+\_\+cap\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yStack_a04399df9b597d40dcf141840e5ed4832}\label{classyLib_1_1yStack_a04399df9b597d40dcf141840e5ed4832}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!tail@{tail}}
+\index{tail@{tail}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{tail()}{tail()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T\& \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::tail (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yStack_a0d5d72f32871bd4462815a249edeaf90}\label{classyLib_1_1yStack_a0d5d72f32871bd4462815a249edeaf90}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::capacity = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yStack_acb4484af701904a67e628b846190e1a4}\label{classyLib_1_1yStack_acb4484af701904a67e628b846190e1a4}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!cur\_size@{cur\_size}}
+\index{cur\_size@{cur\_size}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{cur\_size}{cur\_size}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::cur\+\_\+size = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yStack_a5831e5c991b140faade083a3782ad88a}\label{classyLib_1_1yStack_a5831e5c991b140faade083a3782ad88a}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!NullObj@{NullObj}}
+\index{NullObj@{NullObj}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{NullObj}{NullObj}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::Null\+Obj\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yStack_a1edf66c29ffdf824355f27eaa29a8a5e}\label{classyLib_1_1yStack_a1edf66c29ffdf824355f27eaa29a8a5e}} 
+\index{yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}!stack\_head@{stack\_head}}
+\index{stack\_head@{stack\_head}!yLib::yStack$<$ T, Alloc $>$@{yLib::yStack$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{stack\_head}{stack\_head}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T$\ast$ \mbox{\hyperlink{classyLib_1_1yStack}{y\+Lib\+::y\+Stack}}$<$ T, Alloc $>$\+::stack\+\_\+head = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/basic\+\_\+algorithm/\mbox{\hyperlink{ystack_8hpp}{ystack.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{ystart_8hpp}{}\doxysection{/home/sky/y\+Lib/examples/\+Program\+Frame\+Examples/ystart.hpp File Reference}
+\label{ystart_8hpp}\index{/home/sky/yLib/examples/ProgramFrameExamples/ystart.hpp@{/home/sky/yLib/examples/ProgramFrameExamples/ystart.hpp}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$error.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include \char`\"{}ylib.\+hpp\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classyStartParam}{y\+Start\+Param}}
+\item 
+class \mbox{\hyperlink{classyThread}{y\+Thread}}
+\item 
+class \mbox{\hyperlink{classyMainContext}{y\+Main\+Context$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void $\ast$($\ast$ \mbox{\hyperlink{ystart_8hpp_ac4d1d0002b8fc15edd83cf2d0998911e}{Thread\+Routine}}) (void $\ast$)
+\item 
+typedef int($\ast$ \mbox{\hyperlink{ystart_8hpp_a952a7dd35981c614ee34d6fb90f32b7b}{Main\+Context\+Call\+Back}}) (void $\ast$param)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+\+Y\+L\+I\+B\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+ void \mbox{\hyperlink{ystart_8hpp_af3884ff4b269a138c3b331f2c5ff75ef}{ystart}} (\mbox{\hyperlink{classyStartParam}{y\+Start\+Param}} \&param)
+\item 
+int \mbox{\hyperlink{ystart_8hpp_a5d37a8757cb5e3e4154e7f9b5994cebc}{ystart\+\_\+test}} (void $\ast$param)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{ystart_8hpp_a952a7dd35981c614ee34d6fb90f32b7b}\label{ystart_8hpp_a952a7dd35981c614ee34d6fb90f32b7b}} 
+\index{ystart.hpp@{ystart.hpp}!MainContextCallBack@{MainContextCallBack}}
+\index{MainContextCallBack@{MainContextCallBack}!ystart.hpp@{ystart.hpp}}
+\doxysubsubsection{\texorpdfstring{MainContextCallBack}{MainContextCallBack}}
+{\footnotesize\ttfamily typedef int($\ast$ Main\+Context\+Call\+Back) (void $\ast$param)}
+
+\mbox{\Hypertarget{ystart_8hpp_ac4d1d0002b8fc15edd83cf2d0998911e}\label{ystart_8hpp_ac4d1d0002b8fc15edd83cf2d0998911e}} 
+\index{ystart.hpp@{ystart.hpp}!ThreadRoutine@{ThreadRoutine}}
+\index{ThreadRoutine@{ThreadRoutine}!ystart.hpp@{ystart.hpp}}
+\doxysubsubsection{\texorpdfstring{ThreadRoutine}{ThreadRoutine}}
+{\footnotesize\ttfamily typedef void$\ast$($\ast$ Thread\+Routine) (void $\ast$)}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ystart_8hpp_af3884ff4b269a138c3b331f2c5ff75ef}\label{ystart_8hpp_af3884ff4b269a138c3b331f2c5ff75ef}} 
+\index{ystart.hpp@{ystart.hpp}!ystart@{ystart}}
+\index{ystart@{ystart}!ystart.hpp@{ystart.hpp}}
+\doxysubsubsection{\texorpdfstring{ystart()}{ystart()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+\+Y\+L\+I\+B\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+ void ystart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyStartParam}{y\+Start\+Param}} \&}]{param }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ystart_8hpp_a5d37a8757cb5e3e4154e7f9b5994cebc}\label{ystart_8hpp_a5d37a8757cb5e3e4154e7f9b5994cebc}} 
+\index{ystart.hpp@{ystart.hpp}!ystart\_test@{ystart\_test}}
+\index{ystart\_test@{ystart\_test}!ystart.hpp@{ystart.hpp}}
+\doxysubsubsection{\texorpdfstring{ystart\_test()}{ystart\_test()}}
+{\footnotesize\ttfamily int ystart\+\_\+test (\begin{DoxyParamCaption}\item[{void $\ast$}]{param }\end{DoxyParamCaption})}
+

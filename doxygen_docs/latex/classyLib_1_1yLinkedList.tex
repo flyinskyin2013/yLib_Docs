@@ -1,0 +1,155 @@
+\hypertarget{classyLib_1_1yLinkedList}{}\doxysection{y\+Lib\+::y\+Linked\+List$<$ T, Alloc $>$ Class Template Reference}
+\label{classyLib_1_1yLinkedList}\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+
+
+{\ttfamily \#include $<$ylinked\+\_\+list.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Linked\+List$<$ T, Alloc $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yLinkedList}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yLinkedList_a615e89b58414e58f798fff79e77e81c3}{y\+Linked\+List}} () noexcept \textbackslash{}
+\item 
+void \mbox{\hyperlink{classyLib_1_1yLinkedList_a97b05e84df90c409812be2519383ccc4}{insert\+\_\+head}} (const T \&node\+\_\+)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yLinkedList_acaf86f028ffb70e23440a4bda475bf7d}{insert\+\_\+tail}} (const T \&node\+\_\+)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yLinkedList_a14fb4b2b6b6329b8e92e09e592fbee76}{remove\+\_\+head}} (void)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yLinkedList_ad3d4f97344576a3ac4d5727945d863e6}{remove\+\_\+tail}} (void)
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yLinkedList_ad6875348d5900cc3fa4cb3f399f45a8f}{remove}} (T \&node\+\_\+)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yLinkedList_a45ae12dafaf3c06460bb49ea315ef3ed}{reverse}} (void)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinkedList_ace65edea93998c02c6226c4ea547b413}{get\+\_\+node\+\_\+count}} (void) const
+\item 
+T \& \mbox{\hyperlink{classyLib_1_1yLinkedList_a106906bc733d4c683979d1037d09bb97}{get\+\_\+element}} (uint64\+\_\+t idx\+\_\+) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structyLib_1_1yLinkedListNode}{y\+Linked\+List\+Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classyLib_1_1yLinkedList_afa0c93d9ace1219f6e7f73fa8455f5a5}{head}} = nullptr
+\item 
+\mbox{\hyperlink{structyLib_1_1yLinkedListNode}{y\+Linked\+List\+Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classyLib_1_1yLinkedList_ac397a6e49ba4fae03878f80e449c91f6}{tail}} = nullptr
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinkedList_ad29bf06afcec2168f660b49784f91dc7}{node\+\_\+count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T, class Alloc = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$\newline
+class y\+Lib\+::y\+Linked\+List$<$ T, Alloc $>$}
+
+@description\+: Linked\+List implement 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_a615e89b58414e58f798fff79e77e81c3}\label{classyLib_1_1yLinkedList_a615e89b58414e58f798fff79e77e81c3}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!yLinkedList@{yLinkedList}}
+\index{yLinkedList@{yLinkedList}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yLinkedList()}{yLinkedList()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::\mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Linked\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_a106906bc733d4c683979d1037d09bb97}\label{classyLib_1_1yLinkedList_a106906bc733d4c683979d1037d09bb97}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!get\_element@{get\_element}}
+\index{get\_element@{get\_element}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{get\_element()}{get\_element()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+T\& \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::get\+\_\+element (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{idx\+\_\+ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_ace65edea93998c02c6226c4ea547b413}\label{classyLib_1_1yLinkedList_ace65edea93998c02c6226c4ea547b413}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!get\_node\_count@{get\_node\_count}}
+\index{get\_node\_count@{get\_node\_count}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{get\_node\_count()}{get\_node\_count()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::get\+\_\+node\+\_\+count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_a97b05e84df90c409812be2519383ccc4}\label{classyLib_1_1yLinkedList_a97b05e84df90c409812be2519383ccc4}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!insert\_head@{insert\_head}}
+\index{insert\_head@{insert\_head}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_head()}{insert\_head()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+void \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::insert\+\_\+head (\begin{DoxyParamCaption}\item[{const T \&}]{node\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_acaf86f028ffb70e23440a4bda475bf7d}\label{classyLib_1_1yLinkedList_acaf86f028ffb70e23440a4bda475bf7d}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!insert\_tail@{insert\_tail}}
+\index{insert\_tail@{insert\_tail}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{insert\_tail()}{insert\_tail()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+void \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::insert\+\_\+tail (\begin{DoxyParamCaption}\item[{const T \&}]{node\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_ad6875348d5900cc3fa4cb3f399f45a8f}\label{classyLib_1_1yLinkedList_ad6875348d5900cc3fa4cb3f399f45a8f}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!remove@{remove}}
+\index{remove@{remove}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+bool \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::remove (\begin{DoxyParamCaption}\item[{T \&}]{node\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_a14fb4b2b6b6329b8e92e09e592fbee76}\label{classyLib_1_1yLinkedList_a14fb4b2b6b6329b8e92e09e592fbee76}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!remove\_head@{remove\_head}}
+\index{remove\_head@{remove\_head}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_head()}{remove\_head()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+void \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::remove\+\_\+head (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_ad3d4f97344576a3ac4d5727945d863e6}\label{classyLib_1_1yLinkedList_ad3d4f97344576a3ac4d5727945d863e6}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!remove\_tail@{remove\_tail}}
+\index{remove\_tail@{remove\_tail}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{remove\_tail()}{remove\_tail()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+void \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::remove\+\_\+tail (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_a45ae12dafaf3c06460bb49ea315ef3ed}\label{classyLib_1_1yLinkedList_a45ae12dafaf3c06460bb49ea315ef3ed}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!reverse@{reverse}}
+\index{reverse@{reverse}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{reverse()}{reverse()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+void \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::reverse (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_afa0c93d9ace1219f6e7f73fa8455f5a5}\label{classyLib_1_1yLinkedList_afa0c93d9ace1219f6e7f73fa8455f5a5}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!head@{head}}
+\index{head@{head}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+\mbox{\hyperlink{structyLib_1_1yLinkedListNode}{y\+Linked\+List\+Node}}$<$T$>$$\ast$ \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::head = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_ad29bf06afcec2168f660b49784f91dc7}\label{classyLib_1_1yLinkedList_ad29bf06afcec2168f660b49784f91dc7}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!node\_count@{node\_count}}
+\index{node\_count@{node\_count}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{node\_count}{node\_count}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::node\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinkedList_ac397a6e49ba4fae03878f80e449c91f6}\label{classyLib_1_1yLinkedList_ac397a6e49ba4fae03878f80e449c91f6}} 
+\index{yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}!tail@{tail}}
+\index{tail@{tail}!yLib::yLinkedList$<$ T, Alloc $>$@{yLib::yLinkedList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{tail}{tail}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$y\+Linked\+List\+Node$<$\+T$>$$>$$>$ \\
+\mbox{\hyperlink{structyLib_1_1yLinkedListNode}{y\+Linked\+List\+Node}}$<$T$>$$\ast$ \mbox{\hyperlink{classyLib_1_1yLinkedList}{y\+Lib\+::y\+Linked\+List}}$<$ T, Alloc $>$\+::tail = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/basic\+\_\+algorithm/\mbox{\hyperlink{ylinked__list_8hpp}{ylinked\+\_\+list.\+hpp}}\end{DoxyCompactItemize}

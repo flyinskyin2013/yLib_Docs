@@ -1,0 +1,188 @@
+\hypertarget{classyLib_1_1yBasicAllocator}{}\doxysection{y\+Lib\+::y\+Basic\+Allocator$<$ T $>$ Class Template Reference}
+\label{classyLib_1_1yBasicAllocator}\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+
+
+{\ttfamily \#include $<$yallocator.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Basic\+Allocator$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yBasicAllocator}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structyLib_1_1yBasicAllocator_1_1rebind}{rebind}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef T \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ace1221d18f821a14896eb2acecf8d56c}{value\+\_\+type}}
+\item 
+typedef T $\ast$ \mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}
+\item 
+typedef const T $\ast$ \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}{const\+\_\+pointer}}
+\item 
+typedef T \& \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}{reference}}
+\item 
+typedef const T \& \mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}}
+\item 
+typedef T \&\& \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ab08eba49349b99dbb249c67e05c4bd43}{rreference}}
+\item 
+typedef const T \&\& \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}{const\+\_\+rreference}}
+\item 
+typedef size\+\_\+t \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}}
+\item 
+typedef ptrdiff\+\_\+t \mbox{\hyperlink{classyLib_1_1yBasicAllocator_add7cb549cd0f0edaa88f65e1a4290b2a}{difference\+\_\+type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a47124bf9d71472efa81048b7fbe4414d}{allocate}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} n, const void $\ast$hint=static\+\_\+cast$<$ const void $\ast$ $>$(0))
+\item 
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ab0508bde09428fa387f61741cc1d1194}{deallocate}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p, \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} n)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a97c8d2509160ce700d1c6887e721ea9e}{construct}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p, \mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}} value)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a8ae63e65f6b5e6705746b92ce4a5ac52}{construct}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p, \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}{const\+\_\+rreference}} value)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a21b29dcbc20277148840485b8c78b5d9}{destroy}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p)
+\item 
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae8cac14e62a1e99461078930bfa0f4aa}{max\+\_\+size}} () const
+\item 
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a5e94ddd966982f280bd0768757463a65}{address}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}{reference}} x) const
+\item 
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}{const\+\_\+pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a8b114befe01f3490c3b5bcd84db9a32b}{address}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}} x) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}\label{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!const\_pointer@{const\_pointer}}
+\index{const\_pointer@{const\_pointer}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{const\_pointer}{const\_pointer}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef const T$\ast$ \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}{const\+\_\+pointer}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}\label{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!const\_reference@{const\_reference}}
+\index{const\_reference@{const\_reference}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{const\_reference}{const\_reference}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef const T\& \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}\label{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!const\_rreference@{const\_rreference}}
+\index{const\_rreference@{const\_rreference}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{const\_rreference}{const\_rreference}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef const T\&\& \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}{const\+\_\+rreference}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_add7cb549cd0f0edaa88f65e1a4290b2a}\label{classyLib_1_1yBasicAllocator_add7cb549cd0f0edaa88f65e1a4290b2a}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef ptrdiff\+\_\+t \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_add7cb549cd0f0edaa88f65e1a4290b2a}{difference\+\_\+type}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}\label{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!pointer@{pointer}}
+\index{pointer@{pointer}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef T$\ast$ \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}\label{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!reference@{reference}}
+\index{reference@{reference}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef T\& \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}{reference}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ab08eba49349b99dbb249c67e05c4bd43}\label{classyLib_1_1yBasicAllocator_ab08eba49349b99dbb249c67e05c4bd43}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!rreference@{rreference}}
+\index{rreference@{rreference}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rreference}{rreference}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef T\&\& \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ab08eba49349b99dbb249c67e05c4bd43}{rreference}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}\label{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef size\+\_\+t \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ace1221d18f821a14896eb2acecf8d56c}\label{classyLib_1_1yBasicAllocator_ace1221d18f821a14896eb2acecf8d56c}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+typedef T \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ace1221d18f821a14896eb2acecf8d56c}{value\+\_\+type}}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a8b114befe01f3490c3b5bcd84db9a32b}\label{classyLib_1_1yBasicAllocator_a8b114befe01f3490c3b5bcd84db9a32b}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!address@{address}}
+\index{address@{address}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}{const\+\_\+pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}}}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a5e94ddd966982f280bd0768757463a65}\label{classyLib_1_1yBasicAllocator_a5e94ddd966982f280bd0768757463a65}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!address@{address}}
+\index{address@{address}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{address()}{address()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}{reference}}}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a47124bf9d71472efa81048b7fbe4414d}\label{classyLib_1_1yBasicAllocator_a47124bf9d71472efa81048b7fbe4414d}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!allocate@{allocate}}
+\index{allocate@{allocate}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{allocate()}{allocate()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::allocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}}}]{n,  }\item[{const void $\ast$}]{hint = {\ttfamily static\+\_\+cast$<$const~void$\ast$$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a97c8d2509160ce700d1c6887e721ea9e}\label{classyLib_1_1yBasicAllocator_a97c8d2509160ce700d1c6887e721ea9e}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!construct@{construct}}
+\index{construct@{construct}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p,  }\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a8ae63e65f6b5e6705746b92ce4a5ac52}\label{classyLib_1_1yBasicAllocator_a8ae63e65f6b5e6705746b92ce4a5ac52}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!construct@{construct}}
+\index{construct@{construct}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{construct()}{construct()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p,  }\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}{const\+\_\+rreference}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ab0508bde09428fa387f61741cc1d1194}\label{classyLib_1_1yBasicAllocator_ab0508bde09428fa387f61741cc1d1194}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!deallocate@{deallocate}}
+\index{deallocate@{deallocate}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{deallocate()}{deallocate()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p,  }\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a21b29dcbc20277148840485b8c78b5d9}\label{classyLib_1_1yBasicAllocator_a21b29dcbc20277148840485b8c78b5d9}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!destroy@{destroy}}
+\index{destroy@{destroy}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ae8cac14e62a1e99461078930bfa0f4aa}\label{classyLib_1_1yBasicAllocator_ae8cac14e62a1e99461078930bfa0f4aa}} 
+\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!max\_size@{max\_size}}
+\index{max\_size@{max\_size}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{max\_size()}{max\_size()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/core/\mbox{\hyperlink{yallocator_8hpp}{yallocator.\+hpp}}\end{DoxyCompactItemize}

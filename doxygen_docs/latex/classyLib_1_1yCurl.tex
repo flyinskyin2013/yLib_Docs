@@ -1,0 +1,116 @@
+\hypertarget{classyLib_1_1yCurl}{}\doxysection{y\+Lib\+::y\+Curl Class Reference}
+\label{classyLib_1_1yCurl}\index{yLib::yCurl@{yLib::yCurl}}
+
+
+{\ttfamily \#include $<$ycurl.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Curl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yCurl}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yCurl_a3625aa1af1a7cc499a7ecf7e323e0dc7}{y\+Curl}} ()
+\item 
+\mbox{\hyperlink{classyLib_1_1yCurl_a646947fc9411cf0743bbe0b6e9c90c27}{$\sim$y\+Curl}} ()
+\item 
+int \mbox{\hyperlink{classyLib_1_1yCurl_adb39663aa26c0fb31586b72caa4bd131}{y\+Curl\+\_\+\+Get}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&interface, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} user\+\_\+params)
+\item 
+int \mbox{\hyperlink{classyLib_1_1yCurl_a6aea59fb739b4eddc3069f446e92c972}{y\+Curl\+\_\+\+Post\+\_\+\+Json}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&interface, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} json\+\_\+datas)
+\item 
+int \mbox{\hyperlink{classyLib_1_1yCurl_a308e0ad3ca23df890a301915a85d87a0}{y\+Curl\+\_\+\+Set\+\_\+\+Param}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&ip\+\_\+addr, int port=80, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} protocol\+\_\+type=\char`\"{}http\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classyLib_1_1yCurl_aa0bca24add944ebd97f9692fcc193ede}{m\+\_\+b\+Global\+Init}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structyCurlParam}{y\+Curl\+Param}} \mbox{\hyperlink{classyLib_1_1yCurl_a19fd3727a0828b00ea445a8be75ea5db}{m\+\_\+param}}
+\item 
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yCurl_a10da4d237c9c4b185a897b24ec93e990}{m\+\_\+ptr\+\_\+ycurl}} =N\+U\+LL
+\item 
+int \mbox{\hyperlink{classyLib_1_1yCurl_a64f239ac242205d19f2dc5ff5e9ebaea}{m\+\_\+ycurl\+\_\+ret}}
+\item 
+char $\ast$ \mbox{\hyperlink{classyLib_1_1yCurl_a08fc57a8c52158ed3ea0ac80c8e0b3fe}{m\+\_\+ptr\+\_\+recbuf}} =N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yCurl_a3625aa1af1a7cc499a7ecf7e323e0dc7}\label{classyLib_1_1yCurl_a3625aa1af1a7cc499a7ecf7e323e0dc7}} 
+\index{yLib::yCurl@{yLib::yCurl}!yCurl@{yCurl}}
+\index{yCurl@{yCurl}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{yCurl()}{yCurl()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Curl\+::y\+Curl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yCurl_a646947fc9411cf0743bbe0b6e9c90c27}\label{classyLib_1_1yCurl_a646947fc9411cf0743bbe0b6e9c90c27}} 
+\index{yLib::yCurl@{yLib::yCurl}!````~yCurl@{$\sim$yCurl}}
+\index{````~yCurl@{$\sim$yCurl}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{$\sim$yCurl()}{~yCurl()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Curl\+::$\sim$y\+Curl (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yCurl_adb39663aa26c0fb31586b72caa4bd131}\label{classyLib_1_1yCurl_adb39663aa26c0fb31586b72caa4bd131}} 
+\index{yLib::yCurl@{yLib::yCurl}!yCurl\_Get@{yCurl\_Get}}
+\index{yCurl\_Get@{yCurl\_Get}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{yCurl\_Get()}{yCurl\_Get()}}
+{\footnotesize\ttfamily int y\+Lib\+::y\+Curl\+::y\+Curl\+\_\+\+Get (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{interface,  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{user\+\_\+params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yCurl_a6aea59fb739b4eddc3069f446e92c972}\label{classyLib_1_1yCurl_a6aea59fb739b4eddc3069f446e92c972}} 
+\index{yLib::yCurl@{yLib::yCurl}!yCurl\_Post\_Json@{yCurl\_Post\_Json}}
+\index{yCurl\_Post\_Json@{yCurl\_Post\_Json}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{yCurl\_Post\_Json()}{yCurl\_Post\_Json()}}
+{\footnotesize\ttfamily int y\+Lib\+::y\+Curl\+::y\+Curl\+\_\+\+Post\+\_\+\+Json (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{interface,  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{json\+\_\+datas }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yCurl_a308e0ad3ca23df890a301915a85d87a0}\label{classyLib_1_1yCurl_a308e0ad3ca23df890a301915a85d87a0}} 
+\index{yLib::yCurl@{yLib::yCurl}!yCurl\_Set\_Param@{yCurl\_Set\_Param}}
+\index{yCurl\_Set\_Param@{yCurl\_Set\_Param}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{yCurl\_Set\_Param()}{yCurl\_Set\_Param()}}
+{\footnotesize\ttfamily int y\+Lib\+::y\+Curl\+::y\+Curl\+\_\+\+Set\+\_\+\+Param (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{ip\+\_\+addr,  }\item[{int}]{port = {\ttfamily 80},  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{protocol\+\_\+type = {\ttfamily \char`\"{}http\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yCurl_aa0bca24add944ebd97f9692fcc193ede}\label{classyLib_1_1yCurl_aa0bca24add944ebd97f9692fcc193ede}} 
+\index{yLib::yCurl@{yLib::yCurl}!m\_bGlobalInit@{m\_bGlobalInit}}
+\index{m\_bGlobalInit@{m\_bGlobalInit}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{m\_bGlobalInit}{m\_bGlobalInit}}
+{\footnotesize\ttfamily bool y\+Lib\+::y\+Curl\+::m\+\_\+b\+Global\+Init}
+
+\mbox{\Hypertarget{classyLib_1_1yCurl_a19fd3727a0828b00ea445a8be75ea5db}\label{classyLib_1_1yCurl_a19fd3727a0828b00ea445a8be75ea5db}} 
+\index{yLib::yCurl@{yLib::yCurl}!m\_param@{m\_param}}
+\index{m\_param@{m\_param}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{m\_param}{m\_param}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structyCurlParam}{y\+Curl\+Param}} y\+Lib\+::y\+Curl\+::m\+\_\+param\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yCurl_a08fc57a8c52158ed3ea0ac80c8e0b3fe}\label{classyLib_1_1yCurl_a08fc57a8c52158ed3ea0ac80c8e0b3fe}} 
+\index{yLib::yCurl@{yLib::yCurl}!m\_ptr\_recbuf@{m\_ptr\_recbuf}}
+\index{m\_ptr\_recbuf@{m\_ptr\_recbuf}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{m\_ptr\_recbuf}{m\_ptr\_recbuf}}
+{\footnotesize\ttfamily char$\ast$ y\+Lib\+::y\+Curl\+::m\+\_\+ptr\+\_\+recbuf =N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yCurl_a10da4d237c9c4b185a897b24ec93e990}\label{classyLib_1_1yCurl_a10da4d237c9c4b185a897b24ec93e990}} 
+\index{yLib::yCurl@{yLib::yCurl}!m\_ptr\_ycurl@{m\_ptr\_ycurl}}
+\index{m\_ptr\_ycurl@{m\_ptr\_ycurl}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{m\_ptr\_ycurl}{m\_ptr\_ycurl}}
+{\footnotesize\ttfamily void$\ast$ y\+Lib\+::y\+Curl\+::m\+\_\+ptr\+\_\+ycurl =N\+U\+LL\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yCurl_a64f239ac242205d19f2dc5ff5e9ebaea}\label{classyLib_1_1yCurl_a64f239ac242205d19f2dc5ff5e9ebaea}} 
+\index{yLib::yCurl@{yLib::yCurl}!m\_ycurl\_ret@{m\_ycurl\_ret}}
+\index{m\_ycurl\_ret@{m\_ycurl\_ret}!yLib::yCurl@{yLib::yCurl}}
+\doxysubsubsection{\texorpdfstring{m\_ycurl\_ret}{m\_ycurl\_ret}}
+{\footnotesize\ttfamily int y\+Lib\+::y\+Curl\+::m\+\_\+ycurl\+\_\+ret\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/utility/\mbox{\hyperlink{ycurl_8hpp}{ycurl.\+hpp}}\item 
+/home/sky/y\+Lib/src/utility/\mbox{\hyperlink{ycurl_8cpp}{ycurl.\+cpp}}\end{DoxyCompactItemize}

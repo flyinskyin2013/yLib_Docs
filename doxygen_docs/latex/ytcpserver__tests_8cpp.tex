@@ -1,0 +1,80 @@
+\hypertarget{ytcpserver__tests_8cpp}{}\doxysection{/home/sky/y\+Lib/tests/network/tcp/ytcpserver\+\_\+tests.cpp File Reference}
+\label{ytcpserver__tests_8cpp}\index{/home/sky/yLib/tests/network/tcp/ytcpserver\_tests.cpp@{/home/sky/yLib/tests/network/tcp/ytcpserver\_tests.cpp}}
+{\ttfamily \#include \char`\"{}catch2/catch.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ylib.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ytcpserver__tests_8cpp_a33bb3dd4e89617166d3978a741e9f77a}{test\+\_\+\+On\+Client\+Connect\+CB}} (uint64\+\_\+t client\+\_\+fd\+\_\+, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&client\+\_\+ip\+\_\+, uint64\+\_\+t client\+\_\+port\+\_\+)
+\item 
+void \mbox{\hyperlink{ytcpserver__tests_8cpp_acf209aabf4b31f76b723271b0fd8e2d2}{test\+\_\+\+On\+Client\+Disconnect\+CB}} (uint64\+\_\+t client\+\_\+fd\+\_\+, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&client\+\_\+ip\+\_\+, uint64\+\_\+t client\+\_\+port\+\_\+)
+\item 
+\mbox{\hyperlink{ytcpserver__tests_8cpp_a32a0c7d5751bc3deebf4cae5a8bafd33}{T\+E\+S\+T\+\_\+\+C\+A\+SE}} (\char`\"{}Test \mbox{\hyperlink{classyLib_1_1yTcpServer}{y\+Tcp\+Server}} apis\char`\"{}, \char`\"{}\mbox{[}y\+Tcp\+Server\+\_\+\+Apis\mbox{]}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{ytcpserver__tests_8cpp_a6444d3615050b8bbddab81a408f973f8}{g\+\_\+is\+\_\+tcpserver\+\_\+continue}} = true
+\item 
+int \mbox{\hyperlink{ytcpserver__tests_8cpp_aa37f2fd292401649deea6179dd1ad2c7}{g\+\_\+client\+\_\+array}} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+int \mbox{\hyperlink{ytcpserver__tests_8cpp_a97cafbea90e00dc7acad6d2da2df9447}{g\+\_\+client\+\_\+port\+\_\+array}} \mbox{[}3\mbox{]} = \{0, 0, 0\}
+\item 
+\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \mbox{\hyperlink{ytcpserver__tests_8cpp_a68b3900b1fc89054cbd1e7ec3faebc39}{g\+\_\+client\+\_\+ip\+\_\+array}} \mbox{[}3\mbox{]} = \{\char`\"{}\char`\"{}, \char`\"{}\char`\"{}, \char`\"{}\char`\"{}\}
+\item 
+int \mbox{\hyperlink{ytcpserver__tests_8cpp_a8b35c8498b60b8c275ae8b5513a42cf0}{g\+\_\+client\+\_\+array\+\_\+idx}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_a32a0c7d5751bc3deebf4cae5a8bafd33}\label{ytcpserver__tests_8cpp_a32a0c7d5751bc3deebf4cae5a8bafd33}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}}
+{\footnotesize\ttfamily T\+E\+S\+T\+\_\+\+C\+A\+SE (\begin{DoxyParamCaption}\item[{\char`\"{}Test \mbox{\hyperlink{classyLib_1_1yTcpServer}{y\+Tcp\+Server}} apis\char`\"{}}]{,  }\item[{\char`\"{}\char`\"{}}]{\mbox{[}y\+Tcp\+Server\+\_\+\+Apis\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_a33bb3dd4e89617166d3978a741e9f77a}\label{ytcpserver__tests_8cpp_a33bb3dd4e89617166d3978a741e9f77a}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!test\_OnClientConnectCB@{test\_OnClientConnectCB}}
+\index{test\_OnClientConnectCB@{test\_OnClientConnectCB}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_OnClientConnectCB()}{test\_OnClientConnectCB()}}
+{\footnotesize\ttfamily void test\+\_\+\+On\+Client\+Connect\+CB (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{client\+\_\+fd\+\_\+,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{client\+\_\+ip\+\_\+,  }\item[{uint64\+\_\+t}]{client\+\_\+port\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_acf209aabf4b31f76b723271b0fd8e2d2}\label{ytcpserver__tests_8cpp_acf209aabf4b31f76b723271b0fd8e2d2}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!test\_OnClientDisconnectCB@{test\_OnClientDisconnectCB}}
+\index{test\_OnClientDisconnectCB@{test\_OnClientDisconnectCB}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{test\_OnClientDisconnectCB()}{test\_OnClientDisconnectCB()}}
+{\footnotesize\ttfamily void test\+\_\+\+On\+Client\+Disconnect\+CB (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{client\+\_\+fd\+\_\+,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{client\+\_\+ip\+\_\+,  }\item[{uint64\+\_\+t}]{client\+\_\+port\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_aa37f2fd292401649deea6179dd1ad2c7}\label{ytcpserver__tests_8cpp_aa37f2fd292401649deea6179dd1ad2c7}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!g\_client\_array@{g\_client\_array}}
+\index{g\_client\_array@{g\_client\_array}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_client\_array}{g\_client\_array}}
+{\footnotesize\ttfamily int g\+\_\+client\+\_\+array\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_a8b35c8498b60b8c275ae8b5513a42cf0}\label{ytcpserver__tests_8cpp_a8b35c8498b60b8c275ae8b5513a42cf0}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!g\_client\_array\_idx@{g\_client\_array\_idx}}
+\index{g\_client\_array\_idx@{g\_client\_array\_idx}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_client\_array\_idx}{g\_client\_array\_idx}}
+{\footnotesize\ttfamily int g\+\_\+client\+\_\+array\+\_\+idx = 0}
+
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_a68b3900b1fc89054cbd1e7ec3faebc39}\label{ytcpserver__tests_8cpp_a68b3900b1fc89054cbd1e7ec3faebc39}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!g\_client\_ip\_array@{g\_client\_ip\_array}}
+\index{g\_client\_ip\_array@{g\_client\_ip\_array}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_client\_ip\_array}{g\_client\_ip\_array}}
+{\footnotesize\ttfamily \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} g\+\_\+client\+\_\+ip\+\_\+array\mbox{[}3\mbox{]} = \{\char`\"{}\char`\"{}, \char`\"{}\char`\"{}, \char`\"{}\char`\"{}\}}
+
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_a97cafbea90e00dc7acad6d2da2df9447}\label{ytcpserver__tests_8cpp_a97cafbea90e00dc7acad6d2da2df9447}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!g\_client\_port\_array@{g\_client\_port\_array}}
+\index{g\_client\_port\_array@{g\_client\_port\_array}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_client\_port\_array}{g\_client\_port\_array}}
+{\footnotesize\ttfamily int g\+\_\+client\+\_\+port\+\_\+array\mbox{[}3\mbox{]} = \{0, 0, 0\}}
+
+\mbox{\Hypertarget{ytcpserver__tests_8cpp_a6444d3615050b8bbddab81a408f973f8}\label{ytcpserver__tests_8cpp_a6444d3615050b8bbddab81a408f973f8}} 
+\index{ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}!g\_is\_tcpserver\_continue@{g\_is\_tcpserver\_continue}}
+\index{g\_is\_tcpserver\_continue@{g\_is\_tcpserver\_continue}!ytcpserver\_tests.cpp@{ytcpserver\_tests.cpp}}
+\doxysubsubsection{\texorpdfstring{g\_is\_tcpserver\_continue}{g\_is\_tcpserver\_continue}}
+{\footnotesize\ttfamily bool g\+\_\+is\+\_\+tcpserver\+\_\+continue = true}
+

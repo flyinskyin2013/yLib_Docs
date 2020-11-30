@@ -1,0 +1,266 @@
+\hypertarget{classyLib_1_1yQueue}{}\doxysection{y\+Lib\+::y\+Queue$<$ T, Alloc $>$ Class Template Reference}
+\label{classyLib_1_1yQueue}\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+
+
+{\ttfamily \#include $<$yqueue.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Queue$<$ T, Alloc $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yQueue}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yQueue_a699d153726d70bbd39a9f029b2a79811}{y\+Queue}} (void)
+\item 
+\mbox{\hyperlink{classyLib_1_1yQueue_a060af2984c6d73f0980bf414e8baa0b5}{y\+Queue}} (uint64\+\_\+t size\+\_\+)
+\item 
+\mbox{\hyperlink{classyLib_1_1yQueue_a8de591936fbd259cdd9b914e4a6b7f70}{$\sim$y\+Queue}} (void)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a62d04a4c24a55c93f6bce71d08e3e633}{push}} (T \&lval\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a7f1a0eb7d89210a9a4781b2c8a803ee9}{push}} (T \&\&rval\+\_\+)
+\item 
+T \& \mbox{\hyperlink{classyLib_1_1yQueue_a2df819f871d6cb2bda9d1c8369e13e33}{front}} (void) const
+\item 
+T \& \mbox{\hyperlink{classyLib_1_1yQueue_a4d458608e8f5200ec8a8a0e948b0d2a5}{tail}} (void) const
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a3d7bf55dff29c56cc361aa7bdcfb8761}{pop}} (void)
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a64727570728982c097de06c6a13c6913}{get\+\_\+size}} (void) const
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a195439f158633532bcd0f122d33a21a4}{get\+\_\+capacity}} (void) const
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a1d116e84e03cb6dfe6674effa991473b}{resize\+\_\+capacity}} (uint64\+\_\+t new\+\_\+cap\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a294078fca97e7a3c0f7b3d5701c45458}{capacity}} = 0
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue_a574d9029b1f87dd462463de99a93c1fe}{cur\+\_\+size}} = 0
+\item 
+T $\ast$ \mbox{\hyperlink{classyLib_1_1yQueue_a71f047efe9810293c52c455820ec7b25}{queue\+\_\+head}} = nullptr
+\item 
+T $\ast$ \mbox{\hyperlink{classyLib_1_1yQueue_a75f76555da8d426210a6fc6a0bd330ec}{begin\+\_\+pos}} = nullptr
+\item 
+T $\ast$ \mbox{\hyperlink{classyLib_1_1yQueue_adb208889992c61de45ff584c20f429d0}{end\+\_\+pos}} = nullptr
+\item 
+T \mbox{\hyperlink{classyLib_1_1yQueue_ab731db9c0829ee9ab851aec6ae8d50c7}{Null\+Obj}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a699d153726d70bbd39a9f029b2a79811}\label{classyLib_1_1yQueue_a699d153726d70bbd39a9f029b2a79811}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!yQueue@{yQueue}}
+\index{yQueue@{yQueue}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yQueue()}{yQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::\mbox{\hyperlink{classyLib_1_1yQueue}{y\+Queue}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: create a stack with 32 $\ast$ sizeof(\+T)-\/bytes\textquotesingle{}s capacity. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a060af2984c6d73f0980bf414e8baa0b5}\label{classyLib_1_1yQueue_a060af2984c6d73f0980bf414e8baa0b5}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!yQueue@{yQueue}}
+\index{yQueue@{yQueue}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yQueue()}{yQueue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::\mbox{\hyperlink{classyLib_1_1yQueue}{y\+Queue}} (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{size\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & size\+\_\+ is the current capacity of stack. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a8de591936fbd259cdd9b914e4a6b7f70}\label{classyLib_1_1yQueue_a8de591936fbd259cdd9b914e4a6b7f70}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!````~yQueue@{$\sim$yQueue}}
+\index{````~yQueue@{$\sim$yQueue}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$yQueue()}{~yQueue()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::$\sim$\mbox{\hyperlink{classyLib_1_1yQueue}{y\+Queue}} (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a2df819f871d6cb2bda9d1c8369e13e33}\label{classyLib_1_1yQueue_a2df819f871d6cb2bda9d1c8369e13e33}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!front@{front}}
+\index{front@{front}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T\& \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::front (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a195439f158633532bcd0f122d33a21a4}\label{classyLib_1_1yQueue_a195439f158633532bcd0f122d33a21a4}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!get\_capacity@{get\_capacity}}
+\index{get\_capacity@{get\_capacity}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{get\_capacity()}{get\_capacity()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::get\+\_\+capacity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: get the capacity of stack. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a64727570728982c097de06c6a13c6913}\label{classyLib_1_1yQueue_a64727570728982c097de06c6a13c6913}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::get\+\_\+size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: get the current size of stack. 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a3d7bf55dff29c56cc361aa7bdcfb8761}\label{classyLib_1_1yQueue_a3d7bf55dff29c56cc361aa7bdcfb8761}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!pop@{pop}}
+\index{pop@{pop}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::pop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a7f1a0eb7d89210a9a4781b2c8a803ee9}\label{classyLib_1_1yQueue_a7f1a0eb7d89210a9a4781b2c8a803ee9}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!push@{push}}
+\index{push@{push}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::push (\begin{DoxyParamCaption}\item[{T \&\&}]{rval\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a62d04a4c24a55c93f6bce71d08e3e633}\label{classyLib_1_1yQueue_a62d04a4c24a55c93f6bce71d08e3e633}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!push@{push}}
+\index{push@{push}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::push (\begin{DoxyParamCaption}\item[{T \&}]{lval\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a1d116e84e03cb6dfe6674effa991473b}\label{classyLib_1_1yQueue_a1d116e84e03cb6dfe6674effa991473b}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!resize\_capacity@{resize\_capacity}}
+\index{resize\_capacity@{resize\_capacity}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{resize\_capacity()}{resize\_capacity()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::resize\+\_\+capacity (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{new\+\_\+cap\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a4d458608e8f5200ec8a8a0e948b0d2a5}\label{classyLib_1_1yQueue_a4d458608e8f5200ec8a8a0e948b0d2a5}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!tail@{tail}}
+\index{tail@{tail}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{tail()}{tail()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T\& \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::tail (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{type\} 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yQueue_a75f76555da8d426210a6fc6a0bd330ec}\label{classyLib_1_1yQueue_a75f76555da8d426210a6fc6a0bd330ec}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!begin\_pos@{begin\_pos}}
+\index{begin\_pos@{begin\_pos}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{begin\_pos}{begin\_pos}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T$\ast$ \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::begin\+\_\+pos = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yQueue_a294078fca97e7a3c0f7b3d5701c45458}\label{classyLib_1_1yQueue_a294078fca97e7a3c0f7b3d5701c45458}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!capacity@{capacity}}
+\index{capacity@{capacity}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::capacity = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yQueue_a574d9029b1f87dd462463de99a93c1fe}\label{classyLib_1_1yQueue_a574d9029b1f87dd462463de99a93c1fe}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!cur\_size@{cur\_size}}
+\index{cur\_size@{cur\_size}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{cur\_size}{cur\_size}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::cur\+\_\+size = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yQueue_adb208889992c61de45ff584c20f429d0}\label{classyLib_1_1yQueue_adb208889992c61de45ff584c20f429d0}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!end\_pos@{end\_pos}}
+\index{end\_pos@{end\_pos}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{end\_pos}{end\_pos}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T$\ast$ \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::end\+\_\+pos = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yQueue_ab731db9c0829ee9ab851aec6ae8d50c7}\label{classyLib_1_1yQueue_ab731db9c0829ee9ab851aec6ae8d50c7}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!NullObj@{NullObj}}
+\index{NullObj@{NullObj}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{NullObj}{NullObj}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::Null\+Obj\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yQueue_a71f047efe9810293c52c455820ec7b25}\label{classyLib_1_1yQueue_a71f047efe9810293c52c455820ec7b25}} 
+\index{yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}!queue\_head@{queue\_head}}
+\index{queue\_head@{queue\_head}!yLib::yQueue$<$ T, Alloc $>$@{yLib::yQueue$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{queue\_head}{queue\_head}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T$\ast$ \mbox{\hyperlink{classyLib_1_1yQueue}{y\+Lib\+::y\+Queue}}$<$ T, Alloc $>$\+::queue\+\_\+head = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/basic\+\_\+algorithm/\mbox{\hyperlink{yqueue_8hpp}{yqueue.\+hpp}}\end{DoxyCompactItemize}

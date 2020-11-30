@@ -1,0 +1,122 @@
+\hypertarget{classyLib_1_1yShell}{}\doxysection{y\+Lib\+::y\+Shell Class Reference}
+\label{classyLib_1_1yShell}\index{yLib::yShell@{yLib::yShell}}
+
+
+{\ttfamily \#include $<$yshell.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Shell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yShell}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yShell_a3a8f3cbfa59d627e56875e15fa0fcf96}{y\+Shell}} ()
+\item 
+\mbox{\hyperlink{classyLib_1_1yShell_a65da0ea5c7b9662ec33328571f2a3967}{$\sim$y\+Shell}} ()
+\item 
+\+\_\+\+\_\+\+Y\+L\+I\+B\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+ int \mbox{\hyperlink{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}{Run\+Shell\+Command}} (std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} (std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd\+\_\+, std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd\+\_\+env\+\_\+, std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd\+\_\+result\+\_\+)
+\item 
+void \mbox{\hyperlink{classyLib_1_1yShell_a795ebc9b866c8cad6810de33d45a60d6}{Reconfigy\+Shell\+Buffer}} (uint64\+\_\+t cmd\+\_\+vec\+\_\+size\+\_\+, uint64\+\_\+t cmd\+\_\+env\+\_\+vec\+\_\+size\+\_\+, uint64\+\_\+t \+\_\+result\+\_\+line\+\_\+buf\+\_\+size\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a1667655bd02e01bb85a4cc14d5091b3d}{cmd\+\_\+vec\+\_\+size}} = 20
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a6ebeda8bdbe0593fb7c84f53b5158a28}{cmd\+\_\+env\+\_\+vec\+\_\+size}} = 20
+\item 
+uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a2c83bb1f0f79022fe2cd7c50505638d3}{\+\_\+result\+\_\+line\+\_\+buf\+\_\+size}} = 1024
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a24e2ae313f0f97488ad4f8f704adfb6f}{parse\+\_\+cmd\+\_\+array}} = nullptr
+\item 
+char $\ast$$\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a4aa60b6ed076e260eaa5601a6f3eda1b}{parse\+\_\+cmd\+\_\+env\+\_\+array}} = nullptr
+\item 
+char $\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cbbc}{result\+\_\+read\+\_\+buffer}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yShell_a3a8f3cbfa59d627e56875e15fa0fcf96}\label{classyLib_1_1yShell_a3a8f3cbfa59d627e56875e15fa0fcf96}} 
+\index{yLib::yShell@{yLib::yShell}!yShell@{yShell}}
+\index{yShell@{yShell}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{yShell()}{yShell()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Shell\+::y\+Shell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_a65da0ea5c7b9662ec33328571f2a3967}\label{classyLib_1_1yShell_a65da0ea5c7b9662ec33328571f2a3967}} 
+\index{yLib::yShell@{yLib::yShell}!````~yShell@{$\sim$yShell}}
+\index{````~yShell@{$\sim$yShell}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{$\sim$yShell()}{~yShell()}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Shell\+::$\sim$y\+Shell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yShell_a795ebc9b866c8cad6810de33d45a60d6}\label{classyLib_1_1yShell_a795ebc9b866c8cad6810de33d45a60d6}} 
+\index{yLib::yShell@{yLib::yShell}!ReconfigyShellBuffer@{ReconfigyShellBuffer}}
+\index{ReconfigyShellBuffer@{ReconfigyShellBuffer}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{ReconfigyShellBuffer()}{ReconfigyShellBuffer()}}
+{\footnotesize\ttfamily void y\+Lib\+::y\+Shell\+::\+Reconfigy\+Shell\+Buffer (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{cmd\+\_\+vec\+\_\+size\+\_\+,  }\item[{uint64\+\_\+t}]{cmd\+\_\+env\+\_\+vec\+\_\+size\+\_\+,  }\item[{uint64\+\_\+t}]{\+\_\+result\+\_\+line\+\_\+buf\+\_\+size\+\_\+ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}\label{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}} 
+\index{yLib::yShell@{yLib::yShell}!RunShellCommand@{RunShellCommand}}
+\index{RunShellCommand@{RunShellCommand}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{RunShellCommand()}{RunShellCommand()}}
+{\footnotesize\ttfamily int y\+Lib\+::y\+Shell\+::\+Run\+Shell\+Command (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}\label{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}} 
+\index{yLib::yShell@{yLib::yShell}!RunShellCommandEx@{RunShellCommandEx}}
+\index{RunShellCommandEx@{RunShellCommandEx}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{RunShellCommandEx()}{RunShellCommandEx()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Shell\+::\+Run\+Shell\+Command\+Ex (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd\+\_\+,  }\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd\+\_\+env\+\_\+,  }\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd\+\_\+result\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yShell_a2c83bb1f0f79022fe2cd7c50505638d3}\label{classyLib_1_1yShell_a2c83bb1f0f79022fe2cd7c50505638d3}} 
+\index{yLib::yShell@{yLib::yShell}!\_result\_line\_buf\_size@{\_result\_line\_buf\_size}}
+\index{\_result\_line\_buf\_size@{\_result\_line\_buf\_size}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{\_result\_line\_buf\_size}{\_result\_line\_buf\_size}}
+{\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Shell\+::\+\_\+result\+\_\+line\+\_\+buf\+\_\+size = 1024\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_a6ebeda8bdbe0593fb7c84f53b5158a28}\label{classyLib_1_1yShell_a6ebeda8bdbe0593fb7c84f53b5158a28}} 
+\index{yLib::yShell@{yLib::yShell}!cmd\_env\_vec\_size@{cmd\_env\_vec\_size}}
+\index{cmd\_env\_vec\_size@{cmd\_env\_vec\_size}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{cmd\_env\_vec\_size}{cmd\_env\_vec\_size}}
+{\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Shell\+::cmd\+\_\+env\+\_\+vec\+\_\+size = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_a1667655bd02e01bb85a4cc14d5091b3d}\label{classyLib_1_1yShell_a1667655bd02e01bb85a4cc14d5091b3d}} 
+\index{yLib::yShell@{yLib::yShell}!cmd\_vec\_size@{cmd\_vec\_size}}
+\index{cmd\_vec\_size@{cmd\_vec\_size}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{cmd\_vec\_size}{cmd\_vec\_size}}
+{\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Shell\+::cmd\+\_\+vec\+\_\+size = 20\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_a24e2ae313f0f97488ad4f8f704adfb6f}\label{classyLib_1_1yShell_a24e2ae313f0f97488ad4f8f704adfb6f}} 
+\index{yLib::yShell@{yLib::yShell}!parse\_cmd\_array@{parse\_cmd\_array}}
+\index{parse\_cmd\_array@{parse\_cmd\_array}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{parse\_cmd\_array}{parse\_cmd\_array}}
+{\footnotesize\ttfamily char$\ast$ $\ast$ y\+Lib\+::y\+Shell\+::parse\+\_\+cmd\+\_\+array = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_a4aa60b6ed076e260eaa5601a6f3eda1b}\label{classyLib_1_1yShell_a4aa60b6ed076e260eaa5601a6f3eda1b}} 
+\index{yLib::yShell@{yLib::yShell}!parse\_cmd\_env\_array@{parse\_cmd\_env\_array}}
+\index{parse\_cmd\_env\_array@{parse\_cmd\_env\_array}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{parse\_cmd\_env\_array}{parse\_cmd\_env\_array}}
+{\footnotesize\ttfamily char$\ast$ $\ast$ y\+Lib\+::y\+Shell\+::parse\+\_\+cmd\+\_\+env\+\_\+array = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cbbc}\label{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cbbc}} 
+\index{yLib::yShell@{yLib::yShell}!result\_read\_buffer@{result\_read\_buffer}}
+\index{result\_read\_buffer@{result\_read\_buffer}!yLib::yShell@{yLib::yShell}}
+\doxysubsubsection{\texorpdfstring{result\_read\_buffer}{result\_read\_buffer}}
+{\footnotesize\ttfamily char$\ast$ y\+Lib\+::y\+Shell\+::result\+\_\+read\+\_\+buffer = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/utility/\mbox{\hyperlink{yshell_8hpp}{yshell.\+hpp}}\item 
+/home/sky/y\+Lib/src/utility/\mbox{\hyperlink{yshell_8cpp}{yshell.\+cpp}}\end{DoxyCompactItemize}

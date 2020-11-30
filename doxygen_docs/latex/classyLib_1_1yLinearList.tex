@@ -1,0 +1,269 @@
+\hypertarget{classyLib_1_1yLinearList}{}\doxysection{y\+Lib\+::y\+Linear\+List$<$ T, Alloc $>$ Class Template Reference}
+\label{classyLib_1_1yLinearList}\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+
+
+{\ttfamily \#include $<$ylinear\+\_\+list.\+hpp$>$}
+
+Inheritance diagram for y\+Lib\+::y\+Linear\+List$<$ T, Alloc $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classyLib_1_1yLinearList}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240}{y\+Linear\+List\+Order\+Type}} \+: uint8\+\_\+t \{ \mbox{\hyperlink{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240a6d7038ad4f19edecbba24ae2d378c4cc}{T\+Y\+P\+E\+\_\+\+D\+S\+C\+\_\+\+O\+R\+D\+ER}} = 0, 
+\mbox{\hyperlink{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240a27bf761c992e5c3a8cc248a886668b3e}{T\+Y\+P\+E\+\_\+\+A\+S\+C\+\_\+\+O\+R\+D\+ER}} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classyLib_1_1yLinearList_a4c25c084820637bedfab57b4c344bfd3}{y\+Linear\+List}} ()=delete
+\item 
+\mbox{\hyperlink{classyLib_1_1yLinearList_ac2354cbdaca00f34d609e2aec4676fba}{y\+Linear\+List}} (size\+\_\+t element\+\_\+num\+\_\+) \textbackslash{}
+\item 
+\mbox{\hyperlink{classyLib_1_1yLinearList_ac8ba6e32c7f443e43964509bfb653222}{$\sim$y\+Linear\+List}} ()
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_a18e301dc86db29dcd7035c5b7f1c9b7c}{sq\+\_\+insert}} (size\+\_\+t pos\+\_\+, T \&value\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_ae78f3768f44151f72e0cc1b6ef53ab81}{sq\+\_\+delete}} (T \&value\+\_\+)
+\item 
+const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$ T, Alloc $>$ \& \mbox{\hyperlink{classyLib_1_1yLinearList_a2e726f2c87a442a9ffbfb7a00b5cea34}{operator=}} (const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$ T, Alloc $>$ \&sq\+\_\+) const
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_aa46154cb1d971b9e1384f692e1ea75f2}{sq\+\_\+merge}} (const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$ T, Alloc $>$ \&sq0\+\_\+, const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$ T, Alloc $>$ \&sq1\+\_\+, \mbox{\hyperlink{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240}{y\+Linear\+List\+Order\+Type}} order\+\_\+type\+\_\+)
+\item 
+T \& \mbox{\hyperlink{classyLib_1_1yLinearList_a2da8013972026720036b479b468d6093}{sq\+\_\+get\+\_\+value}} (uint64\+\_\+t val\+\_\+pos\+\_\+) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_a6f16f109147bbea12465916d3cfd5d4d}{sq\+\_\+get\+\_\+size}} (void) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_afb23195dea33493df8949aa02efe5aa0}{sq\+\_\+get\+\_\+capacity}} (void) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_ae4deeab60e1652f3af742211a824d19d}{sq\+\_\+find\+\_\+2index\+\_\+greater\+\_\+than\+\_\+size}} (size\+\_\+t size\+\_\+)
+\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_a0b78644bb6caaa97769a0d0b1953f659}{check\+\_\+capacity\+\_\+and\+\_\+alloc\+\_\+mem\+\_\+by\+\_\+element\+\_\+num}} (size\+\_\+t element\+\_\+num\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_a9809aea29244a14b4e9b6d7f3703adcd}{sq\+\_\+size}} = 0
+\item 
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_a9a2906c7289d2ff0d159a1ec47d72bef}{sq\+\_\+capacity}} = 0
+\item 
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList_a55ed3d89e1a7acc5b70ad8c08abb8f1c}{sq\+\_\+element\+\_\+size}} = 0
+\item 
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yLinearList_a71b4481be545af98ff9d3fbbbd7dad2a}{sq\+\_\+data\+\_\+head}} = nullptr
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T, class Alloc = std\+::allocator$<$\+T$>$$>$\newline
+class y\+Lib\+::y\+Linear\+List$<$ T, Alloc $>$}
+
+@description\+: A implement of linear list,class T must have operator== , operator=, operator$>$ or operator$<$ 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240}\label{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!yLinearListOrderType@{yLinearListOrderType}}
+\index{yLinearListOrderType@{yLinearListOrderType}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yLinearListOrderType}{yLinearListOrderType}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+enum \mbox{\hyperlink{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240}{y\+Lib\+::y\+Linear\+List\+::y\+Linear\+List\+Order\+Type}} \+: uint8\+\_\+t}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_DSC\_ORDER@{TYPE\_DSC\_ORDER}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!TYPE\_DSC\_ORDER@{TYPE\_DSC\_ORDER}}}\mbox{\Hypertarget{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240a6d7038ad4f19edecbba24ae2d378c4cc}\label{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240a6d7038ad4f19edecbba24ae2d378c4cc}} 
+T\+Y\+P\+E\+\_\+\+D\+S\+C\+\_\+\+O\+R\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TYPE\_ASC\_ORDER@{TYPE\_ASC\_ORDER}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!TYPE\_ASC\_ORDER@{TYPE\_ASC\_ORDER}}}\mbox{\Hypertarget{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240a27bf761c992e5c3a8cc248a886668b3e}\label{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240a27bf761c992e5c3a8cc248a886668b3e}} 
+T\+Y\+P\+E\+\_\+\+A\+S\+C\+\_\+\+O\+R\+D\+ER&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a4c25c084820637bedfab57b4c344bfd3}\label{classyLib_1_1yLinearList_a4c25c084820637bedfab57b4c344bfd3}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!yLinearList@{yLinearList}}
+\index{yLinearList@{yLinearList}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yLinearList()}{yLinearList()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::\mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_ac2354cbdaca00f34d609e2aec4676fba}\label{classyLib_1_1yLinearList_ac2354cbdaca00f34d609e2aec4676fba}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!yLinearList@{yLinearList}}
+\index{yLinearList@{yLinearList}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{yLinearList()}{yLinearList()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::\mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}} (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{element\+\_\+num\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_ac8ba6e32c7f443e43964509bfb653222}\label{classyLib_1_1yLinearList_ac8ba6e32c7f443e43964509bfb653222}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!````~yLinearList@{$\sim$yLinearList}}
+\index{````~yLinearList@{$\sim$yLinearList}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$yLinearList()}{~yLinearList()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+\mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::$\sim$\mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a0b78644bb6caaa97769a0d0b1953f659}\label{classyLib_1_1yLinearList_a0b78644bb6caaa97769a0d0b1953f659}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!check\_capacity\_and\_alloc\_mem\_by\_element\_num@{check\_capacity\_and\_alloc\_mem\_by\_element\_num}}
+\index{check\_capacity\_and\_alloc\_mem\_by\_element\_num@{check\_capacity\_and\_alloc\_mem\_by\_element\_num}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{check\_capacity\_and\_alloc\_mem\_by\_element\_num()}{check\_capacity\_and\_alloc\_mem\_by\_element\_num()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::check\+\_\+capacity\+\_\+and\+\_\+alloc\+\_\+mem\+\_\+by\+\_\+element\+\_\+num (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{element\+\_\+num\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+@description\+: 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & element\+\_\+num\+\_\+ is num of elment; \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a2e726f2c87a442a9ffbfb7a00b5cea34}\label{classyLib_1_1yLinearList_a2e726f2c87a442a9ffbfb7a00b5cea34}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$T, Alloc$>$\& \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$ T, Alloc $>$ \&}]{sq\+\_\+ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_ae78f3768f44151f72e0cc1b6ef53ab81}\label{classyLib_1_1yLinearList_ae78f3768f44151f72e0cc1b6ef53ab81}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_delete@{sq\_delete}}
+\index{sq\_delete@{sq\_delete}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_delete()}{sq\_delete()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+delete (\begin{DoxyParamCaption}\item[{T \&}]{value\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: delete value from linearlist, class T must have operator== and operator= 
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: @analyse\+: ~\newline
+ Space-\/\+Complexity\+: O(1)
+\end{DoxyReturn}
+Worst time-\/\+Complexity\+: O(n) Best time-\/\+Complexity\+: O(n) Average time-\/\+Complexity\+: O(n) ~\newline
+ \mbox{\Hypertarget{classyLib_1_1yLinearList_ae4deeab60e1652f3af742211a824d19d}\label{classyLib_1_1yLinearList_ae4deeab60e1652f3af742211a824d19d}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_find\_2index\_greater\_than\_size@{sq\_find\_2index\_greater\_than\_size}}
+\index{sq\_find\_2index\_greater\_than\_size@{sq\_find\_2index\_greater\_than\_size}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_find\_2index\_greater\_than\_size()}{sq\_find\_2index\_greater\_than\_size()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+find\+\_\+2index\+\_\+greater\+\_\+than\+\_\+size (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+@description\+: find a num(index of 2) is greater than size\+\_\+ 
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+} & is num of bytes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yLinearList_afb23195dea33493df8949aa02efe5aa0}\label{classyLib_1_1yLinearList_afb23195dea33493df8949aa02efe5aa0}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_get\_capacity@{sq\_get\_capacity}}
+\index{sq\_get\_capacity@{sq\_get\_capacity}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_get\_capacity()}{sq\_get\_capacity()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+get\+\_\+capacity (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a6f16f109147bbea12465916d3cfd5d4d}\label{classyLib_1_1yLinearList_a6f16f109147bbea12465916d3cfd5d4d}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_get\_size@{sq\_get\_size}}
+\index{sq\_get\_size@{sq\_get\_size}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_get\_size()}{sq\_get\_size()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+get\+\_\+size (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a2da8013972026720036b479b468d6093}\label{classyLib_1_1yLinearList_a2da8013972026720036b479b468d6093}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_get\_value@{sq\_get\_value}}
+\index{sq\_get\_value@{sq\_get\_value}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_get\_value()}{sq\_get\_value()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+T\& \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+get\+\_\+value (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{val\+\_\+pos\+\_\+ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a18e301dc86db29dcd7035c5b7f1c9b7c}\label{classyLib_1_1yLinearList_a18e301dc86db29dcd7035c5b7f1c9b7c}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_insert@{sq\_insert}}
+\index{sq\_insert@{sq\_insert}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_insert()}{sq\_insert()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+insert (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{pos\+\_\+,  }\item[{T \&}]{value\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: insert value to linearlist, class T must have operator= 
+\begin{DoxyParams}{Parameters}
+{\em } & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: @analyse\+: ~\newline
+ Space-\/\+Complexity\+: O(1)
+\end{DoxyReturn}
+Worst time-\/\+Complexity\+: O(n) Best time-\/\+Complexity\+: O(1) Average time-\/\+Complexity\+: O(n) \mbox{\Hypertarget{classyLib_1_1yLinearList_aa46154cb1d971b9e1384f692e1ea75f2}\label{classyLib_1_1yLinearList_aa46154cb1d971b9e1384f692e1ea75f2}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_merge@{sq\_merge}}
+\index{sq\_merge@{sq\_merge}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_merge()}{sq\_merge()}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+merge (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$ T, Alloc $>$ \&}]{sq0\+\_\+,  }\item[{const \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Linear\+List}}$<$ T, Alloc $>$ \&}]{sq1\+\_\+,  }\item[{\mbox{\hyperlink{classyLib_1_1yLinearList_a0cbeaf3a7ba4fce70c860b10dacef240}{y\+Linear\+List\+Order\+Type}}}]{order\+\_\+type\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@description\+: only support ordered Linearlist(same order-\/type)(ascending order or descending order)
+
+
+\begin{DoxyParams}{Parameters}
+{\em \{type\}} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: @analyse\+: ~\newline
+ Space-\/\+Complexity\+: O(1)
+\end{DoxyReturn}
+N=sq0\+\_\+.\+sq\+\_\+get\+\_\+size() M=sq1\+\_\+.\+sq\+\_\+get\+\_\+size() Worst time-\/\+Complexity\+: O(M + N) Best time-\/\+Complexity\+: O(\+Max(\+M,\+N)) Average time-\/\+Complexity\+: O(M + N) ~\newline
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a9a2906c7289d2ff0d159a1ec47d72bef}\label{classyLib_1_1yLinearList_a9a2906c7289d2ff0d159a1ec47d72bef}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_capacity@{sq\_capacity}}
+\index{sq\_capacity@{sq\_capacity}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_capacity}{sq\_capacity}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+capacity = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a71b4481be545af98ff9d3fbbbd7dad2a}\label{classyLib_1_1yLinearList_a71b4481be545af98ff9d3fbbbd7dad2a}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_data\_head@{sq\_data\_head}}
+\index{sq\_data\_head@{sq\_data\_head}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_data\_head}{sq\_data\_head}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+void$\ast$ \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+data\+\_\+head = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a55ed3d89e1a7acc5b70ad8c08abb8f1c}\label{classyLib_1_1yLinearList_a55ed3d89e1a7acc5b70ad8c08abb8f1c}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_element\_size@{sq\_element\_size}}
+\index{sq\_element\_size@{sq\_element\_size}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_element\_size}{sq\_element\_size}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+element\+\_\+size = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classyLib_1_1yLinearList_a9809aea29244a14b4e9b6d7f3703adcd}\label{classyLib_1_1yLinearList_a9809aea29244a14b4e9b6d7f3703adcd}} 
+\index{yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}!sq\_size@{sq\_size}}
+\index{sq\_size@{sq\_size}!yLib::yLinearList$<$ T, Alloc $>$@{yLib::yLinearList$<$ T, Alloc $>$}}
+\doxysubsubsection{\texorpdfstring{sq\_size}{sq\_size}}
+{\footnotesize\ttfamily template$<$class T , class Alloc  = std\+::allocator$<$\+T$>$$>$ \\
+size\+\_\+t \mbox{\hyperlink{classyLib_1_1yLinearList}{y\+Lib\+::y\+Linear\+List}}$<$ T, Alloc $>$\+::sq\+\_\+size = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sky/y\+Lib/include/basic\+\_\+algorithm/\mbox{\hyperlink{ylinear__list_8hpp}{ylinear\+\_\+list.\+hpp}}\end{DoxyCompactItemize}
