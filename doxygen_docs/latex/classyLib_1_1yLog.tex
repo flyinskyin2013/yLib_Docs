@@ -2,6 +2,11 @@
 \label{classyLib_1_1yLog}\index{yLib::yLog@{yLib::yLog}}
 
 
+This is log-\/class based on \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}.  
+
+
+
+
 {\ttfamily \#include $<$ylog.\+hpp$>$}
 
 Inheritance diagram for y\+Lib\+::y\+Log\+:\begin{figure}[H]
@@ -14,46 +19,46 @@ Inheritance diagram for y\+Lib\+::y\+Log\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yLog_aabbbad87b1e18ab48f30ea0cf35385f4}{y\+Log}} (\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&log)=delete
-\item 
-\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \& \mbox{\hyperlink{classyLib_1_1yLog_a7f53dfca17c9feee5f89148143d327ba}{operator=}} (\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&log)=delete
-\item 
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \& \mbox{\hyperlink{classyLib_1_1yLog_ae8f6a6dd4053cbb5ae3b92a2200e12dc}{operator=}} (\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&log)=delete
+\begin{DoxyCompactList}\small\item\em Assignment constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yLog_a3b722f581e88016a247655cf87037cde}{y\+Log}} (\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\&log)=delete
-\item 
-\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\& \mbox{\hyperlink{classyLib_1_1yLog_ab2a30fc381a95f55999880d0363012fa}{operator=}} (\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\&log)=delete
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\& \mbox{\hyperlink{classyLib_1_1yLog_af6279a49d1e5f36b88015325d9a897da}{operator=}} (\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\&log)=delete
+\begin{DoxyCompactList}\small\item\em Assignment constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_ad90b9eeff83647e7bee128f8d9222c08}{Set\+Log4cpp}} (bool enable\+\_\+log4cpp=false, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} log\+\_\+path=\char`\"{}log4cplus.\+properties\char`\"{})
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a36153bfe94dbdee7b4dca73c53c225f0}{Set\+Log4cpp\+Sub\+Category}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} category\+\_\+name)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_af47fd5c82c496dbb148c11d7798ccfbd}{Set\+Process\+Safety\+Feature}} (bool enable\+\_\+feature)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a61797bed679a647806858034651b9cae}{Set\+Log4cpp\+Log\+Level}} (uint16\+\_\+t log\+\_\+level)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a88446df9892f0baafaac022b5137bad3}{Set\+Log4cpp\+Log\+Level}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, uint16\+\_\+t log\+\_\+level)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a1e8cec833cf9aca67789d11b0f4310e5}{Sety\+Log\+Log\+Level}} (uint16\+\_\+t log\+\_\+level)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a7bfd25363ceff2401c78e9bd3b2aaee9}{Sety\+Log\+Log\+Level}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, uint16\+\_\+t log\+\_\+level)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a86e42c07624268c55e38925241cc1fa7}{D}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a9eae50920a831022df48dcaed52205ed}{W}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_ae44400056319a99e835460df7c7d269e}{I}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a0c234464e507458b107bd9a35456ee3c}{E}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_af86edeb8ecfd5db64870c6c76e18a419}{D}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_acb08cb4c6d72d780ecf9e3aa6fdc1192}{W}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_ad508b89966dfbdc99097b9468f2cd468}{I}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a42197716111ab91f062a6aaacb1193e4}{E}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
-\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a3cb37921f1afd01980227ea06b312963}{Set\+Log4cpp}} (bool enable\+\_\+log4cpp=false, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} log\+\_\+path=\char`\"{}log4cplus.\+properties\char`\"{})
+\begin{DoxyCompactList}\small\item\em Enable or disable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a0c96751734d1bc64d7f0de6af0080845}{Set\+Log4cpp\+Sub\+Category}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} category\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Create a sub-\/category for \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a182dc8e5ecbdfd107f96141c7eaa897a}{Set\+Process\+Safety\+Feature}} (bool enable\+\_\+feature)
+\begin{DoxyCompactList}\small\item\em If you want to enable this feature,system must define \+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+O\+B\+J\+E\+C\+TS(getconf -\/a) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_ae787619f9a1e9a12c225a35691df8a74}{Set\+Log4cpp\+Log\+Level}} (uint16\+\_\+t log\+\_\+level)
+\begin{DoxyCompactList}\small\item\em set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_ac5035cd9767c7d3692676629a34d3bd0}{Set\+Log4cpp\+Log\+Level}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, uint16\+\_\+t log\+\_\+level)
+\begin{DoxyCompactList}\small\item\em set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level(parity\+: debug $<$ info $<$ warn $<$ error) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a50a621e7468a93641deba042dc14af5c}{Sety\+Log\+Log\+Level}} (uint16\+\_\+t log\+\_\+level)
+\begin{DoxyCompactList}\small\item\em set the ylog level \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a210787f0b08b1ec78108139f18e161eb}{Sety\+Log\+Log\+Level}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, uint16\+\_\+t log\+\_\+level)
+\begin{DoxyCompactList}\small\item\em set the ylog level(parity\+: debug $<$ info $<$ warn $<$ error) \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_ae333292a25e951c0453e37c4472b5cbc}{D}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the debug log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_ac2a461bc67453a83021d305fba985fef}{W}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the warn log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_ad7f92ec6a799d7c55cd9e643beabb80f}{I}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the info log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a4c188447524aa7ffab8f2b374127237e}{E}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the error log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a481c2a1c79f55e9c10e0113af06994af}{D}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the debug log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a34b1675db9eff9ef6c81db0f69d70b57}{W}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the warn log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_aa2d792d90d8a873809491ee136416c72}{I}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the info log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a3ff75f5f818a235bbf4143aa5f318297}{E}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} fmt,...)
+\begin{DoxyCompactList}\small\item\em the error log \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_ad4c2d67c847cef31ad8f8de4a0b61ea9}{D}} (const char $\ast$fmt,...)
 \item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a71712dd70801e8394d25a782ef01b106}{W}} (const char $\ast$fmt,...)
@@ -62,47 +67,50 @@ static void \mbox{\hyperlink{classyLib_1_1yLog_a3a6435a4c0c2f8ed41465ebcc168e3ee
 \item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a02cb4f9e8c002dc6c41220e62ccd2234}{E}} (const char $\ast$fmt,...)
 \item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_ae89a53521d73913b97d732a96231ca60}{D}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a287a63ecb508a979e2d82b674020c4da}{W}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a95a2a6fbf37369f58774db00461794b8}{I}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
-\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_a34cdb4bd47caed215688bce7895bfd82}{E}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
-\end{DoxyCompactItemize}
+static void \mbox{\hyperlink{classyLib_1_1yLog_acaa60f842c9cc2ce60b90c781cbe2d2a}{D}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
+\begin{DoxyCompactList}\small\item\em the debug log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a1f95748367e11d7195b9a36dc95c9f59}{W}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
+\begin{DoxyCompactList}\small\item\em the warn log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a33b3ecad2c9ab5670cdbc546cb9b29cf}{I}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
+\begin{DoxyCompactList}\small\item\em the info log \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_afbe7f324b98ee9776b6bb6cb5fb9a315}{E}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, const char $\ast$fmt,...)
+\begin{DoxyCompactList}\small\item\em the error log \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yLog_a87aa22ca30e7786efdae21bf449f9775}{y\+Log}} () noexcept
-\item 
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yLog_ae982bcb94b3ea46e9f9c1673c28f5051}{$\sim$y\+Log}} () noexcept
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_aadb8bec2fe8f84c5e1043cf44df3d09d}{\+\_\+ylog\+\_\+log\+\_\+impl}} (uint16\+\_\+t log\+\_\+type, const char $\ast$fmt, va\+\_\+list arg\+\_\+list)
-\item 
+static void \mbox{\hyperlink{classyLib_1_1yLog_a3b94b24d2b314508a999dff2ff808873}{\+\_\+ylog\+\_\+log\+\_\+impl}} (uint16\+\_\+t log\+\_\+type, const char $\ast$fmt, va\+\_\+list arg\+\_\+list)
+\begin{DoxyCompactList}\small\item\em the basic-\/implement of D I W E \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_aa5c38dddbbd2368e5fa00ec82f018da7}{\+\_\+ylog\+\_\+log\+\_\+impl}} (uint16\+\_\+t log\+\_\+type, const char $\ast$fmt, va\+\_\+list arg\+\_\+list, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name)
 \end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static char \mbox{\hyperlink{classyLib_1_1yLog_ad270bbb0228c35b9151aeaf8ac0c6fe2}{\+\_\+c\+\_\+ptr\+\_\+msg\+\_\+buf}} \mbox{[}4096\mbox{]}
+static char \mbox{\hyperlink{classyLib_1_1yLog_ace6d0d977d2ca3c71a2b26320406c2ca}{\+\_\+c\+\_\+ptr\+\_\+msg\+\_\+buf}} \mbox{[}4096\mbox{]}
 \begin{DoxyCompactList}\small\item\em property \end{DoxyCompactList}\item 
-static log4cpp\+::\+Category $\ast$ \mbox{\hyperlink{classyLib_1_1yLog_a12338ceb8546f0fc86b891e846e0fa1a}{\+\_\+ptr\+\_\+log4\+\_\+category\+\_\+root}} = nullptr
-\item 
-static \mbox{\hyperlink{namespaceyLib_aafac5e659058b54da4669f945e6e55c5}{Type\+Sub\+Category\+Map}} \mbox{\hyperlink{classyLib_1_1yLog_a5981d8a93f5cfac429c637bc31505418}{\+\_\+log4cpp\+\_\+sub\+\_\+category\+\_\+map}}
-\item 
-static bool \mbox{\hyperlink{classyLib_1_1yLog_a6bb694ba491e287359e5181a5972b3b7}{\+\_\+b\+\_\+enable\+\_\+log4cpp}} = false
-\item 
-static bool \mbox{\hyperlink{classyLib_1_1yLog_a438559b1efead2368afa190c6d18c270}{\+\_\+b\+\_\+enable\+\_\+feature\+\_\+ps}} = false
-\item 
-static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_a8ac4d5edf10384a4d859f304e8537c0f}{\+\_\+c\+\_\+log4cpp\+\_\+log\+\_\+level}} = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+
-\item 
-static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_ac6ada77065fd204a1a376c7853cc7dc0}{\+\_\+c\+\_\+ylog\+\_\+log\+\_\+level}} = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+
-\end{DoxyCompactItemize}
+static log4cpp\+::\+Category $\ast$ \mbox{\hyperlink{classyLib_1_1yLog_a1f3823c287955b3322f23a9a4494323d}{\+\_\+ptr\+\_\+log4\+\_\+category\+\_\+root}} = nullptr
+\begin{DoxyCompactList}\small\item\em the handle of log4cpp\+::\+Category \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{namespaceyLib_aafac5e659058b54da4669f945e6e55c5}{Type\+Sub\+Category\+Map}} \mbox{\hyperlink{classyLib_1_1yLog_a157ef63dad3abcc92f7064cfd1000dc9}{\+\_\+log4cpp\+\_\+sub\+\_\+category\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em the sub-\/category map \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classyLib_1_1yLog_ade9c5010462fb728b09be21047a0d0b0}{\+\_\+b\+\_\+enable\+\_\+log4cpp}} = false
+\begin{DoxyCompactList}\small\item\em if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classyLib_1_1yLog_abf6e0d07541b78810309fbc6bb09222d}{\+\_\+b\+\_\+enable\+\_\+feature\+\_\+ps}} = false
+\begin{DoxyCompactList}\small\item\em if enable process-\/safety. \end{DoxyCompactList}\item 
+static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_abed4c2347a2fc12c550e11b6f73450ed}{\+\_\+c\+\_\+log4cpp\+\_\+log\+\_\+level}} = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+
+\begin{DoxyCompactList}\small\item\em current \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} log-\/level. \end{DoxyCompactList}\item 
+static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_a287c0233628508aec712f85701be69ff}{\+\_\+c\+\_\+ylog\+\_\+log\+\_\+level}} = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+
+\begin{DoxyCompactList}\small\item\em current ylog log-\/level. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+This is log-\/class based on \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classyLib_1_1yLog_aabbbad87b1e18ab48f30ea0cf35385f4}\label{classyLib_1_1yLog_aabbbad87b1e18ab48f30ea0cf35385f4}} 
@@ -111,18 +119,55 @@ static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_ac6ada77065fd204a1a376c7
 \doxysubsubsection{\texorpdfstring{yLog()}{yLog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Log\+::y\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & exsited obj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This op is deleted. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yLog_a3b722f581e88016a247655cf87037cde}\label{classyLib_1_1yLog_a3b722f581e88016a247655cf87037cde}} 
 \index{yLib::yLog@{yLib::yLog}!yLog@{yLog}}
 \index{yLog@{yLog}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{yLog()}{yLog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Log\+::y\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & exsited obj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This op is deleted. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yLog_a87aa22ca30e7786efdae21bf449f9775}\label{classyLib_1_1yLog_a87aa22ca30e7786efdae21bf449f9775}} 
 \index{yLib::yLog@{yLib::yLog}!yLog@{yLog}}
 \index{yLog@{yLog}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{yLog()}{yLog()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Log\+::y\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [noexcept]}}
 
+
+
+Default constructor. 
+
+\begin{DoxyWarning}{Warning}
+\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} is a static-\/class, we can not instance it 
+\end{DoxyWarning}
 \mbox{\Hypertarget{classyLib_1_1yLog_ae982bcb94b3ea46e9f9c1673c28f5051}\label{classyLib_1_1yLog_ae982bcb94b3ea46e9f9c1673c28f5051}} 
 \index{yLib::yLog@{yLib::yLog}!````~yLog@{$\sim$yLog}}
 \index{````~yLog@{$\sim$yLog}!yLib::yLog@{yLib::yLog}}
@@ -132,12 +177,33 @@ static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_ac6ada77065fd204a1a376c7
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classyLib_1_1yLog_aadb8bec2fe8f84c5e1043cf44df3d09d}\label{classyLib_1_1yLog_aadb8bec2fe8f84c5e1043cf44df3d09d}} 
+\mbox{\Hypertarget{classyLib_1_1yLog_a3b94b24d2b314508a999dff2ff808873}\label{classyLib_1_1yLog_a3b94b24d2b314508a999dff2ff808873}} 
 \index{yLib::yLog@{yLib::yLog}!\_ylog\_log\_impl@{\_ylog\_log\_impl}}
 \index{\_ylog\_log\_impl@{\_ylog\_log\_impl}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_ylog\_log\_impl()}{\_ylog\_log\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+\_\+ylog\+\_\+log\+\_\+impl (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+type,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{arg\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+\_\+ylog\+\_\+log\+\_\+impl (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+type,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{arg\+\_\+list }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
+
+
+the basic-\/implement of D I W E 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+type} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+{\em arg\+\_\+list} & the input arg-\/lists\\
+\hline
+{\em log\+\_\+type} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+{\em arg\+\_\+list} & the input arg-\/lists \\
+\hline
+{\em category\+\_\+name} & the sub-\/category name \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classyLib_1_1yLog_aa5c38dddbbd2368e5fa00ec82f018da7}\label{classyLib_1_1yLog_aa5c38dddbbd2368e5fa00ec82f018da7}} 
 \index{yLib::yLog@{yLib::yLog}!\_ylog\_log\_impl@{\_ylog\_log\_impl}}
 \index{\_ylog\_log\_impl@{\_ylog\_log\_impl}!yLib::yLog@{yLib::yLog}}
@@ -150,97 +216,233 @@ static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_ac6ada77065fd204a1a376c7
 \doxysubsubsection{\texorpdfstring{D()}{D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::D (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a86e42c07624268c55e38925241cc1fa7}\label{classyLib_1_1yLog_a86e42c07624268c55e38925241cc1fa7}} 
+\mbox{\Hypertarget{classyLib_1_1yLog_ae333292a25e951c0453e37c4472b5cbc}\label{classyLib_1_1yLog_ae333292a25e951c0453e37c4472b5cbc}} 
 \index{yLib::yLog@{yLib::yLog}!D@{D}}
 \index{D@{D}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{D()}{D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_ae89a53521d73913b97d732a96231ca60}\label{classyLib_1_1yLog_ae89a53521d73913b97d732a96231ca60}} 
+
+
+the debug log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_acaa60f842c9cc2ce60b90c781cbe2d2a}\label{classyLib_1_1yLog_acaa60f842c9cc2ce60b90c781cbe2d2a}} 
 \index{yLib::yLog@{yLib::yLog}!D@{D}}
 \index{D@{D}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{D()}{D()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_af86edeb8ecfd5db64870c6c76e18a419}\label{classyLib_1_1yLog_af86edeb8ecfd5db64870c6c76e18a419}} 
+
+
+the debug log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_a481c2a1c79f55e9c10e0113af06994af}\label{classyLib_1_1yLog_a481c2a1c79f55e9c10e0113af06994af}} 
 \index{yLib::yLog@{yLib::yLog}!D@{D}}
 \index{D@{D}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{D()}{D()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+the debug log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string.\\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classyLib_1_1yLog_a02cb4f9e8c002dc6c41220e62ccd2234}\label{classyLib_1_1yLog_a02cb4f9e8c002dc6c41220e62ccd2234}} 
 \index{yLib::yLog@{yLib::yLog}!E@{E}}
 \index{E@{E}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{E()}{E()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::E (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a0c234464e507458b107bd9a35456ee3c}\label{classyLib_1_1yLog_a0c234464e507458b107bd9a35456ee3c}} 
+\mbox{\Hypertarget{classyLib_1_1yLog_a4c188447524aa7ffab8f2b374127237e}\label{classyLib_1_1yLog_a4c188447524aa7ffab8f2b374127237e}} 
 \index{yLib::yLog@{yLib::yLog}!E@{E}}
 \index{E@{E}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{E()}{E()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::E (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::E (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a34cdb4bd47caed215688bce7895bfd82}\label{classyLib_1_1yLog_a34cdb4bd47caed215688bce7895bfd82}} 
+
+
+the error log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_afbe7f324b98ee9776b6bb6cb5fb9a315}\label{classyLib_1_1yLog_afbe7f324b98ee9776b6bb6cb5fb9a315}} 
 \index{yLib::yLog@{yLib::yLog}!E@{E}}
 \index{E@{E}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{E()}{E()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::E (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::E (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a42197716111ab91f062a6aaacb1193e4}\label{classyLib_1_1yLog_a42197716111ab91f062a6aaacb1193e4}} 
+
+
+the error log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_a3ff75f5f818a235bbf4143aa5f318297}\label{classyLib_1_1yLog_a3ff75f5f818a235bbf4143aa5f318297}} 
 \index{yLib::yLog@{yLib::yLog}!E@{E}}
 \index{E@{E}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{E()}{E()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::E (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::E (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+the error log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string.\\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classyLib_1_1yLog_a3a6435a4c0c2f8ed41465ebcc168e3ee}\label{classyLib_1_1yLog_a3a6435a4c0c2f8ed41465ebcc168e3ee}} 
 \index{yLib::yLog@{yLib::yLog}!I@{I}}
 \index{I@{I}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{I()}{I()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::I (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_ae44400056319a99e835460df7c7d269e}\label{classyLib_1_1yLog_ae44400056319a99e835460df7c7d269e}} 
+\mbox{\Hypertarget{classyLib_1_1yLog_ad7f92ec6a799d7c55cd9e643beabb80f}\label{classyLib_1_1yLog_ad7f92ec6a799d7c55cd9e643beabb80f}} 
 \index{yLib::yLog@{yLib::yLog}!I@{I}}
 \index{I@{I}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{I()}{I()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::I (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::I (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a95a2a6fbf37369f58774db00461794b8}\label{classyLib_1_1yLog_a95a2a6fbf37369f58774db00461794b8}} 
-\index{yLib::yLog@{yLib::yLog}!I@{I}}
-\index{I@{I}!yLib::yLog@{yLib::yLog}}
-\doxysubsubsection{\texorpdfstring{I()}{I()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::I (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_ad508b89966dfbdc99097b9468f2cd468}\label{classyLib_1_1yLog_ad508b89966dfbdc99097b9468f2cd468}} 
-\index{yLib::yLog@{yLib::yLog}!I@{I}}
-\index{I@{I}!yLib::yLog@{yLib::yLog}}
-\doxysubsubsection{\texorpdfstring{I()}{I()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::I (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_ab2a30fc381a95f55999880d0363012fa}\label{classyLib_1_1yLog_ab2a30fc381a95f55999880d0363012fa}} 
-\index{yLib::yLog@{yLib::yLog}!operator=@{operator=}}
-\index{operator=@{operator=}!yLib::yLog@{yLib::yLog}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}}\&\& y\+Lib\+::y\+Log\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-\mbox{\Hypertarget{classyLib_1_1yLog_a7f53dfca17c9feee5f89148143d327ba}\label{classyLib_1_1yLog_a7f53dfca17c9feee5f89148143d327ba}} 
-\index{yLib::yLog@{yLib::yLog}!operator=@{operator=}}
-\index{operator=@{operator=}!yLib::yLog@{yLib::yLog}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}}\& y\+Lib\+::y\+Log\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
-
-\mbox{\Hypertarget{classyLib_1_1yLog_ad90b9eeff83647e7bee128f8d9222c08}\label{classyLib_1_1yLog_ad90b9eeff83647e7bee128f8d9222c08}} 
-\index{yLib::yLog@{yLib::yLog}!SetLog4cpp@{SetLog4cpp}}
-\index{SetLog4cpp@{SetLog4cpp}!yLib::yLog@{yLib::yLog}}
-\doxysubsubsection{\texorpdfstring{SetLog4cpp()}{SetLog4cpp()}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp (\begin{DoxyParamCaption}\item[{bool}]{enable\+\_\+log4cpp = {\ttfamily false},  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{log\+\_\+path = {\ttfamily \char`\"{}log4cplus.properties\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
-
-@description\+: Enable or disable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}
+the info log 
 
 
 \begin{DoxyParams}{Parameters}
-{\em enable\+\_\+log4cpp} & if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} log\+\_\+path\+: \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}\textquotesingle{}s cfg-\/file\\
+{\em fmt} & the format of info-\/string. \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_a33b3ecad2c9ab5670cdbc546cb9b29cf}\label{classyLib_1_1yLog_a33b3ecad2c9ab5670cdbc546cb9b29cf}} 
+\index{yLib::yLog@{yLib::yLog}!I@{I}}
+\index{I@{I}!yLib::yLog@{yLib::yLog}}
+\doxysubsubsection{\texorpdfstring{I()}{I()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::I (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the info log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_aa2d792d90d8a873809491ee136416c72}\label{classyLib_1_1yLog_aa2d792d90d8a873809491ee136416c72}} 
+\index{yLib::yLog@{yLib::yLog}!I@{I}}
+\index{I@{I}!yLib::yLog@{yLib::yLog}}
+\doxysubsubsection{\texorpdfstring{I()}{I()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::I (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+the info log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string.\\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_af6279a49d1e5f36b88015325d9a897da}\label{classyLib_1_1yLog_af6279a49d1e5f36b88015325d9a897da}} 
+\index{yLib::yLog@{yLib::yLog}!operator=@{operator=}}
+\index{operator=@{operator=}!yLib::yLog@{yLib::yLog}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\& y\+Lib\+::y\+Log\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&\&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & exsited obj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This op is deleted. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The reference of \mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}}\textquotesingle{}s object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yLog_ae8f6a6dd4053cbb5ae3b92a2200e12dc}\label{classyLib_1_1yLog_ae8f6a6dd4053cbb5ae3b92a2200e12dc}} 
+\index{yLib::yLog@{yLib::yLog}!operator=@{operator=}}
+\index{operator=@{operator=}!yLib::yLog@{yLib::yLog}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \& y\+Lib\+::y\+Log\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}} \&}]{log }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Assignment constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log} & exsited obj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This op is deleted. 
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+The reference of \mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}}\textquotesingle{}s object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classyLib_1_1yLog_a3cb37921f1afd01980227ea06b312963}\label{classyLib_1_1yLog_a3cb37921f1afd01980227ea06b312963}} 
+\index{yLib::yLog@{yLib::yLog}!SetLog4cpp@{SetLog4cpp}}
+\index{SetLog4cpp@{SetLog4cpp}!yLib::yLog@{yLib::yLog}}
+\doxysubsubsection{\texorpdfstring{SetLog4cpp()}{SetLog4cpp()}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp (\begin{DoxyParamCaption}\item[{bool}]{enable\+\_\+log4cpp = {\ttfamily false},  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{log\+\_\+path = {\ttfamily \char`\"{}log4cplus.properties\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable or disable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable\+\_\+log4cpp} & if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} \\
+\hline
+{\em log\+\_\+path} & \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}\textquotesingle{}s cfg-\/file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
 \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
@@ -249,114 +451,295 @@ static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_ac6ada77065fd204a1a376c7
 {\em throw} & a anonymous exception if the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}\textquotesingle{}s cfg-\/file is invalid. \\
 \hline
 \end{DoxyExceptions}
-\mbox{\Hypertarget{classyLib_1_1yLog_a88446df9892f0baafaac022b5137bad3}\label{classyLib_1_1yLog_a88446df9892f0baafaac022b5137bad3}} 
+\mbox{\Hypertarget{classyLib_1_1yLog_ac5035cd9767c7d3692676629a34d3bd0}\label{classyLib_1_1yLog_ac5035cd9767c7d3692676629a34d3bd0}} 
 \index{yLib::yLog@{yLib::yLog}!SetLog4cppLogLevel@{SetLog4cppLogLevel}}
 \index{SetLog4cppLogLevel@{SetLog4cppLogLevel}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{SetLog4cppLogLevel()}{SetLog4cppLogLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp\+Log\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp\+Log\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a61797bed679a647806858034651b9cae}\label{classyLib_1_1yLog_a61797bed679a647806858034651b9cae}} 
+
+
+set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level(parity\+: debug $<$ info $<$ warn $<$ error) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name \\
+\hline
+{\em log\+\_\+level} & enable log-\/level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classyLib_1_1yLog_ae787619f9a1e9a12c225a35691df8a74}\label{classyLib_1_1yLog_ae787619f9a1e9a12c225a35691df8a74}} 
 \index{yLib::yLog@{yLib::yLog}!SetLog4cppLogLevel@{SetLog4cppLogLevel}}
 \index{SetLog4cppLogLevel@{SetLog4cppLogLevel}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{SetLog4cppLogLevel()}{SetLog4cppLogLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp\+Log\+Level (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp\+Log\+Level (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a36153bfe94dbdee7b4dca73c53c225f0}\label{classyLib_1_1yLog_a36153bfe94dbdee7b4dca73c53c225f0}} 
+
+
+set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+level} & enable log-\/level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classyLib_1_1yLog_a0c96751734d1bc64d7f0de6af0080845}\label{classyLib_1_1yLog_a0c96751734d1bc64d7f0de6af0080845}} 
 \index{yLib::yLog@{yLib::yLog}!SetLog4cppSubCategory@{SetLog4cppSubCategory}}
 \index{SetLog4cppSubCategory@{SetLog4cppSubCategory}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{SetLog4cppSubCategory()}{SetLog4cppSubCategory()}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp\+Sub\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{category\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+Set\+Log4cpp\+Sub\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{category\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_af47fd5c82c496dbb148c11d7798ccfbd}\label{classyLib_1_1yLog_af47fd5c82c496dbb148c11d7798ccfbd}} 
+
+
+Create a sub-\/category for \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classyLib_1_1yLog_a182dc8e5ecbdfd107f96141c7eaa897a}\label{classyLib_1_1yLog_a182dc8e5ecbdfd107f96141c7eaa897a}} 
 \index{yLib::yLog@{yLib::yLog}!SetProcessSafetyFeature@{SetProcessSafetyFeature}}
 \index{SetProcessSafetyFeature@{SetProcessSafetyFeature}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{SetProcessSafetyFeature()}{SetProcessSafetyFeature()}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+Set\+Process\+Safety\+Feature (\begin{DoxyParamCaption}\item[{bool}]{enable\+\_\+feature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+Set\+Process\+Safety\+Feature (\begin{DoxyParamCaption}\item[{bool}]{enable\+\_\+feature }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a7bfd25363ceff2401c78e9bd3b2aaee9}\label{classyLib_1_1yLog_a7bfd25363ceff2401c78e9bd3b2aaee9}} 
+
+
+If you want to enable this feature,system must define \+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+O\+B\+J\+E\+C\+TS(getconf -\/a) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable\+\_\+feature} & enable or disable thread-\/satety. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classyLib_1_1yLog_a210787f0b08b1ec78108139f18e161eb}\label{classyLib_1_1yLog_a210787f0b08b1ec78108139f18e161eb}} 
 \index{yLib::yLog@{yLib::yLog}!SetyLogLogLevel@{SetyLogLogLevel}}
 \index{SetyLogLogLevel@{SetyLogLogLevel}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{SetyLogLogLevel()}{SetyLogLogLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+Sety\+Log\+Log\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+Sety\+Log\+Log\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a1e8cec833cf9aca67789d11b0f4310e5}\label{classyLib_1_1yLog_a1e8cec833cf9aca67789d11b0f4310e5}} 
+
+
+set the ylog level(parity\+: debug $<$ info $<$ warn $<$ error) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name \\
+\hline
+{\em log\+\_\+level} & enable log-\/level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classyLib_1_1yLog_a50a621e7468a93641deba042dc14af5c}\label{classyLib_1_1yLog_a50a621e7468a93641deba042dc14af5c}} 
 \index{yLib::yLog@{yLib::yLog}!SetyLogLogLevel@{SetyLogLogLevel}}
 \index{SetyLogLogLevel@{SetyLogLogLevel}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{SetyLogLogLevel()}{SetyLogLogLevel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+Sety\+Log\+Log\+Level (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+Sety\+Log\+Log\+Level (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+set the ylog level 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+\_\+level} & enable log-\/level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classyLib_1_1yLog_a71712dd70801e8394d25a782ef01b106}\label{classyLib_1_1yLog_a71712dd70801e8394d25a782ef01b106}} 
 \index{yLib::yLog@{yLib::yLog}!W@{W}}
 \index{W@{W}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{W()}{W()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::W (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a9eae50920a831022df48dcaed52205ed}\label{classyLib_1_1yLog_a9eae50920a831022df48dcaed52205ed}} 
+\mbox{\Hypertarget{classyLib_1_1yLog_ac2a461bc67453a83021d305fba985fef}\label{classyLib_1_1yLog_ac2a461bc67453a83021d305fba985fef}} 
 \index{yLib::yLog@{yLib::yLog}!W@{W}}
 \index{W@{W}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{W()}{W()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::W (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::W (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a287a63ecb508a979e2d82b674020c4da}\label{classyLib_1_1yLog_a287a63ecb508a979e2d82b674020c4da}} 
+
+
+the warn log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_a1f95748367e11d7195b9a36dc95c9f59}\label{classyLib_1_1yLog_a1f95748367e11d7195b9a36dc95c9f59}} 
 \index{yLib::yLog@{yLib::yLog}!W@{W}}
 \index{W@{W}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{W()}{W()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::W (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::W (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const char $\ast$}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_acb08cb4c6d72d780ecf9e3aa6fdc1192}\label{classyLib_1_1yLog_acb08cb4c6d72d780ecf9e3aa6fdc1192}} 
+
+
+the warn log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_a34b1675db9eff9ef6c81db0f69d70b57}\label{classyLib_1_1yLog_a34b1675db9eff9ef6c81db0f69d70b57}} 
 \index{yLib::yLog@{yLib::yLog}!W@{W}}
 \index{W@{W}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{W()}{W()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::W (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::W (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{fmt,  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+the warn log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+\_\+name} & the sub-\/category name. \\
+\hline
+{\em fmt} & the format of info-\/string.\\
+\hline
+{\em fmt} & the format of info-\/string. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classyLib_1_1yLog_a438559b1efead2368afa190c6d18c270}\label{classyLib_1_1yLog_a438559b1efead2368afa190c6d18c270}} 
+\mbox{\Hypertarget{classyLib_1_1yLog_abf6e0d07541b78810309fbc6bb09222d}\label{classyLib_1_1yLog_abf6e0d07541b78810309fbc6bb09222d}} 
 \index{yLib::yLog@{yLib::yLog}!\_b\_enable\_feature\_ps@{\_b\_enable\_feature\_ps}}
 \index{\_b\_enable\_feature\_ps@{\_b\_enable\_feature\_ps}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_b\_enable\_feature\_ps}{\_b\_enable\_feature\_ps}}
-{\footnotesize\ttfamily bool y\+Lib\+::y\+Log\+::\+\_\+b\+\_\+enable\+\_\+feature\+\_\+ps = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Log\+::\+\_\+b\+\_\+enable\+\_\+feature\+\_\+ps = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a6bb694ba491e287359e5181a5972b3b7}\label{classyLib_1_1yLog_a6bb694ba491e287359e5181a5972b3b7}} 
+
+
+if enable process-\/safety. 
+
+\mbox{\Hypertarget{classyLib_1_1yLog_ade9c5010462fb728b09be21047a0d0b0}\label{classyLib_1_1yLog_ade9c5010462fb728b09be21047a0d0b0}} 
 \index{yLib::yLog@{yLib::yLog}!\_b\_enable\_log4cpp@{\_b\_enable\_log4cpp}}
 \index{\_b\_enable\_log4cpp@{\_b\_enable\_log4cpp}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_b\_enable\_log4cpp}{\_b\_enable\_log4cpp}}
-{\footnotesize\ttfamily bool y\+Lib\+::y\+Log\+::\+\_\+b\+\_\+enable\+\_\+log4cpp = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Log\+::\+\_\+b\+\_\+enable\+\_\+log4cpp = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a8ac4d5edf10384a4d859f304e8537c0f}\label{classyLib_1_1yLog_a8ac4d5edf10384a4d859f304e8537c0f}} 
+
+
+if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} 
+
+\mbox{\Hypertarget{classyLib_1_1yLog_abed4c2347a2fc12c550e11b6f73450ed}\label{classyLib_1_1yLog_abed4c2347a2fc12c550e11b6f73450ed}} 
 \index{yLib::yLog@{yLib::yLog}!\_c\_log4cpp\_log\_level@{\_c\_log4cpp\_log\_level}}
 \index{\_c\_log4cpp\_log\_level@{\_c\_log4cpp\_log\_level}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_c\_log4cpp\_log\_level}{\_c\_log4cpp\_log\_level}}
-{\footnotesize\ttfamily uint16\+\_\+t y\+Lib\+::y\+Log\+::\+\_\+c\+\_\+log4cpp\+\_\+log\+\_\+level = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Log\+::\+\_\+c\+\_\+log4cpp\+\_\+log\+\_\+level = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_ad270bbb0228c35b9151aeaf8ac0c6fe2}\label{classyLib_1_1yLog_ad270bbb0228c35b9151aeaf8ac0c6fe2}} 
+
+
+current \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} log-\/level. 
+
+\mbox{\Hypertarget{classyLib_1_1yLog_ace6d0d977d2ca3c71a2b26320406c2ca}\label{classyLib_1_1yLog_ace6d0d977d2ca3c71a2b26320406c2ca}} 
 \index{yLib::yLog@{yLib::yLog}!\_c\_ptr\_msg\_buf@{\_c\_ptr\_msg\_buf}}
 \index{\_c\_ptr\_msg\_buf@{\_c\_ptr\_msg\_buf}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_c\_ptr\_msg\_buf}{\_c\_ptr\_msg\_buf}}
-{\footnotesize\ttfamily char y\+Lib\+::y\+Log\+::\+\_\+c\+\_\+ptr\+\_\+msg\+\_\+buf\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Log\+::\+\_\+c\+\_\+ptr\+\_\+msg\+\_\+buf\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
 property 
 
-\mbox{\Hypertarget{classyLib_1_1yLog_ac6ada77065fd204a1a376c7853cc7dc0}\label{classyLib_1_1yLog_ac6ada77065fd204a1a376c7853cc7dc0}} 
+the buffer of the log-\/string \mbox{\Hypertarget{classyLib_1_1yLog_a287c0233628508aec712f85701be69ff}\label{classyLib_1_1yLog_a287c0233628508aec712f85701be69ff}} 
 \index{yLib::yLog@{yLib::yLog}!\_c\_ylog\_log\_level@{\_c\_ylog\_log\_level}}
 \index{\_c\_ylog\_log\_level@{\_c\_ylog\_log\_level}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_c\_ylog\_log\_level}{\_c\_ylog\_log\_level}}
-{\footnotesize\ttfamily uint16\+\_\+t y\+Lib\+::y\+Log\+::\+\_\+c\+\_\+ylog\+\_\+log\+\_\+level = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Log\+::\+\_\+c\+\_\+ylog\+\_\+log\+\_\+level = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a5981d8a93f5cfac429c637bc31505418}\label{classyLib_1_1yLog_a5981d8a93f5cfac429c637bc31505418}} 
+
+
+current ylog log-\/level. 
+
+\mbox{\Hypertarget{classyLib_1_1yLog_a157ef63dad3abcc92f7064cfd1000dc9}\label{classyLib_1_1yLog_a157ef63dad3abcc92f7064cfd1000dc9}} 
 \index{yLib::yLog@{yLib::yLog}!\_log4cpp\_sub\_category\_map@{\_log4cpp\_sub\_category\_map}}
 \index{\_log4cpp\_sub\_category\_map@{\_log4cpp\_sub\_category\_map}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_log4cpp\_sub\_category\_map}{\_log4cpp\_sub\_category\_map}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespaceyLib_aafac5e659058b54da4669f945e6e55c5}{y\+Lib\+::\+Type\+Sub\+Category\+Map}} y\+Lib\+::y\+Log\+::\+\_\+log4cpp\+\_\+sub\+\_\+category\+\_\+map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Log\+::\+\_\+log4cpp\+\_\+sub\+\_\+category\+\_\+map\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLog_a12338ceb8546f0fc86b891e846e0fa1a}\label{classyLib_1_1yLog_a12338ceb8546f0fc86b891e846e0fa1a}} 
+
+
+the sub-\/category map 
+
+\mbox{\Hypertarget{classyLib_1_1yLog_a1f3823c287955b3322f23a9a4494323d}\label{classyLib_1_1yLog_a1f3823c287955b3322f23a9a4494323d}} 
 \index{yLib::yLog@{yLib::yLog}!\_ptr\_log4\_category\_root@{\_ptr\_log4\_category\_root}}
 \index{\_ptr\_log4\_category\_root@{\_ptr\_log4\_category\_root}!yLib::yLog@{yLib::yLog}}
 \doxysubsubsection{\texorpdfstring{\_ptr\_log4\_category\_root}{\_ptr\_log4\_category\_root}}
-{\footnotesize\ttfamily log4cpp\+::\+Category $\ast$ y\+Lib\+::y\+Log\+::\+\_\+ptr\+\_\+log4\+\_\+category\+\_\+root = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Log\+::\+\_\+ptr\+\_\+log4\+\_\+category\+\_\+root = nullptr\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+the handle of log4cpp\+::\+Category 
 
 
 

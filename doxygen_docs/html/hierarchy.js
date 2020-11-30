@@ -4,6 +4,8 @@ var hierarchy =
     [ "yLib::yBasicValue::__value_container__", "structyLib_1_1yBasicValue_1_1____value__container____.html", null ],
     [ "yHttpRequestParam::__yhttp_request_query_kv__", "structyHttpRequestParam_1_1____yhttp__request__query__kv____.html", null ],
     [ "yLib::yBasicAllocator< T >::rebind< U >", "structyLib_1_1yBasicAllocator_1_1rebind.html", null ],
+    [ "struct", "structstruct.html", null ],
+    [ "SubCategoryProperty", "structSubCategoryProperty.html", null ],
     [ "SubCategoryProperty", "structSubCategoryProperty.html", null ],
     [ "tmp_data", "classtmp__data.html", null ],
     [ "yCurlParam", "structyCurlParam.html", null ],

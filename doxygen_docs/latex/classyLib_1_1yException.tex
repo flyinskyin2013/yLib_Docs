@@ -2,6 +2,11 @@
 \label{classyLib_1_1yException}\index{yLib::yException@{yLib::yException}}
 
 
+This is base-\/class of the all exception in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}.  
+
+
+
+
 {\ttfamily \#include $<$yexception.\+hpp$>$}
 
 Inheritance diagram for y\+Lib\+::y\+Exception\+:\begin{figure}[H]
@@ -14,20 +19,23 @@ Inheritance diagram for y\+Lib\+::y\+Exception\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yException_a191fc7aef8713cf391f486f1ef1ffe7a}{y\+Exception}} () noexcept
-\item 
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yException_a679e90a31e37d6fd27f96fa93cde34d2}{y\+Exception}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} exception\+\_\+msg) noexcept
 \item 
 virtual \mbox{\hyperlink{classyLib_1_1yException_a840f89fe1c1f2e31f3e992aed2d46a35}{$\sim$y\+Exception}} () noexcept
-\item 
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
 virtual const char $\ast$ \mbox{\hyperlink{classyLib_1_1yException_ac61556e8a95a042f8bbdb342d3c74883}{what}} () noexcept
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em get the exception msg-\/str. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \mbox{\hyperlink{classyLib_1_1yException_a18d5e6a962a6d03d2b034c5c0ff7c555}{\+\_\+exception\+\_\+msg}}
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \mbox{\hyperlink{classyLib_1_1yException_afced48c293a375375d1717e9ce5ed69c}{\+\_\+exception\+\_\+msg}}
+\begin{DoxyCompactList}\small\item\em The exception msg. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+This is base-\/class of the all exception in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classyLib_1_1yException_a191fc7aef8713cf391f486f1ef1ffe7a}\label{classyLib_1_1yException_a191fc7aef8713cf391f486f1ef1ffe7a}} 
@@ -36,6 +44,17 @@ virtual const char $\ast$ \mbox{\hyperlink{classyLib_1_1yException_ac61556e8a95a
 \doxysubsubsection{\texorpdfstring{yException()}{yException()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Exception\+::y\+Exception (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+
+
+Default constructor. 
+
+Default constructor(overide)
+
+
+\begin{DoxyParams}{Parameters}
+{\em exception\+\_\+msg} & the exception msg. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classyLib_1_1yException_a679e90a31e37d6fd27f96fa93cde34d2}\label{classyLib_1_1yException_a679e90a31e37d6fd27f96fa93cde34d2}} 
 \index{yLib::yException@{yLib::yException}!yException@{yException}}
 \index{yException@{yException}!yLib::yException@{yLib::yException}}
@@ -50,6 +69,10 @@ virtual const char $\ast$ \mbox{\hyperlink{classyLib_1_1yException_ac61556e8a95a
 
 
 
+Default destructor. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classyLib_1_1yException_ac61556e8a95a042f8bbdb342d3c74883}\label{classyLib_1_1yException_ac61556e8a95a042f8bbdb342d3c74883}} 
 \index{yLib::yException@{yLib::yException}!what@{what}}
@@ -59,12 +82,23 @@ virtual const char $\ast$ \mbox{\hyperlink{classyLib_1_1yException_ac61556e8a95a
 
 
 
+get the exception msg-\/str. 
+
+\begin{DoxyReturn}{Returns}
+the exception msg-\/str 
+\end{DoxyReturn}
+
+
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classyLib_1_1yException_a18d5e6a962a6d03d2b034c5c0ff7c555}\label{classyLib_1_1yException_a18d5e6a962a6d03d2b034c5c0ff7c555}} 
+\mbox{\Hypertarget{classyLib_1_1yException_afced48c293a375375d1717e9ce5ed69c}\label{classyLib_1_1yException_afced48c293a375375d1717e9ce5ed69c}} 
 \index{yLib::yException@{yLib::yException}!\_exception\_msg@{\_exception\_msg}}
 \index{\_exception\_msg@{\_exception\_msg}!yLib::yException@{yLib::yException}}
 \doxysubsubsection{\texorpdfstring{\_exception\_msg}{\_exception\_msg}}
-{\footnotesize\ttfamily \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} y\+Lib\+::y\+Exception\+::\+\_\+exception\+\_\+msg\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Exception\+::\+\_\+exception\+\_\+msg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The exception msg. 
 
 
 

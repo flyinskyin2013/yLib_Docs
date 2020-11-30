@@ -1,6 +1,6 @@
 var ylog_8hpp =
 [
-    [ "SubCategoryProperty", "structSubCategoryProperty.html", "structSubCategoryProperty" ],
+    [ "SubCategoryProperty", "structSubCategoryProperty.html", null ],
     [ "yLog", "classyLib_1_1yLog.html", "classyLib_1_1yLog" ],
     [ "DISABLE_ALL_LOG_LEVEL", "ylog_8hpp.html#a70a0ad84667cf6a47cbdbee2d127457c", null ],
     [ "ENABLE_ALL_LOG_LEVEL", "ylog_8hpp.html#ad161b25638e6ab25dae2036ac895252d", null ],

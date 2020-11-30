@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['d_90',['D',['../classyLib_1_1yLog.html#a86e42c07624268c55e38925241cc1fa7',1,'yLib::yLog::D(const std::string fmt,...)'],['../classyLib_1_1yLog.html#af86edeb8ecfd5db64870c6c76e18a419',1,'yLib::yLog::D(std::string &amp;category_name, const std::string fmt,...)'],['../classyLib_1_1yLog.html#ad4c2d67c847cef31ad8f8de4a0b61ea9',1,'yLib::yLog::D(const char *fmt,...)'],['../classyLib_1_1yLog.html#ae89a53521d73913b97d732a96231ca60',1,'yLib::yLog::D(std::string &amp;category_name, const char *fmt,...)']]],
+  ['d_90',['D',['../classyLib_1_1yLog.html#ae333292a25e951c0453e37c4472b5cbc',1,'yLib::yLog::D(const std::string fmt,...)'],['../classyLib_1_1yLog.html#a481c2a1c79f55e9c10e0113af06994af',1,'yLib::yLog::D(std::string &amp;category_name, const std::string fmt,...)'],['../classyLib_1_1yLog.html#ad4c2d67c847cef31ad8f8de4a0b61ea9',1,'yLib::yLog::D(const char *fmt,...)'],['../classyLib_1_1yLog.html#acaa60f842c9cc2ce60b90c781cbe2d2a',1,'yLib::yLog::D(std::string &amp;category_name, const char *fmt,...)']]],
   ['data_5fbuf_91',['data_buf',['../structyHttpPostMultiPartItem.html#a98dea8d7299f151d463fd7dd6166f449',1,'yHttpPostMultiPartItem']]],
   ['data_5fval_92',['data_val',['../classyTestElementData.html#a1b956696b980c4a7129014467dff1b3e',1,'yTestElementData']]],
   ['deallocate_93',['deallocate',['../classyLib_1_1yBasicAllocator.html#ab0508bde09428fa387f61741cc1d1194',1,'yLib::yBasicAllocator']]],

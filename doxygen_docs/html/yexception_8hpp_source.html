@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('yexception_8hpp_source.html',''); init
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @Author: Sky</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @Date: 2019-09-20 17:06:18</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @LastEditors: Sky</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @LastEditTime: 2020-07-14 18:30:18</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @LastEditTime: 2020-11-30 16:46:00</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * @Description: </span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __YLIB_CORE_YEXCEPTION_HPP__</span></div>
@@ -103,50 +103,53 @@ $(document).ready(function(){initNavTree('yexception_8hpp_source.html',''); init
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceyLib.html">yLib</a>{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structyLib_1_1yExceptionTable.html">   18</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structyLib_1_1yExceptionTable.html">yExceptionTable</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">/* data */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structyLib_1_1yExceptionTable.html#a0dbc7465c72f5b0901e8cab597e872d7">   21</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structyLib_1_1yExceptionTable.html#a0dbc7465c72f5b0901e8cab597e872d7">_exception_idx</a>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structyLib_1_1yExceptionTable.html#a207af1cbaa98284cdd69ac815c714e23">   22</a></span>&#160;        <a class="code" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> <a class="code" href="structyLib_1_1yExceptionTable.html#a207af1cbaa98284cdd69ac815c714e23">_exception_msg</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0">   26</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0">yExceptionIdx</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structyLib_1_1yExceptionTable.html">   22</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structyLib_1_1yExceptionTable.html">yExceptionTable</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">/* data */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structyLib_1_1yExceptionTable.html#a0dbc7465c72f5b0901e8cab597e872d7">   25</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="structyLib_1_1yExceptionTable.html#a0dbc7465c72f5b0901e8cab597e872d7">_exception_idx</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="structyLib_1_1yExceptionTable.html#a207af1cbaa98284cdd69ac815c714e23">   26</a></span>&#160;        <a class="code" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> <a class="code" href="structyLib_1_1yExceptionTable.html#a207af1cbaa98284cdd69ac815c714e23">_exception_msg</a>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555">   28</a></span>&#160;        <a class="code" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555">IDX_RESERVE_EXCEPTION</a> = 0,</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0">   29</a></span>&#160;        <a class="code" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0">IDX_YBASIC_EXCEPTION</a> ,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classyLib_1_1yException.html">   33</a></span>&#160;    <span class="keyword">class </span>__YLIB_EXPORT__ <a class="code" href="classyLib_1_1yException.html">yException</a> <a class="code" href="yobject_8hpp.html#a456ca9afeca82fe693720d57ef746192">MACRO_PUBLIC_INHERIT_YOBJECT</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">/* data */</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classyLib_1_1yException.html#a18d5e6a962a6d03d2b034c5c0ff7c555">   37</a></span>&#160;        <a class="code" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> <a class="code" href="classyLib_1_1yException.html#a18d5e6a962a6d03d2b034c5c0ff7c555">_exception_msg</a>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classyLib_1_1yException.html">yException</a>(<span class="comment">/* args */</span>) noexcept; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classyLib_1_1yException.html">yException</a>(<span class="comment">/* args */</span>std::<span class="keywordtype">string</span> exception_msg) noexcept; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        virtual ~<a class="code" href="classyLib_1_1yException.html">yException</a>() noexcept; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        virtual const <span class="keywordtype">char</span> * what() noexcept;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif //__YLIB_CORE_YEXCEPTION_HPP__</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0">   34</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0">yExceptionIdx</a>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555">   36</a></span>&#160;        <a class="code" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555">IDX_RESERVE_EXCEPTION</a> = 0,</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0">   37</a></span>&#160;        <a class="code" href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0">IDX_YBASIC_EXCEPTION</a> ,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classyLib_1_1yException.html">   45</a></span>&#160;    <span class="keyword">class </span>__YLIB_EXPORT__ <a class="code" href="classyLib_1_1yException.html">yException</a> <a class="code" href="yobject_8hpp.html#a456ca9afeca82fe693720d57ef746192">MACRO_PUBLIC_INHERIT_YOBJECT</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">/* data */</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classyLib_1_1yException.html#afced48c293a375375d1717e9ce5ed69c">   53</a></span>&#160;        <a class="code" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> <a class="code" href="classyLib_1_1yException.html#afced48c293a375375d1717e9ce5ed69c">_exception_msg</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classyLib_1_1yException.html">yException</a>() noexcept; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classyLib_1_1yException.html">yException</a>(std::<span class="keywordtype">string</span> exception_msg) noexcept; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        virtual ~<a class="code" href="classyLib_1_1yException.html">yException</a>() noexcept; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        virtual const <span class="keywordtype">char</span> * what() noexcept;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif //__YLIB_CORE_YEXCEPTION_HPP__</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="asrc_2CMakeLists_8txt_html_a296644e9ff1d0a602b4703f361406374"><div class="ttname"><a href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">string</a></div><div class="ttdeci">module_name string(TOLOWER ${class_name} class_dir_name) set(SRC $</div><div class="ttdef"><b>Definition:</b> CMakeLists.txt:65</div></div>
-<div class="ttc" id="aclassyLib_1_1yException_html"><div class="ttname"><a href="classyLib_1_1yException.html">yLib::yException</a></div><div class="ttdef"><b>Definition:</b> yexception.hpp:34</div></div>
+<div class="ttc" id="aclassyLib_1_1yException_html"><div class="ttname"><a href="classyLib_1_1yException.html">yLib::yException</a></div><div class="ttdoc">This is base-class of the all exception in yLib.</div><div class="ttdef"><b>Definition:</b> yexception.hpp:46</div></div>
 <div class="ttc" id="aycommon_8hpp_html"><div class="ttname"><a href="ycommon_8hpp.html">ycommon.hpp</a></div></div>
 <div class="ttc" id="ayobject_8hpp_html_a456ca9afeca82fe693720d57ef746192"><div class="ttname"><a href="yobject_8hpp.html#a456ca9afeca82fe693720d57ef746192">MACRO_PUBLIC_INHERIT_YOBJECT</a></div><div class="ttdeci">#define MACRO_PUBLIC_INHERIT_YOBJECT</div><div class="ttdoc">The public inherit from yObject.</div><div class="ttdef"><b>Definition:</b> yobject.hpp:101</div></div>
-<div class="ttc" id="anamespaceyLib_html_ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555"><div class="ttname"><a href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555">yLib::IDX_RESERVE_EXCEPTION</a></div><div class="ttdeci">@ IDX_RESERVE_EXCEPTION</div><div class="ttdef"><b>Definition:</b> yexception.hpp:28</div></div>
-<div class="ttc" id="aclassyLib_1_1yException_html_a18d5e6a962a6d03d2b034c5c0ff7c555"><div class="ttname"><a href="classyLib_1_1yException.html#a18d5e6a962a6d03d2b034c5c0ff7c555">yLib::yException::_exception_msg</a></div><div class="ttdeci">std::string _exception_msg</div><div class="ttdef"><b>Definition:</b> yexception.hpp:37</div></div>
-<div class="ttc" id="astructyLib_1_1yExceptionTable_html_a207af1cbaa98284cdd69ac815c714e23"><div class="ttname"><a href="structyLib_1_1yExceptionTable.html#a207af1cbaa98284cdd69ac815c714e23">yLib::yExceptionTable::_exception_msg</a></div><div class="ttdeci">std::string _exception_msg</div><div class="ttdef"><b>Definition:</b> yexception.hpp:22</div></div>
-<div class="ttc" id="anamespaceyLib_html_ac6be0d2eaca6d9f43e541be222ad62f0"><div class="ttname"><a href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0">yLib::yExceptionIdx</a></div><div class="ttdeci">yExceptionIdx</div><div class="ttdef"><b>Definition:</b> yexception.hpp:26</div></div>
-<div class="ttc" id="astructyLib_1_1yExceptionTable_html"><div class="ttname"><a href="structyLib_1_1yExceptionTable.html">yLib::yExceptionTable</a></div><div class="ttdef"><b>Definition:</b> yexception.hpp:19</div></div>
-<div class="ttc" id="astructyLib_1_1yExceptionTable_html_a0dbc7465c72f5b0901e8cab597e872d7"><div class="ttname"><a href="structyLib_1_1yExceptionTable.html#a0dbc7465c72f5b0901e8cab597e872d7">yLib::yExceptionTable::_exception_idx</a></div><div class="ttdeci">int _exception_idx</div><div class="ttdef"><b>Definition:</b> yexception.hpp:21</div></div>
+<div class="ttc" id="aclassyLib_1_1yException_html_afced48c293a375375d1717e9ce5ed69c"><div class="ttname"><a href="classyLib_1_1yException.html#afced48c293a375375d1717e9ce5ed69c">yLib::yException::_exception_msg</a></div><div class="ttdeci">std::string _exception_msg</div><div class="ttdoc">The exception msg.</div><div class="ttdef"><b>Definition:</b> yexception.hpp:53</div></div>
+<div class="ttc" id="anamespaceyLib_html_ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555"><div class="ttname"><a href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555">yLib::IDX_RESERVE_EXCEPTION</a></div><div class="ttdeci">@ IDX_RESERVE_EXCEPTION</div><div class="ttdef"><b>Definition:</b> yexception.hpp:36</div></div>
+<div class="ttc" id="astructyLib_1_1yExceptionTable_html_a207af1cbaa98284cdd69ac815c714e23"><div class="ttname"><a href="structyLib_1_1yExceptionTable.html#a207af1cbaa98284cdd69ac815c714e23">yLib::yExceptionTable::_exception_msg</a></div><div class="ttdeci">std::string _exception_msg</div><div class="ttdef"><b>Definition:</b> yexception.hpp:26</div></div>
+<div class="ttc" id="anamespaceyLib_html_ac6be0d2eaca6d9f43e541be222ad62f0"><div class="ttname"><a href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0">yLib::yExceptionIdx</a></div><div class="ttdeci">yExceptionIdx</div><div class="ttdoc">This is a index of exception table.</div><div class="ttdef"><b>Definition:</b> yexception.hpp:34</div></div>
+<div class="ttc" id="astructyLib_1_1yExceptionTable_html"><div class="ttname"><a href="structyLib_1_1yExceptionTable.html">yLib::yExceptionTable</a></div><div class="ttdoc">This is a exception table.</div><div class="ttdef"><b>Definition:</b> yexception.hpp:23</div></div>
+<div class="ttc" id="astructyLib_1_1yExceptionTable_html_a0dbc7465c72f5b0901e8cab597e872d7"><div class="ttname"><a href="structyLib_1_1yExceptionTable.html#a0dbc7465c72f5b0901e8cab597e872d7">yLib::yExceptionTable::_exception_idx</a></div><div class="ttdeci">int _exception_idx</div><div class="ttdef"><b>Definition:</b> yexception.hpp:25</div></div>
 <div class="ttc" id="anamespaceyLib_html"><div class="ttname"><a href="namespaceyLib.html">yLib</a></div><div class="ttdoc">This is a top namespace in yLib.</div><div class="ttdef"><b>Definition:</b> ylinuxerrnohelper.cpp:28</div></div>
-<div class="ttc" id="anamespaceyLib_html_ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0"><div class="ttname"><a href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0">yLib::IDX_YBASIC_EXCEPTION</a></div><div class="ttdeci">@ IDX_YBASIC_EXCEPTION</div><div class="ttdef"><b>Definition:</b> yexception.hpp:29</div></div>
+<div class="ttc" id="anamespaceyLib_html_ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0"><div class="ttname"><a href="namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0">yLib::IDX_YBASIC_EXCEPTION</a></div><div class="ttdeci">@ IDX_YBASIC_EXCEPTION</div><div class="ttdef"><b>Definition:</b> yexception.hpp:37</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

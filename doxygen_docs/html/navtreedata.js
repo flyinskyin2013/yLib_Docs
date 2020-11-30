@@ -25,6 +25,7 @@
 var NAVTREE =
 [
   [ "yLib", "index.html", [
+    [ "Bug List", "bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -66,9 +67,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "all__in__one__tests_8cpp.html",
-"classyLib_1_1yLog.html#a438559b1efead2368afa190c6d18c270",
+"classyLib_1_1yLog.html#a3a6435a4c0c2f8ed41465ebcc168e3ee",
 "functions_m.html",
-"ylinuxerrnohelper_8cpp.html#a71e7b9579ac443721bfc9d78c5f5507d"
+"ylinuxerrnohelper_8cpp.html#a192f1eab564c98a601d838d220e4f5c4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

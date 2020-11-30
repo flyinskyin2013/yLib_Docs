@@ -2,26 +2,34 @@
 \label{classyLib_1_1yLinuxErrnoHelper}\index{yLib::yLinuxErrnoHelper@{yLib::yLinuxErrnoHelper}}
 
 
+This is a helper class of errno.  
+
+
+
+
 {\ttfamily \#include $<$ylinuxerrnohelper.\+hpp$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yLinuxErrnoHelper_ae3c123a4319f76a3da9d07f3f567cf5a}{$\sim$y\+Linux\+Errno\+Helper}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& \mbox{\hyperlink{classyLib_1_1yLinuxErrnoHelper_ae8fc560e8d068299c10908504af9bd32}{Get\+Detail\+By\+Errno}} (uint16\+\_\+t errno\+\_\+)
-\item 
-static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& \mbox{\hyperlink{classyLib_1_1yLinuxErrnoHelper_a1ca0c7ed593e4df22b5bbc60c3dab8ff}{Get\+Short\+Hand\+By\+Errno}} (uint16\+\_\+t errno\+\_\+)
-\end{DoxyCompactItemize}
+static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& \mbox{\hyperlink{classyLib_1_1yLinuxErrnoHelper_a70241103f9e24c97ebce488ed3c17d86}{Get\+Detail\+By\+Errno}} (uint16\+\_\+t errno\+\_\+)
+\begin{DoxyCompactList}\small\item\em Move constructor. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& \mbox{\hyperlink{classyLib_1_1yLinuxErrnoHelper_ae5ef1bfbac6ad10474c19b5b85812d3f}{Get\+Short\+Hand\+By\+Errno}} (uint16\+\_\+t errno\+\_\+)
+\begin{DoxyCompactList}\small\item\em a shorthand string about errno. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yLinuxErrnoHelper_aeb592b6486e47d661a42b109fe3bdfc4}{y\+Linux\+Errno\+Helper}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+This is a helper class of errno. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classyLib_1_1yLinuxErrnoHelper_aeb592b6486e47d661a42b109fe3bdfc4}\label{classyLib_1_1yLinuxErrnoHelper_aeb592b6486e47d661a42b109fe3bdfc4}} 
@@ -30,6 +38,13 @@ static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f36140
 \doxysubsubsection{\texorpdfstring{yLinuxErrnoHelper()}{yLinuxErrnoHelper()}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Linux\+Errno\+Helper\+::y\+Linux\+Errno\+Helper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+Default constructor. 
+
+\begin{DoxyWarning}{Warning}
+This is a static class, it can\textquotesingle{}t be instanced. 
+\end{DoxyWarning}
 \mbox{\Hypertarget{classyLib_1_1yLinuxErrnoHelper_ae3c123a4319f76a3da9d07f3f567cf5a}\label{classyLib_1_1yLinuxErrnoHelper_ae3c123a4319f76a3da9d07f3f567cf5a}} 
 \index{yLib::yLinuxErrnoHelper@{yLib::yLinuxErrnoHelper}!````~yLinuxErrnoHelper@{$\sim$yLinuxErrnoHelper}}
 \index{````~yLinuxErrnoHelper@{$\sim$yLinuxErrnoHelper}!yLib::yLinuxErrnoHelper@{yLib::yLinuxErrnoHelper}}
@@ -38,19 +53,50 @@ static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f36140
 
 
 
+Default destructor. 
+
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classyLib_1_1yLinuxErrnoHelper_ae8fc560e8d068299c10908504af9bd32}\label{classyLib_1_1yLinuxErrnoHelper_ae8fc560e8d068299c10908504af9bd32}} 
+\mbox{\Hypertarget{classyLib_1_1yLinuxErrnoHelper_a70241103f9e24c97ebce488ed3c17d86}\label{classyLib_1_1yLinuxErrnoHelper_a70241103f9e24c97ebce488ed3c17d86}} 
 \index{yLib::yLinuxErrnoHelper@{yLib::yLinuxErrnoHelper}!GetDetailByErrno@{GetDetailByErrno}}
 \index{GetDetailByErrno@{GetDetailByErrno}!yLib::yLinuxErrnoHelper@{yLib::yLinuxErrnoHelper}}
 \doxysubsubsection{\texorpdfstring{GetDetailByErrno()}{GetDetailByErrno()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& y\+Lib\+::y\+Linux\+Errno\+Helper\+::\+Get\+Detail\+By\+Errno (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{errno\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& y\+Lib\+::y\+Linux\+Errno\+Helper\+::\+Get\+Detail\+By\+Errno (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{errno\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
-\mbox{\Hypertarget{classyLib_1_1yLinuxErrnoHelper_a1ca0c7ed593e4df22b5bbc60c3dab8ff}\label{classyLib_1_1yLinuxErrnoHelper_a1ca0c7ed593e4df22b5bbc60c3dab8ff}} 
+
+
+Move constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em errno\+\_\+} & the linux errno. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a detail string about errno. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yLinuxErrnoHelper_ae5ef1bfbac6ad10474c19b5b85812d3f}\label{classyLib_1_1yLinuxErrnoHelper_ae5ef1bfbac6ad10474c19b5b85812d3f}} 
 \index{yLib::yLinuxErrnoHelper@{yLib::yLinuxErrnoHelper}!GetShortHandByErrno@{GetShortHandByErrno}}
 \index{GetShortHandByErrno@{GetShortHandByErrno}!yLib::yLinuxErrnoHelper@{yLib::yLinuxErrnoHelper}}
 \doxysubsubsection{\texorpdfstring{GetShortHandByErrno()}{GetShortHandByErrno()}}
-{\footnotesize\ttfamily const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& y\+Lib\+::y\+Linux\+Errno\+Helper\+::\+Get\+Short\+Hand\+By\+Errno (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{errno\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \& y\+Lib\+::y\+Linux\+Errno\+Helper\+::\+Get\+Short\+Hand\+By\+Errno (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{errno\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+a shorthand string about errno. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em errno\+\_\+} & the linux errno. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

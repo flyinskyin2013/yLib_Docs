@@ -1,6 +1,8 @@
 var annotated_dup =
 [
     [ "yLib", "namespaceyLib.html", "namespaceyLib" ],
+    [ "struct", "structstruct.html", null ],
+    [ "SubCategoryProperty", "structSubCategoryProperty.html", null ],
     [ "SubCategoryProperty", "structSubCategoryProperty.html", "structSubCategoryProperty" ],
     [ "tmp_data", "classtmp__data.html", "classtmp__data" ],
     [ "yCurlParam", "structyCurlParam.html", "structyCurlParam" ],

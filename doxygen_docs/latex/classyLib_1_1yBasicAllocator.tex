@@ -2,6 +2,11 @@
 \label{classyLib_1_1yBasicAllocator}\index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
 
 
+This is a basic mem-\/allocator in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}.  
+
+
+
+
 {\ttfamily \#include $<$yallocator.\+hpp$>$}
 
 Inheritance diagram for y\+Lib\+::y\+Basic\+Allocator$<$ T $>$\+:\begin{figure}[H]
@@ -14,7 +19,7 @@ Inheritance diagram for y\+Lib\+::y\+Basic\+Allocator$<$ T $>$\+:\begin{figure}[
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structyLib_1_1yBasicAllocator_1_1rebind}{rebind}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The element of \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Basic\+Allocator}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,23 +45,29 @@ typedef ptrdiff\+\_\+t \mbox{\hyperlink{classyLib_1_1yBasicAllocator_add7cb549cd
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a47124bf9d71472efa81048b7fbe4414d}{allocate}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} n, const void $\ast$hint=static\+\_\+cast$<$ const void $\ast$ $>$(0))
-\item 
+\begin{DoxyCompactList}\small\item\em Allocate memory. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ab0508bde09428fa387f61741cc1d1194}{deallocate}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p, \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} n)
-\item 
+\begin{DoxyCompactList}\small\item\em free memory. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a97c8d2509160ce700d1c6887e721ea9e}{construct}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p, \mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}} value)
-\item 
+\begin{DoxyCompactList}\small\item\em copy-\/construct a obj on exsited memory. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a8ae63e65f6b5e6705746b92ce4a5ac52}{construct}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p, \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}{const\+\_\+rreference}} value)
-\item 
+\begin{DoxyCompactList}\small\item\em move-\/construct a obj on exsited memory. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a21b29dcbc20277148840485b8c78b5d9}{destroy}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} p)
-\item 
+\begin{DoxyCompactList}\small\item\em destructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae8cac14e62a1e99461078930bfa0f4aa}{max\+\_\+size}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em calculate the max-\/num of T. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a5e94ddd966982f280bd0768757463a65}{address}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}{reference}} x) const
-\item 
+\begin{DoxyCompactList}\small\item\em calculate the addr of reference(x). \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}{const\+\_\+pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a8b114befe01f3490c3b5bcd84db9a32b}{address}} (\mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}} x) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em calculate the const addr of reference(x).. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class y\+Lib\+::y\+Basic\+Allocator$<$ T $>$}
+
+This is a basic mem-\/allocator in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}. 
 
 \doxysubsection{Member Typedef Documentation}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}\label{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}} 
@@ -132,6 +143,21 @@ typedef T \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+All
 {\footnotesize\ttfamily template$<$class T $>$ \\
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_a7cb0b3a23165aeab48a8cfa790b11560}{const\+\_\+pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}}}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+calculate the const addr of reference(x).. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the obj will be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+the reference(x)\textquotesingle{}s const addr 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a5e94ddd966982f280bd0768757463a65}\label{classyLib_1_1yBasicAllocator_a5e94ddd966982f280bd0768757463a65}} 
 \index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!address@{address}}
 \index{address@{address}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
@@ -139,6 +165,26 @@ typedef T \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+All
 {\footnotesize\ttfamily template$<$class T $>$ \\
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_a6b07a6bf07a98c8e2830b3bd4acccaf6}{reference}}}]{x }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+calculate the addr of reference(x). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the obj will be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+the reference(x)\textquotesingle{}s addr 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em } & \\
+\hline
+\end{DoxyRetVals}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a47124bf9d71472efa81048b7fbe4414d}\label{classyLib_1_1yBasicAllocator_a47124bf9d71472efa81048b7fbe4414d}} 
 \index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!allocate@{allocate}}
 \index{allocate@{allocate}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
@@ -146,6 +192,23 @@ typedef T \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+All
 {\footnotesize\ttfamily template$<$class T $>$ \\
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::allocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}}}]{n,  }\item[{const void $\ast$}]{hint = {\ttfamily static\+\_\+cast$<$const~void$\ast$$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Allocate memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the num of sizeof(\+T) will be allocted. \\
+\hline
+{\em hint} & not use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+Return a pointer that size is n$\ast$sizeof(T) bytes. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a97c8d2509160ce700d1c6887e721ea9e}\label{classyLib_1_1yBasicAllocator_a97c8d2509160ce700d1c6887e721ea9e}} 
 \index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!construct@{construct}}
 \index{construct@{construct}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
@@ -153,6 +216,23 @@ typedef T \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+All
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p,  }\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_aa89d64c8f2e2bfa3421c635d6f4e54db}{const\+\_\+reference}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+copy-\/construct a obj on exsited memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the pointer will be constructed. \\
+\hline
+{\em value} & the default val for constructed obj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a8ae63e65f6b5e6705746b92ce4a5ac52}\label{classyLib_1_1yBasicAllocator_a8ae63e65f6b5e6705746b92ce4a5ac52}} 
 \index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!construct@{construct}}
 \index{construct@{construct}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
@@ -160,6 +240,23 @@ void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocato
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p,  }\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ad773fe9868b90172228552c538bbfa91}{const\+\_\+rreference}}}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+move-\/construct a obj on exsited memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the pointer will be constructed. \\
+\hline
+{\em value} & the default val for constructed obj. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ab0508bde09428fa387f61741cc1d1194}\label{classyLib_1_1yBasicAllocator_ab0508bde09428fa387f61741cc1d1194}} 
 \index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!deallocate@{deallocate}}
 \index{deallocate@{deallocate}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
@@ -167,6 +264,23 @@ void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocato
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::deallocate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p,  }\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+free memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the pointer will be freed. \\
+\hline
+{\em n} & not use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_a21b29dcbc20277148840485b8c78b5d9}\label{classyLib_1_1yBasicAllocator_a21b29dcbc20277148840485b8c78b5d9}} 
 \index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!destroy@{destroy}}
 \index{destroy@{destroy}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
@@ -174,6 +288,21 @@ void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocato
 {\footnotesize\ttfamily template$<$class T $>$ \\
 void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yBasicAllocator_adc6649dc9cdb1db1e9414654e1d1f4dc}{pointer}}}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+destructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the pointer will be destructed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classyLib_1_1yBasicAllocator_ae8cac14e62a1e99461078930bfa0f4aa}\label{classyLib_1_1yBasicAllocator_ae8cac14e62a1e99461078930bfa0f4aa}} 
 \index{yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}!max\_size@{max\_size}}
 \index{max\_size@{max\_size}!yLib::yBasicAllocator$<$ T $>$@{yLib::yBasicAllocator$<$ T $>$}}
@@ -181,6 +310,16 @@ void \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocato
 {\footnotesize\ttfamily template$<$class T $>$ \\
 \mbox{\hyperlink{classyLib_1_1yBasicAllocator_ae80e1085e61306bbe08b7b7df203c039}{size\+\_\+type}} \mbox{\hyperlink{classyLib_1_1yBasicAllocator}{y\+Lib\+::y\+Basic\+Allocator}}$<$ T $>$\+::max\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+calculate the max-\/num of T. 
+
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\begin{DoxyReturn}{Returns}
+the max-\/num of T. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
