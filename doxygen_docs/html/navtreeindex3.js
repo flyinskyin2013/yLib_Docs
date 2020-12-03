@@ -1,8 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"ylinuxerrnohelper_8cpp.html#a192f1eab564c98a601d838d220e4f5c4":[3,0,2,0,3,2],
-"ylinuxerrnohelper_8cpp.html#a3fb29631626dfdd6abfc4a300f21f789":[3,0,2,0,3,3],
-"ylinuxerrnohelper_8cpp.html#a71e7b9579ac443721bfc9d78c5f5507d":[3,0,2,0,3,1],
 "ylinuxerrnohelper_8hpp.html":[3,0,1,1,7],
 "ylinuxerrnohelper_8hpp_source.html":[3,0,1,1,7],
 "ylog_8cpp.html":[3,0,2,3,4],

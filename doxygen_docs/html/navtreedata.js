@@ -69,7 +69,7 @@ var NAVTREEINDEX =
 "all__in__one__tests_8cpp.html",
 "classyLib_1_1yLog.html#a3a6435a4c0c2f8ed41465ebcc168e3ee",
 "functions_m.html",
-"ylinuxerrnohelper_8cpp.html#a192f1eab564c98a601d838d220e4f5c4"
+"ylinuxerrnohelper_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

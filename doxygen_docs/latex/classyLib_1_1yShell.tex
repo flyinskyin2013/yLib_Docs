@@ -2,6 +2,11 @@
 \label{classyLib_1_1yShell}\index{yLib::yShell@{yLib::yShell}}
 
 
+This class can run our cmd in linux(it is based on popen/pclose).  
+
+
+
+
 {\ttfamily \#include $<$yshell.\+hpp$>$}
 
 Inheritance diagram for y\+Lib\+::y\+Shell\+:\begin{figure}[H]
@@ -14,31 +19,39 @@ Inheritance diagram for y\+Lib\+::y\+Shell\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yShell_a3a8f3cbfa59d627e56875e15fa0fcf96}{y\+Shell}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yShell_a65da0ea5c7b9662ec33328571f2a3967}{$\sim$y\+Shell}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
 \+\_\+\+\_\+\+Y\+L\+I\+B\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+ int \mbox{\hyperlink{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}{Run\+Shell\+Command}} (std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd)
-\item 
+\begin{DoxyCompactList}\small\item\em run user\textquotesingle{}s cmd \end{DoxyCompactList}\item 
 int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} (std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd\+\_\+, std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd\+\_\+env\+\_\+, std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&cmd\+\_\+result\+\_\+)
-\item 
+\begin{DoxyCompactList}\small\item\em run user\textquotesingle{}s cmd with env and get the result of rum-\/cmd. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classyLib_1_1yShell_a795ebc9b866c8cad6810de33d45a60d6}{Reconfigy\+Shell\+Buffer}} (uint64\+\_\+t cmd\+\_\+vec\+\_\+size\+\_\+, uint64\+\_\+t cmd\+\_\+env\+\_\+vec\+\_\+size\+\_\+, uint64\+\_\+t \+\_\+result\+\_\+line\+\_\+buf\+\_\+size\+\_\+)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em we can reconfig cmd\+\_\+, cmd\+\_\+env\+\_\+, cmd\+\_\+result\+\_\+\textquotesingle{}s capcity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a1667655bd02e01bb85a4cc14d5091b3d}{cmd\+\_\+vec\+\_\+size}} = 20
-\item 
+\begin{DoxyCompactList}\small\item\em The cmd\+\_\+ max size. \end{DoxyCompactList}\item 
 uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a6ebeda8bdbe0593fb7c84f53b5158a28}{cmd\+\_\+env\+\_\+vec\+\_\+size}} = 20
-\item 
+\begin{DoxyCompactList}\small\item\em The cmd-\/env max size. \end{DoxyCompactList}\item 
 uint64\+\_\+t \mbox{\hyperlink{classyLib_1_1yShell_a2c83bb1f0f79022fe2cd7c50505638d3}{\+\_\+result\+\_\+line\+\_\+buf\+\_\+size}} = 1024
-\item 
-char $\ast$$\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a24e2ae313f0f97488ad4f8f704adfb6f}{parse\+\_\+cmd\+\_\+array}} = nullptr
-\item 
-char $\ast$$\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a4aa60b6ed076e260eaa5601a6f3eda1b}{parse\+\_\+cmd\+\_\+env\+\_\+array}} = nullptr
-\item 
-char $\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cbbc}{result\+\_\+read\+\_\+buffer}} = nullptr
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em The result-\/buffer max size. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a94296a7abb9c955b5482b8e2e0910783}{parse\+\_\+cmd\+\_\+array}} = nullptr
+\begin{DoxyCompactList}\small\item\em The pointer of cmd-\/buffer parsed. \end{DoxyCompactList}\item 
+char $\ast$$\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a04db935511c5cf3631e45fc48a93744f}{parse\+\_\+cmd\+\_\+env\+\_\+array}} = nullptr
+\begin{DoxyCompactList}\small\item\em The pointer of cmd-\/env-\/buffer parsed. \end{DoxyCompactList}\item 
+char $\ast$ \mbox{\hyperlink{classyLib_1_1yShell_aea63af8a21c2f04a5f8f446fd95d0793}{result\+\_\+read\+\_\+buffer}} = nullptr
+\begin{DoxyCompactList}\small\item\em The pointer of result-\/buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class can run our cmd in linux(it is based on popen/pclose). 
+
+\begin{DoxyWarning}{Warning}
+We will support windows in the future. 
+\end{DoxyWarning}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -48,11 +61,19 @@ char $\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cb
 \doxysubsubsection{\texorpdfstring{yShell()}{yShell()}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Shell\+::y\+Shell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Default constructor. 
+
 \mbox{\Hypertarget{classyLib_1_1yShell_a65da0ea5c7b9662ec33328571f2a3967}\label{classyLib_1_1yShell_a65da0ea5c7b9662ec33328571f2a3967}} 
 \index{yLib::yShell@{yLib::yShell}!````~yShell@{$\sim$yShell}}
 \index{````~yShell@{$\sim$yShell}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{$\sim$yShell()}{~yShell()}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Shell\+::$\sim$y\+Shell (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default destructor. 
 
 
 
@@ -63,18 +84,88 @@ char $\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cb
 \doxysubsubsection{\texorpdfstring{ReconfigyShellBuffer()}{ReconfigyShellBuffer()}}
 {\footnotesize\ttfamily void y\+Lib\+::y\+Shell\+::\+Reconfigy\+Shell\+Buffer (\begin{DoxyParamCaption}\item[{uint64\+\_\+t}]{cmd\+\_\+vec\+\_\+size\+\_\+,  }\item[{uint64\+\_\+t}]{cmd\+\_\+env\+\_\+vec\+\_\+size\+\_\+,  }\item[{uint64\+\_\+t}]{\+\_\+result\+\_\+line\+\_\+buf\+\_\+size\+\_\+ }\end{DoxyParamCaption})}
 
+
+
+we can reconfig cmd\+\_\+, cmd\+\_\+env\+\_\+, cmd\+\_\+result\+\_\+\textquotesingle{}s capcity. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} \textquotesingle{}s param. 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+vec\+\_\+size\+\_\+} & cmd-\/vec max size \\
+\hline
+{\em cmd\+\_\+env\+\_\+vec\+\_\+size\+\_\+} & cmd-\/env-\/vec max size \\
+\hline
+{\em $<$em$>$result\+\_\+line\+\_\+buf\+\_\+size$<$/em$>$} & result-\/line-\/buffer-\/vec max size\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None.
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
 \mbox{\Hypertarget{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}\label{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}} 
 \index{yLib::yShell@{yLib::yShell}!RunShellCommand@{RunShellCommand}}
 \index{RunShellCommand@{RunShellCommand}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{RunShellCommand()}{RunShellCommand()}}
 {\footnotesize\ttfamily int y\+Lib\+::y\+Shell\+::\+Run\+Shell\+Command (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd }\end{DoxyParamCaption})}
 
+
+
+run user\textquotesingle{}s cmd 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & we want to run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The status of run-\/cmd 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & run cmd ok. \\
+\hline
+{\em -\/1} & run cmd error.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+This op is deprecated. 
+\end{DoxyWarning}
 \mbox{\Hypertarget{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}\label{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}} 
 \index{yLib::yShell@{yLib::yShell}!RunShellCommandEx@{RunShellCommandEx}}
 \index{RunShellCommandEx@{RunShellCommandEx}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{RunShellCommandEx()}{RunShellCommandEx()}}
 {\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Shell\+::\+Run\+Shell\+Command\+Ex (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd\+\_\+,  }\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd\+\_\+env\+\_\+,  }\item[{std\+::vector$<$ \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} $>$ \&}]{cmd\+\_\+result\+\_\+ }\end{DoxyParamCaption})}
 
+
+
+run user\textquotesingle{}s cmd with env and get the result of rum-\/cmd. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd\+\_\+} & we want to run, cmd\+\_\+\textquotesingle{}s size must be less than 20. \\
+\hline
+{\em cmd\+\_\+env\+\_\+} & the env of cmd\+\_\+, cmd\+\_\+env\+\_\+\textquotesingle{}s size must be less than 20. \\
+\hline
+{\em cmd\+\_\+result\+\_\+} & the result of cmd\+\_\+, \+\_\+result\+\_\+line\+\_\+buf\+\_\+size\textquotesingle{}s size must be less than 1024.(\+\_\+result\+\_\+line\+\_\+buf\+\_\+size is max line-\/length of cmd\+\_\+result).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The status of run-\/cmd 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & run cmd ok. \\
+\hline
+{\em -\/1} & run cmd error.\\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
 
 
 \doxysubsection{Member Data Documentation}
@@ -84,36 +175,78 @@ char $\ast$ \mbox{\hyperlink{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cb
 \doxysubsubsection{\texorpdfstring{\_result\_line\_buf\_size}{\_result\_line\_buf\_size}}
 {\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Shell\+::\+\_\+result\+\_\+line\+\_\+buf\+\_\+size = 1024\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The result-\/buffer max size. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} \textquotesingle{}s param 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classyLib_1_1yShell_a6ebeda8bdbe0593fb7c84f53b5158a28}\label{classyLib_1_1yShell_a6ebeda8bdbe0593fb7c84f53b5158a28}} 
 \index{yLib::yShell@{yLib::yShell}!cmd\_env\_vec\_size@{cmd\_env\_vec\_size}}
 \index{cmd\_env\_vec\_size@{cmd\_env\_vec\_size}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{cmd\_env\_vec\_size}{cmd\_env\_vec\_size}}
 {\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Shell\+::cmd\+\_\+env\+\_\+vec\+\_\+size = 20\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The cmd-\/env max size. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} \textquotesingle{}s param 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classyLib_1_1yShell_a1667655bd02e01bb85a4cc14d5091b3d}\label{classyLib_1_1yShell_a1667655bd02e01bb85a4cc14d5091b3d}} 
 \index{yLib::yShell@{yLib::yShell}!cmd\_vec\_size@{cmd\_vec\_size}}
 \index{cmd\_vec\_size@{cmd\_vec\_size}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{cmd\_vec\_size}{cmd\_vec\_size}}
 {\footnotesize\ttfamily uint64\+\_\+t y\+Lib\+::y\+Shell\+::cmd\+\_\+vec\+\_\+size = 20\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yShell_a24e2ae313f0f97488ad4f8f704adfb6f}\label{classyLib_1_1yShell_a24e2ae313f0f97488ad4f8f704adfb6f}} 
+
+
+The cmd\+\_\+ max size. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}{Run\+Shell\+Command}} / \mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} \textquotesingle{}s param 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classyLib_1_1yShell_a94296a7abb9c955b5482b8e2e0910783}\label{classyLib_1_1yShell_a94296a7abb9c955b5482b8e2e0910783}} 
 \index{yLib::yShell@{yLib::yShell}!parse\_cmd\_array@{parse\_cmd\_array}}
 \index{parse\_cmd\_array@{parse\_cmd\_array}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{parse\_cmd\_array}{parse\_cmd\_array}}
-{\footnotesize\ttfamily char$\ast$ $\ast$ y\+Lib\+::y\+Shell\+::parse\+\_\+cmd\+\_\+array = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily char $\ast$$\ast$ y\+Lib\+::y\+Shell\+::parse\+\_\+cmd\+\_\+array = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yShell_a4aa60b6ed076e260eaa5601a6f3eda1b}\label{classyLib_1_1yShell_a4aa60b6ed076e260eaa5601a6f3eda1b}} 
+
+
+The pointer of cmd-\/buffer parsed. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classyLib_1_1yShell_adb8c2b97b7a2772f21cbe5937f4e9716}{Run\+Shell\+Command}} / \mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} \textquotesingle{}s param 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classyLib_1_1yShell_a04db935511c5cf3631e45fc48a93744f}\label{classyLib_1_1yShell_a04db935511c5cf3631e45fc48a93744f}} 
 \index{yLib::yShell@{yLib::yShell}!parse\_cmd\_env\_array@{parse\_cmd\_env\_array}}
 \index{parse\_cmd\_env\_array@{parse\_cmd\_env\_array}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{parse\_cmd\_env\_array}{parse\_cmd\_env\_array}}
-{\footnotesize\ttfamily char$\ast$ $\ast$ y\+Lib\+::y\+Shell\+::parse\+\_\+cmd\+\_\+env\+\_\+array = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily char $\ast$$\ast$ y\+Lib\+::y\+Shell\+::parse\+\_\+cmd\+\_\+env\+\_\+array = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cbbc}\label{classyLib_1_1yShell_a42f88b876fa838b2814597d7a537cbbc}} 
+
+
+The pointer of cmd-\/env-\/buffer parsed. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} \textquotesingle{}s param 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classyLib_1_1yShell_aea63af8a21c2f04a5f8f446fd95d0793}\label{classyLib_1_1yShell_aea63af8a21c2f04a5f8f446fd95d0793}} 
 \index{yLib::yShell@{yLib::yShell}!result\_read\_buffer@{result\_read\_buffer}}
 \index{result\_read\_buffer@{result\_read\_buffer}!yLib::yShell@{yLib::yShell}}
 \doxysubsubsection{\texorpdfstring{result\_read\_buffer}{result\_read\_buffer}}
-{\footnotesize\ttfamily char$\ast$ y\+Lib\+::y\+Shell\+::result\+\_\+read\+\_\+buffer = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily char $\ast$ y\+Lib\+::y\+Shell\+::result\+\_\+read\+\_\+buffer = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
+
+
+The pointer of result-\/buffer. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classyLib_1_1yShell_a0a35adb0a8c0b12c490c9c7c7e58d370}{Run\+Shell\+Command\+Ex}} \textquotesingle{}s param 
+\end{DoxySeeAlso}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

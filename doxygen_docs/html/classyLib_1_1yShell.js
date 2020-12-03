@@ -8,7 +8,7 @@ var classyLib_1_1yShell =
     [ "_result_line_buf_size", "classyLib_1_1yShell.html#a2c83bb1f0f79022fe2cd7c50505638d3", null ],
     [ "cmd_env_vec_size", "classyLib_1_1yShell.html#a6ebeda8bdbe0593fb7c84f53b5158a28", null ],
     [ "cmd_vec_size", "classyLib_1_1yShell.html#a1667655bd02e01bb85a4cc14d5091b3d", null ],
-    [ "parse_cmd_array", "classyLib_1_1yShell.html#a24e2ae313f0f97488ad4f8f704adfb6f", null ],
-    [ "parse_cmd_env_array", "classyLib_1_1yShell.html#a4aa60b6ed076e260eaa5601a6f3eda1b", null ],
-    [ "result_read_buffer", "classyLib_1_1yShell.html#a42f88b876fa838b2814597d7a537cbbc", null ]
+    [ "parse_cmd_array", "classyLib_1_1yShell.html#a94296a7abb9c955b5482b8e2e0910783", null ],
+    [ "parse_cmd_env_array", "classyLib_1_1yShell.html#a04db935511c5cf3631e45fc48a93744f", null ],
+    [ "result_read_buffer", "classyLib_1_1yShell.html#aea63af8a21c2f04a5f8f446fd95d0793", null ]
 ];

@@ -5,7 +5,7 @@ var classyLib_1_1yLog =
     [ "yLog", "classyLib_1_1yLog.html#a87aa22ca30e7786efdae21bf449f9775", null ],
     [ "~yLog", "classyLib_1_1yLog.html#ae982bcb94b3ea46e9f9c1673c28f5051", null ],
     [ "_ylog_log_impl", "classyLib_1_1yLog.html#a3b94b24d2b314508a999dff2ff808873", null ],
-    [ "_ylog_log_impl", "classyLib_1_1yLog.html#aa5c38dddbbd2368e5fa00ec82f018da7", null ],
+    [ "_ylog_log_impl", "classyLib_1_1yLog.html#a7d8fa5ca875def017083b301348e9606", null ],
     [ "D", "classyLib_1_1yLog.html#ad4c2d67c847cef31ad8f8de4a0b61ea9", null ],
     [ "D", "classyLib_1_1yLog.html#ae333292a25e951c0453e37c4472b5cbc", null ],
     [ "D", "classyLib_1_1yLog.html#acaa60f842c9cc2ce60b90c781cbe2d2a", null ],

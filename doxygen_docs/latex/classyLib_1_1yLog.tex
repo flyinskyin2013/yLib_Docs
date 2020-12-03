@@ -2,7 +2,7 @@
 \label{classyLib_1_1yLog}\index{yLib::yLog@{yLib::yLog}}
 
 
-This is log-\/class based on \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}.  
+This is log-\/class based on log4cpp in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}.  
 
 
 
@@ -30,15 +30,15 @@ Inheritance diagram for y\+Lib\+::y\+Log\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a3cb37921f1afd01980227ea06b312963}{Set\+Log4cpp}} (bool enable\+\_\+log4cpp=false, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} log\+\_\+path=\char`\"{}log4cplus.\+properties\char`\"{})
-\begin{DoxyCompactList}\small\item\em Enable or disable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Enable or disable log4cpp. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a0c96751734d1bc64d7f0de6af0080845}{Set\+Log4cpp\+Sub\+Category}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} category\+\_\+name)
-\begin{DoxyCompactList}\small\item\em Create a sub-\/category for \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Create a sub-\/category for log4cpp. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a182dc8e5ecbdfd107f96141c7eaa897a}{Set\+Process\+Safety\+Feature}} (bool enable\+\_\+feature)
 \begin{DoxyCompactList}\small\item\em If you want to enable this feature,system must define \+\_\+\+P\+O\+S\+I\+X\+\_\+\+S\+H\+A\+R\+E\+D\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+O\+B\+J\+E\+C\+TS(getconf -\/a) \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_ae787619f9a1e9a12c225a35691df8a74}{Set\+Log4cpp\+Log\+Level}} (uint16\+\_\+t log\+\_\+level)
-\begin{DoxyCompactList}\small\item\em set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the log4cpp level \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_ac5035cd9767c7d3692676629a34d3bd0}{Set\+Log4cpp\+Log\+Level}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, uint16\+\_\+t log\+\_\+level)
-\begin{DoxyCompactList}\small\item\em set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level(parity\+: debug $<$ info $<$ warn $<$ error) \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the log4cpp level(parity\+: debug $<$ info $<$ warn $<$ error) \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a50a621e7468a93641deba042dc14af5c}{Sety\+Log\+Log\+Level}} (uint16\+\_\+t log\+\_\+level)
 \begin{DoxyCompactList}\small\item\em set the ylog level \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a210787f0b08b1ec78108139f18e161eb}{Sety\+Log\+Log\+Level}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name, uint16\+\_\+t log\+\_\+level)
@@ -87,8 +87,8 @@ static void \mbox{\hyperlink{classyLib_1_1yLog_afbe7f324b98ee9776b6bb6cb5fb9a315
 \item 
 static void \mbox{\hyperlink{classyLib_1_1yLog_a3b94b24d2b314508a999dff2ff808873}{\+\_\+ylog\+\_\+log\+\_\+impl}} (uint16\+\_\+t log\+\_\+type, const char $\ast$fmt, va\+\_\+list arg\+\_\+list)
 \begin{DoxyCompactList}\small\item\em the basic-\/implement of D I W E \end{DoxyCompactList}\item 
-static void \mbox{\hyperlink{classyLib_1_1yLog_aa5c38dddbbd2368e5fa00ec82f018da7}{\+\_\+ylog\+\_\+log\+\_\+impl}} (uint16\+\_\+t log\+\_\+type, const char $\ast$fmt, va\+\_\+list arg\+\_\+list, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name)
-\end{DoxyCompactItemize}
+static void \mbox{\hyperlink{classyLib_1_1yLog_a7d8fa5ca875def017083b301348e9606}{\+\_\+ylog\+\_\+log\+\_\+impl}} (uint16\+\_\+t log\+\_\+type, const char $\ast$fmt, va\+\_\+list arg\+\_\+list, \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&category\+\_\+name)
+\begin{DoxyCompactList}\small\item\em the basic-\/implement of D I W E \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -99,18 +99,18 @@ static log4cpp\+::\+Category $\ast$ \mbox{\hyperlink{classyLib_1_1yLog_a1f3823c2
 static \mbox{\hyperlink{namespaceyLib_aafac5e659058b54da4669f945e6e55c5}{Type\+Sub\+Category\+Map}} \mbox{\hyperlink{classyLib_1_1yLog_a157ef63dad3abcc92f7064cfd1000dc9}{\+\_\+log4cpp\+\_\+sub\+\_\+category\+\_\+map}}
 \begin{DoxyCompactList}\small\item\em the sub-\/category map \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{classyLib_1_1yLog_ade9c5010462fb728b09be21047a0d0b0}{\+\_\+b\+\_\+enable\+\_\+log4cpp}} = false
-\begin{DoxyCompactList}\small\item\em if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em if enable log4cpp \end{DoxyCompactList}\item 
 static bool \mbox{\hyperlink{classyLib_1_1yLog_abf6e0d07541b78810309fbc6bb09222d}{\+\_\+b\+\_\+enable\+\_\+feature\+\_\+ps}} = false
 \begin{DoxyCompactList}\small\item\em if enable process-\/safety. \end{DoxyCompactList}\item 
 static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_abed4c2347a2fc12c550e11b6f73450ed}{\+\_\+c\+\_\+log4cpp\+\_\+log\+\_\+level}} = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+
-\begin{DoxyCompactList}\small\item\em current \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} log-\/level. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em current log4cpp log-\/level. \end{DoxyCompactList}\item 
 static uint16\+\_\+t \mbox{\hyperlink{classyLib_1_1yLog_a287c0233628508aec712f85701be69ff}{\+\_\+c\+\_\+ylog\+\_\+log\+\_\+level}} = y\+Lib\+::y\+Log\+Level\+::\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+A\+L\+L\+\_\+\+L\+O\+G\+\_\+\+L\+E\+V\+E\+L\+\_\+
 \begin{DoxyCompactList}\small\item\em current ylog log-\/level. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
-This is log-\/class based on \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}. 
+This is log-\/class based on log4cpp in \mbox{\hyperlink{namespaceyLib}{y\+Lib}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classyLib_1_1yLog_aabbbad87b1e18ab48f30ea0cf35385f4}\label{classyLib_1_1yLog_aabbbad87b1e18ab48f30ea0cf35385f4}} 
@@ -193,8 +193,21 @@ the basic-\/implement of D I W E
 \hline
 {\em fmt} & the format of info-\/string. \\
 \hline
-{\em arg\+\_\+list} & the input arg-\/lists\\
+{\em arg\+\_\+list} & the input arg-\/lists \\
 \hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classyLib_1_1yLog_a7d8fa5ca875def017083b301348e9606}\label{classyLib_1_1yLog_a7d8fa5ca875def017083b301348e9606}} 
+\index{yLib::yLog@{yLib::yLog}!\_ylog\_log\_impl@{\_ylog\_log\_impl}}
+\index{\_ylog\_log\_impl@{\_ylog\_log\_impl}!yLib::yLog@{yLib::yLog}}
+\doxysubsubsection{\texorpdfstring{\_ylog\_log\_impl()}{\_ylog\_log\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void y\+Lib\+::y\+Log\+::\+\_\+ylog\+\_\+log\+\_\+impl (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+type,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{arg\+\_\+list,  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+the basic-\/implement of D I W E 
+
+
+\begin{DoxyParams}{Parameters}
 {\em log\+\_\+type} & the sub-\/category name. \\
 \hline
 {\em fmt} & the format of info-\/string. \\
@@ -204,12 +217,6 @@ the basic-\/implement of D I W E
 {\em category\+\_\+name} & the sub-\/category name \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classyLib_1_1yLog_aa5c38dddbbd2368e5fa00ec82f018da7}\label{classyLib_1_1yLog_aa5c38dddbbd2368e5fa00ec82f018da7}} 
-\index{yLib::yLog@{yLib::yLog}!\_ylog\_log\_impl@{\_ylog\_log\_impl}}
-\index{\_ylog\_log\_impl@{\_ylog\_log\_impl}!yLib::yLog@{yLib::yLog}}
-\doxysubsubsection{\texorpdfstring{\_ylog\_log\_impl()}{\_ylog\_log\_impl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void y\+Lib\+::y\+Log\+::\+\_\+ylog\+\_\+log\+\_\+impl (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{log\+\_\+type,  }\item[{const char $\ast$}]{fmt,  }\item[{va\+\_\+list}]{arg\+\_\+list,  }\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{category\+\_\+name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
-
 \mbox{\Hypertarget{classyLib_1_1yLog_ad4c2d67c847cef31ad8f8de4a0b61ea9}\label{classyLib_1_1yLog_ad4c2d67c847cef31ad8f8de4a0b61ea9}} 
 \index{yLib::yLog@{yLib::yLog}!D@{D}}
 \index{D@{D}!yLib::yLog@{yLib::yLog}}
@@ -431,13 +438,13 @@ The reference of \mbox{\hyperlink{classyLib_1_1yLog}{y\+Log}}\textquotesingle{}s
 
 
 
-Enable or disable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. 
+Enable or disable log4cpp. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em enable\+\_\+log4cpp} & if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} \\
+{\em enable\+\_\+log4cpp} & if enable log4cpp \\
 \hline
-{\em log\+\_\+path} & \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}\textquotesingle{}s cfg-\/file \\
+{\em log\+\_\+path} & log4cpp\textquotesingle{}s cfg-\/file \\
 \hline
 \end{DoxyParams}
 \begin{DoxyWarning}{Warning}
@@ -448,7 +455,7 @@ Enable or disable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}.
 \end{DoxyReturn}
 
 \begin{DoxyExceptions}{Exceptions}
-{\em throw} & a anonymous exception if the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}\textquotesingle{}s cfg-\/file is invalid. \\
+{\em throw} & a anonymous exception if the log4cpp\textquotesingle{}s cfg-\/file is invalid. \\
 \hline
 \end{DoxyExceptions}
 \mbox{\Hypertarget{classyLib_1_1yLog_ac5035cd9767c7d3692676629a34d3bd0}\label{classyLib_1_1yLog_ac5035cd9767c7d3692676629a34d3bd0}} 
@@ -459,7 +466,7 @@ Enable or disable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}.
 
 
 
-set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level(parity\+: debug $<$ info $<$ warn $<$ error) 
+set the log4cpp level(parity\+: debug $<$ info $<$ warn $<$ error) 
 
 
 \begin{DoxyParams}{Parameters}
@@ -487,7 +494,7 @@ set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level(parity\+: debug $<$ i
 
 
 
-set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level 
+set the log4cpp level 
 
 
 \begin{DoxyParams}{Parameters}
@@ -513,7 +520,7 @@ set the \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} level
 
 
 
-Create a sub-\/category for \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}. 
+Create a sub-\/category for log4cpp. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -689,7 +696,7 @@ if enable process-\/safety.
 
 
 
-if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} 
+if enable log4cpp 
 
 \mbox{\Hypertarget{classyLib_1_1yLog_abed4c2347a2fc12c550e11b6f73450ed}\label{classyLib_1_1yLog_abed4c2347a2fc12c550e11b6f73450ed}} 
 \index{yLib::yLog@{yLib::yLog}!\_c\_log4cpp\_log\_level@{\_c\_log4cpp\_log\_level}}
@@ -699,7 +706,7 @@ if enable \mbox{\hyperlink{namespacelog4cpp}{log4cpp}}
 
 
 
-current \mbox{\hyperlink{namespacelog4cpp}{log4cpp}} log-\/level. 
+current log4cpp log-\/level. 
 
 \mbox{\Hypertarget{classyLib_1_1yLog_ace6d0d977d2ca3c71a2b26320406c2ca}\label{classyLib_1_1yLog_ace6d0d977d2ca3c71a2b26320406c2ca}} 
 \index{yLib::yLog@{yLib::yLog}!\_c\_ptr\_msg\_buf@{\_c\_ptr\_msg\_buf}}

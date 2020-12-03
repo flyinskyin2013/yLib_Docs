@@ -58,5 +58,5 @@ var searchData=
   ['_5fvalue_5fcontainter_55',['_value_containter',['../classyLib_1_1yBasicValue.html#aa90f661feb15b357b6026504eff4c3ba',1,'yLib::yBasicValue']]],
   ['_5fvalue_5ftype_56',['_value_type',['../classyLib_1_1yJsonValue.html#aa5e49b640deb59ad4c30c304c601e357',1,'yLib::yJsonValue']]],
   ['_5fxmlfile_5fpdoc_5f_57',['_xmlfile_pdoc_',['../classyLib_1_1yXML.html#abdbeedaab6bd09b8839f6527c9bd8ebb',1,'yLib::yXML']]],
-  ['_5fylog_5flog_5fimpl_58',['_ylog_log_impl',['../classyLib_1_1yLog.html#a3b94b24d2b314508a999dff2ff808873',1,'yLib::yLog::_ylog_log_impl(uint16_t log_type, const char *fmt, va_list arg_list)'],['../classyLib_1_1yLog.html#aa5c38dddbbd2368e5fa00ec82f018da7',1,'yLib::yLog::_ylog_log_impl(uint16_t log_type, const char *fmt, va_list arg_list, std::string &amp;category_name)']]]
+  ['_5fylog_5flog_5fimpl_58',['_ylog_log_impl',['../classyLib_1_1yLog.html#a3b94b24d2b314508a999dff2ff808873',1,'yLib::yLog::_ylog_log_impl(uint16_t log_type, const char *fmt, va_list arg_list)'],['../classyLib_1_1yLog.html#a7d8fa5ca875def017083b301348e9606',1,'yLib::yLog::_ylog_log_impl(uint16_t log_type, const char *fmt, va_list arg_list, std::string &amp;category_name)']]]
 ];
