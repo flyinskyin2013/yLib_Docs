@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['idx_5freserve_5fexception_1062',['IDX_RESERVE_EXCEPTION',['../namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a1a6597b3b1a5e643a0cc2d31592d9555',1,'yLib']]],
-  ['idx_5fybasic_5fexception_1063',['IDX_YBASIC_EXCEPTION',['../namespaceyLib.html#ac6be0d2eaca6d9f43e541be222ad62f0a687a2c1d33307801665fffdc5d8c19a0',1,'yLib']]],
-  ['int64_5ftype_1064',['INT64_TYPE',['../classyLib_1_1yJsonValue.html#a06c6af4ddaee9a408ca850a5d9ff3103a0854d6743048a50f5ae46739bfc4083c',1,'yLib::yJsonValue']]],
-  ['int64_5fybasicvalue_5ftype_1065',['INT64_YBASICVALUE_TYPE',['../namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69a184eb836a6fa4eb4fd68262302c9fb3b',1,'yLib']]],
-  ['int_5ftype_1066',['INT_TYPE',['../namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594a1ff37af93978008d0b3ea004ef65060d',1,'yLib']]]
+  ['none_5ftype_1099',['NONE_TYPE',['../classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2afebf621b752807da247e8d67837b0581',1,'yLib::yValue']]],
+  ['null_5ftype_1100',['NULL_TYPE',['../classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a15d2daa32ba9e81e87d99816b3273c3e',1,'yLib::yValue']]]
 ];

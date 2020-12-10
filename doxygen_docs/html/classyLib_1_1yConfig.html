@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">yLib
-   &#160;<span id="projectnumber">V0.0.8 beta</span>
+   &#160;<span id="projectnumber">V0.0.9 beta</span>
    </div>
   </td>
  </tr>
@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('classyLib_1_1yConfig.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>This is a tool to parse a cfg-file that is like c.  
+ <a href="classyLib_1_1yConfig.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="yconfig_8hpp_source.html">yconfig.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for yLib::yConfig:</div>
@@ -108,30 +111,32 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac9551c5ce0183bbfd92fc9ab05ff54ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9281679e3bd88192f89223d05aba12be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a9281679e3bd88192f89223d05aba12be">~yConfig</a> ()</td></tr>
 <tr class="separator:a9281679e3bd88192f89223d05aba12be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b0764070b1eb7e583cecdf83c396b8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a2b0764070b1eb7e583cecdf83c396b8b">yConfig</a> (<a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;config)=delete</td></tr>
-<tr class="separator:a2b0764070b1eb7e583cecdf83c396b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac4652f444efa3c4dde49e71696a9153"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#aac4652f444efa3c4dde49e71696a9153">operator=</a> (<a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;config)=delete</td></tr>
-<tr class="separator:aac4652f444efa3c4dde49e71696a9153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56f8206683acd07a15bb844537f1f554"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a56f8206683acd07a15bb844537f1f554">yConfigReadFile</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;file_path)</td></tr>
-<tr class="separator:a56f8206683acd07a15bb844537f1f554"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0d872701164707561d25e91394802c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a8a0d872701164707561d25e91394802c">yConfigWriteFile</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;file_path)</td></tr>
-<tr class="separator:a8a0d872701164707561d25e91394802c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6d11b4f67d84a8375740a852b8afa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#aef6d11b4f67d84a8375740a852b8afa4">yConfigGetValue</a> (const char *node_path)</td></tr>
-<tr class="separator:aef6d11b4f67d84a8375740a852b8afa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c154ac9e48596c3868a0e3bccd5715"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a39c154ac9e48596c3868a0e3bccd5715">yConfigGetValue</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;node_path)</td></tr>
-<tr class="separator:a39c154ac9e48596c3868a0e3bccd5715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1278621856e1c35713efef91154544e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#af1278621856e1c35713efef91154544e">yConfigSetValue</a> (const char *node_path, const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value)</td></tr>
-<tr class="separator:af1278621856e1c35713efef91154544e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e03edbe105b819cb244b6cf0b5e29ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a0e03edbe105b819cb244b6cf0b5e29ca">yConfigSetValue</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;node_path, const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value)</td></tr>
-<tr class="separator:a0e03edbe105b819cb244b6cf0b5e29ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3c0120de54405aaf6375412d1f3650"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a8e3c0120de54405aaf6375412d1f3650">yConfigAddNode</a> (const char *add_node_pos, const char *add_node_name, <a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a> add_node_type, const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value)</td></tr>
-<tr class="separator:a8e3c0120de54405aaf6375412d1f3650"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab31fad7dd769eba30480794ddac5ac46"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#ab31fad7dd769eba30480794ddac5ac46">yConfigAddNode</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;add_node_pos, const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;add_node_name, <a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a> add_node_type, const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value)</td></tr>
-<tr class="separator:ab31fad7dd769eba30480794ddac5ac46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d29a5284919fa7deca2334cb8f6afaf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a0d29a5284919fa7deca2334cb8f6afaf">yConfigAddNode</a> (const char *add_node_pos, const char *add_node_name, <a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a> add_node_type)</td></tr>
-<tr class="separator:a0d29a5284919fa7deca2334cb8f6afaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad316d34c11687820e4334a285f04f848"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#ad316d34c11687820e4334a285f04f848">yConfigAddNode</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;add_node_pos, const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;add_node_name, <a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a> add_node_type)</td></tr>
-<tr class="separator:ad316d34c11687820e4334a285f04f848"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b115c227214b762f431824b9e19851"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#ad2b115c227214b762f431824b9e19851">yConfig</a> (const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;config_)=delete</td></tr>
+<tr class="memdesc:ad2b115c227214b762f431824b9e19851"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor  <a href="classyLib_1_1yConfig.html#ad2b115c227214b762f431824b9e19851">More...</a><br /></td></tr>
+<tr class="separator:ad2b115c227214b762f431824b9e19851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa543c4ccae607127eade86e8eeaa03e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#aaa543c4ccae607127eade86e8eeaa03e">operator=</a> (const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;config_)=delete</td></tr>
+<tr class="memdesc:aaa543c4ccae607127eade86e8eeaa03e"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment func  <a href="classyLib_1_1yConfig.html#aaa543c4ccae607127eade86e8eeaa03e">More...</a><br /></td></tr>
+<tr class="separator:aaa543c4ccae607127eade86e8eeaa03e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057d77e66c1121a8023bc905434770c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a057d77e66c1121a8023bc905434770c7">yConfig</a> (const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&amp;config_)=delete</td></tr>
+<tr class="memdesc:a057d77e66c1121a8023bc905434770c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">move constructor  <a href="classyLib_1_1yConfig.html#a057d77e66c1121a8023bc905434770c7">More...</a><br /></td></tr>
+<tr class="separator:a057d77e66c1121a8023bc905434770c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58607ff6fb45235cff11a09cc951b5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#aa58607ff6fb45235cff11a09cc951b5c">operator=</a> (const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&amp;config_)=delete</td></tr>
+<tr class="memdesc:aa58607ff6fb45235cff11a09cc951b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment func  <a href="classyLib_1_1yConfig.html#aa58607ff6fb45235cff11a09cc951b5c">More...</a><br /></td></tr>
+<tr class="separator:aa58607ff6fb45235cff11a09cc951b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1cb8bb7d528ac2979aa7a2cbecac6e0"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#aa1cb8bb7d528ac2979aa7a2cbecac6e0">ReadFile</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;file_path_)</td></tr>
+<tr class="memdesc:aa1cb8bb7d528ac2979aa7a2cbecac6e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">read cfg-file from disk.  <a href="classyLib_1_1yConfig.html#aa1cb8bb7d528ac2979aa7a2cbecac6e0">More...</a><br /></td></tr>
+<tr class="separator:aa1cb8bb7d528ac2979aa7a2cbecac6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58efbd759e4f0240d8dcb7583f392421"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a58efbd759e4f0240d8dcb7583f392421">WriteFile</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;file_path_)</td></tr>
+<tr class="memdesc:a58efbd759e4f0240d8dcb7583f392421"><td class="mdescLeft">&#160;</td><td class="mdescRight">write cfg-file to disk.  <a href="classyLib_1_1yConfig.html#a58efbd759e4f0240d8dcb7583f392421">More...</a><br /></td></tr>
+<tr class="separator:a58efbd759e4f0240d8dcb7583f392421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde3da0df3be69fe498953c67cc1b03b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#acde3da0df3be69fe498953c67cc1b03b">GetValue</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;node_path_)</td></tr>
+<tr class="memdesc:acde3da0df3be69fe498953c67cc1b03b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get value by node-path.  <a href="classyLib_1_1yConfig.html#acde3da0df3be69fe498953c67cc1b03b">More...</a><br /></td></tr>
+<tr class="separator:acde3da0df3be69fe498953c67cc1b03b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7002cc95e08e8c750651d15fc79951be"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a7002cc95e08e8c750651d15fc79951be">SetValue</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;node_path_, const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value_)</td></tr>
+<tr class="memdesc:a7002cc95e08e8c750651d15fc79951be"><td class="mdescLeft">&#160;</td><td class="mdescRight">get value by node-path.  <a href="classyLib_1_1yConfig.html#a7002cc95e08e8c750651d15fc79951be">More...</a><br /></td></tr>
+<tr class="separator:a7002cc95e08e8c750651d15fc79951be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bd8857e345191563d530f1acde5447"><td class="memItemLeft" align="right" valign="top">int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a90bd8857e345191563d530f1acde5447">AddNode</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;pos_, const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;name_, <a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2">yValue::yValueType</a> type_, const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value_=<a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a>())</td></tr>
+<tr class="separator:a90bd8857e345191563d530f1acde5447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classyLib_1_1yObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classyLib_1_1yObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classyLib_1_1yObject.html">yLib::yObject</a></td></tr>
 <tr class="memitem:a4f7523f70c3832ac47812ca5d366adca inherit pub_methods_classyLib_1_1yObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yObject.html#a4f7523f70c3832ac47812ca5d366adca">yObject</a> ()</td></tr>
 <tr class="memdesc:a4f7523f70c3832ac47812ca5d366adca inherit pub_methods_classyLib_1_1yObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classyLib_1_1yObject.html#a4f7523f70c3832ac47812ca5d366adca">More...</a><br /></td></tr>
@@ -157,8 +162,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8d47690be796f19dba7fcb0197c4cddc"><td class="memItemLeft" align="right" valign="top">libconfig::Config &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a8d47690be796f19dba7fcb0197c4cddc">_libconfig_config</a></td></tr>
-<tr class="separator:a8d47690be796f19dba7fcb0197c4cddc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a01d2ffd41c92d76b682f68581273a1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfig.html#a9a01d2ffd41c92d76b682f68581273a1">config_instance</a></td></tr>
+<tr class="separator:a9a01d2ffd41c92d76b682f68581273a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -167,9 +172,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memdesc:a2db8b0c6fba5a9137092715442866090 inherit pub_attribs_classyLib_1_1yObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object-name.  <a href="classyLib_1_1yObject.html#a2db8b0c6fba5a9137092715442866090">More...</a><br /></td></tr>
 <tr class="separator:a2db8b0c6fba5a9137092715442866090 inherit pub_attribs_classyLib_1_1yObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is a tool to parse a cfg-file that is like c. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac9551c5ce0183bbfd92fc9ab05ff54ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9551c5ce0183bbfd92fc9ab05ff54ef">&#9670;&nbsp;</a></span>yConfig() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9551c5ce0183bbfd92fc9ab05ff54ef">&#9670;&nbsp;</a></span>yConfig() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,8 +209,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b0764070b1eb7e583cecdf83c396b8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b0764070b1eb7e583cecdf83c396b8b">&#9670;&nbsp;</a></span>yConfig() <span class="overload">[2/2]</span></h2>
+<a id="ad2b115c227214b762f431824b9e19851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2b115c227214b762f431824b9e19851">&#9670;&nbsp;</a></span>yConfig() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,8 +221,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">yLib::yConfig::yConfig </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&#160;</td>
-          <td class="paramname"><em>config</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>config_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -225,12 +232,126 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>copy constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>this op is disable. </dd></dl>
+
+</div>
+</div>
+<a id="a057d77e66c1121a8023bc905434770c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a057d77e66c1121a8023bc905434770c7">&#9670;&nbsp;</a></span>yConfig() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">yLib::yConfig::yConfig </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>config_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>move constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>this op is disable. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aac4652f444efa3c4dde49e71696a9153"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac4652f444efa3c4dde49e71696a9153">&#9670;&nbsp;</a></span>operator=()</h2>
+<a id="a90bd8857e345191563d530f1acde5447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bd8857e345191563d530f1acde5447">&#9670;&nbsp;</a></span>AddNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t yLib::yConfig::AddNode </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>pos_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>name_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2">yValue::yValueType</a>&#160;</td>
+          <td class="paramname"><em>type_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>value_</em> = <code><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acde3da0df3be69fe498953c67cc1b03b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde3da0df3be69fe498953c67cc1b03b">&#9670;&nbsp;</a></span>GetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> yLib::yConfig::GetValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>node_path_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get value by node-path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node_path_</td><td>the path of node. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the value of node-path. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="aa58607ff6fb45235cff11a09cc951b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58607ff6fb45235cff11a09cc951b5c">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,10 +360,10 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a>&amp; yLib::yConfig::operator= </td>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp; yLib::yConfig::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&#160;</td>
-          <td class="paramname"><em>config</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>config_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -253,287 +374,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a0d29a5284919fa7deca2334cb8f6afaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d29a5284919fa7deca2334cb8f6afaf">&#9670;&nbsp;</a></span>yConfigAddNode() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigAddNode </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>add_node_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>add_node_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a>&#160;</td>
-          <td class="paramname"><em>add_node_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>assignment func </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the obj of <a class="el" href="classyLib_1_1yConfig.html" title="This is a tool to parse a cfg-file that is like c.">yConfig</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>this op is disable. </dd></dl>
 
 </div>
 </div>
-<a id="a8e3c0120de54405aaf6375412d1f3650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e3c0120de54405aaf6375412d1f3650">&#9670;&nbsp;</a></span>yConfigAddNode() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigAddNode </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>add_node_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>add_node_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a>&#160;</td>
-          <td class="paramname"><em>add_node_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad316d34c11687820e4334a285f04f848"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad316d34c11687820e4334a285f04f848">&#9670;&nbsp;</a></span>yConfigAddNode() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigAddNode </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>add_node_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>add_node_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a>&#160;</td>
-          <td class="paramname"><em>add_node_type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab31fad7dd769eba30480794ddac5ac46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab31fad7dd769eba30480794ddac5ac46">&#9670;&nbsp;</a></span>yConfigAddNode() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigAddNode </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>add_node_pos</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>add_node_name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a>&#160;</td>
-          <td class="paramname"><em>add_node_type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aef6d11b4f67d84a8375740a852b8afa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6d11b4f67d84a8375740a852b8afa4">&#9670;&nbsp;</a></span>yConfigGetValue() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> yLib::yConfig::yConfigGetValue </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>node_path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39c154ac9e48596c3868a0e3bccd5715"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39c154ac9e48596c3868a0e3bccd5715">&#9670;&nbsp;</a></span>yConfigGetValue() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> yLib::yConfig::yConfigGetValue </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>node_path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a56f8206683acd07a15bb844537f1f554"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56f8206683acd07a15bb844537f1f554">&#9670;&nbsp;</a></span>yConfigReadFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigReadFile </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>file_path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af1278621856e1c35713efef91154544e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1278621856e1c35713efef91154544e">&#9670;&nbsp;</a></span>yConfigSetValue() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigSetValue </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>node_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0e03edbe105b819cb244b6cf0b5e29ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e03edbe105b819cb244b6cf0b5e29ca">&#9670;&nbsp;</a></span>yConfigSetValue() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigSetValue </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>node_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8a0d872701164707561d25e91394802c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a0d872701164707561d25e91394802c">&#9670;&nbsp;</a></span>yConfigWriteFile()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int yLib::yConfig::yConfigWriteFile </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>file_path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8d47690be796f19dba7fcb0197c4cddc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d47690be796f19dba7fcb0197c4cddc">&#9670;&nbsp;</a></span>_libconfig_config</h2>
+<a id="aaa543c4ccae607127eade86e8eeaa03e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa543c4ccae607127eade86e8eeaa03e">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,7 +396,178 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">libconfig::Config&amp; yLib::yConfig::_libconfig_config</td>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp; yLib::yConfig::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfig.html">yConfig</a> &amp;&#160;</td>
+          <td class="paramname"><em>config_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assignment func </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the obj of <a class="el" href="classyLib_1_1yConfig.html" title="This is a tool to parse a cfg-file that is like c.">yConfig</a> </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>this op is disable. </dd></dl>
+
+</div>
+</div>
+<a id="aa1cb8bb7d528ac2979aa7a2cbecac6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1cb8bb7d528ac2979aa7a2cbecac6e0">&#9670;&nbsp;</a></span>ReadFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t yLib::yConfig::ReadFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>file_path_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>read cfg-file from disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path_</td><td>the path of cfg-file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the op status </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>ok. </td></tr>
+    <tr><td class="paramname">-1</td><td>error. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a7002cc95e08e8c750651d15fc79951be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7002cc95e08e8c750651d15fc79951be">&#9670;&nbsp;</a></span>SetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int yLib::yConfig::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>node_path_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
+          <td class="paramname"><em>value_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get value by node-path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node_path_</td><td>the path of node. </td></tr>
+    <tr><td class="paramname">value_</td><td>the value to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the status of op. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>ok. </td></tr>
+    <tr><td class="paramname">-1</td><td>error. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos_</td><td>the position of node. </td></tr>
+    <tr><td class="paramname">name_</td><td>the name of node. </td></tr>
+    <tr><td class="paramname">type_</td><td>the type of value.we only support int32_t/bool/float/std<a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">string</a>/group. </td></tr>
+    <tr><td class="paramname">value_</td><td>the value to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the status of op. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>ok. </td></tr>
+    <tr><td class="paramname">-1</td><td>error. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>if pos_ == '.' or "", we will add node to root </dd></dl>
+
+</div>
+</div>
+<a id="a58efbd759e4f0240d8dcb7583f392421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58efbd759e4f0240d8dcb7583f392421">&#9670;&nbsp;</a></span>WriteFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int8_t yLib::yConfig::WriteFile </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>file_path_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>write cfg-file to disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path_</td><td>the path of cfg-file </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the status of op. </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>ok. </td></tr>
+    <tr><td class="paramname">-1</td><td>error. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd></dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9a01d2ffd41c92d76b682f68581273a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a01d2ffd41c92d76b682f68581273a1">&#9670;&nbsp;</a></span>config_instance</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* yLib::yConfig::config_instance</td>
         </tr>
       </table>
   </td>

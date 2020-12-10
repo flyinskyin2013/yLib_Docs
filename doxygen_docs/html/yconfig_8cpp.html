@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">yLib
-   &#160;<span id="projectnumber">V0.0.8 beta</span>
+   &#160;<span id="projectnumber">V0.0.9 beta</span>
    </div>
   </td>
  </tr>
@@ -83,6 +83,7 @@ $(document).ready(function(){initNavTree('yconfig_8cpp.html',''); initResizable(
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">yconfig.cpp File Reference</div>  </div>
@@ -91,22 +92,47 @@ $(document).ready(function(){initNavTree('yconfig_8cpp.html',''); initResizable(
 <div class="textblock"><code>#include &quot;<a class="el" href="yconfig_8hpp_source.html">utility/yconfig.hpp</a>&quot;</code><br />
 <code>#include &lt;libconfig.h++&gt;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a82dd6effcc50d719d78c9a6e75d6abc5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yconfig_8cpp.html#a82dd6effcc50d719d78c9a6e75d6abc5">CONVERT_POINTER_TO_LIBCONFIG_CONFIG_INSTANCE</a>(pointer)&#160;&#160;&#160;    static_cast&lt;libconfig::Config *&gt;(<a class="el" href="yconfig_8cpp.html#a4d1849fc63690ea118a72005fce5df34">config_instance</a>)</td></tr>
+<tr class="separator:a82dd6effcc50d719d78c9a6e75d6abc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3527b79f43981b942a7c5b77aa76995e"><td class="memItemLeft" align="right" valign="top">_libconfig_config *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yconfig_8cpp.html#a3527b79f43981b942a7c5b77aa76995e">new</a> ()</td></tr>
-<tr class="separator:a3527b79f43981b942a7c5b77aa76995e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1849fc63690ea118a72005fce5df34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="yconfig_8cpp.html#a4d1849fc63690ea118a72005fce5df34">config_instance</a> (static_cast&lt; void * &gt;(new libconfig::Config()))</td></tr>
+<tr class="separator:a4d1849fc63690ea118a72005fce5df34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a3527b79f43981b942a7c5b77aa76995e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3527b79f43981b942a7c5b77aa76995e">&#9670;&nbsp;</a></span>new()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a82dd6effcc50d719d78c9a6e75d6abc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82dd6effcc50d719d78c9a6e75d6abc5">&#9670;&nbsp;</a></span>CONVERT_POINTER_TO_LIBCONFIG_CONFIG_INSTANCE</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">_libconfig_config* new </td>
+          <td class="memname">#define CONVERT_POINTER_TO_LIBCONFIG_CONFIG_INSTANCE</td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pointer</td><td>)</td>
+          <td>&#160;&#160;&#160;    static_cast&lt;libconfig::Config *&gt;(<a class="el" href="yconfig_8cpp.html#a4d1849fc63690ea118a72005fce5df34">config_instance</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a4d1849fc63690ea118a72005fce5df34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d1849fc63690ea118a72005fce5df34">&#9670;&nbsp;</a></span>config_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">config_instance </td>
+          <td>(</td>
+          <td class="paramtype">static_cast&lt; void * &gt;&#160;</td>
+          <td class="paramname">new libconfig::Config()</td><td>)</td>
           <td></td>
         </tr>
       </table>

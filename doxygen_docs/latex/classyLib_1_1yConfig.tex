@@ -2,6 +2,11 @@
 \label{classyLib_1_1yConfig}\index{yLib::yConfig@{yLib::yConfig}}
 
 
+This is a tool to parse a cfg-\/file that is like c.  
+
+
+
+
 {\ttfamily \#include $<$yconfig.\+hpp$>$}
 
 Inheritance diagram for y\+Lib\+::y\+Config\+:\begin{figure}[H]
@@ -17,43 +22,40 @@ Inheritance diagram for y\+Lib\+::y\+Config\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classyLib_1_1yConfig_a9281679e3bd88192f89223d05aba12be}{$\sim$y\+Config}} ()
 \item 
-\mbox{\hyperlink{classyLib_1_1yConfig_a2b0764070b1eb7e583cecdf83c396b8b}{y\+Config}} (\mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&config)=delete
-\item 
-\mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \& \mbox{\hyperlink{classyLib_1_1yConfig_aac4652f444efa3c4dde49e71696a9153}{operator=}} (\mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&config)=delete
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_a56f8206683acd07a15bb844537f1f554}{y\+Config\+Read\+File}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&file\+\_\+path)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_a8a0d872701164707561d25e91394802c}{y\+Config\+Write\+File}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&file\+\_\+path)
-\item 
-\mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \mbox{\hyperlink{classyLib_1_1yConfig_aef6d11b4f67d84a8375740a852b8afa4}{y\+Config\+Get\+Value}} (const char $\ast$node\+\_\+path)
-\item 
-\mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \mbox{\hyperlink{classyLib_1_1yConfig_a39c154ac9e48596c3868a0e3bccd5715}{y\+Config\+Get\+Value}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&node\+\_\+path)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_af1278621856e1c35713efef91154544e}{y\+Config\+Set\+Value}} (const char $\ast$node\+\_\+path, const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&value)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_a0e03edbe105b819cb244b6cf0b5e29ca}{y\+Config\+Set\+Value}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&node\+\_\+path, const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&value)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_a8e3c0120de54405aaf6375412d1f3650}{y\+Config\+Add\+Node}} (const char $\ast$add\+\_\+node\+\_\+pos, const char $\ast$add\+\_\+node\+\_\+name, \mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}} add\+\_\+node\+\_\+type, const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&value)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_ab31fad7dd769eba30480794ddac5ac46}{y\+Config\+Add\+Node}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&add\+\_\+node\+\_\+pos, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&add\+\_\+node\+\_\+name, \mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}} add\+\_\+node\+\_\+type, const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&value)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_a0d29a5284919fa7deca2334cb8f6afaf}{y\+Config\+Add\+Node}} (const char $\ast$add\+\_\+node\+\_\+pos, const char $\ast$add\+\_\+node\+\_\+name, \mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}} add\+\_\+node\+\_\+type)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yConfig_ad316d34c11687820e4334a285f04f848}{y\+Config\+Add\+Node}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&add\+\_\+node\+\_\+pos, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&add\+\_\+node\+\_\+name, \mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}} add\+\_\+node\+\_\+type)
+\mbox{\hyperlink{classyLib_1_1yConfig_ad2b115c227214b762f431824b9e19851}{y\+Config}} (const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&config\+\_\+)=delete
+\begin{DoxyCompactList}\small\item\em copy constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \& \mbox{\hyperlink{classyLib_1_1yConfig_aaa543c4ccae607127eade86e8eeaa03e}{operator=}} (const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&config\+\_\+)=delete
+\begin{DoxyCompactList}\small\item\em assignment func \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classyLib_1_1yConfig_a057d77e66c1121a8023bc905434770c7}{y\+Config}} (const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&\&config\+\_\+)=delete
+\begin{DoxyCompactList}\small\item\em move constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \& \mbox{\hyperlink{classyLib_1_1yConfig_aa58607ff6fb45235cff11a09cc951b5c}{operator=}} (const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&\&config\+\_\+)=delete
+\begin{DoxyCompactList}\small\item\em assignment func \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yConfig_aa1cb8bb7d528ac2979aa7a2cbecac6e0}{Read\+File}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&file\+\_\+path\+\_\+)
+\begin{DoxyCompactList}\small\item\em read cfg-\/file from disk. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yConfig_a58efbd759e4f0240d8dcb7583f392421}{Write\+File}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&file\+\_\+path\+\_\+)
+\begin{DoxyCompactList}\small\item\em write cfg-\/file to disk. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \mbox{\hyperlink{classyLib_1_1yConfig_acde3da0df3be69fe498953c67cc1b03b}{Get\+Value}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&node\+\_\+path\+\_\+)
+\begin{DoxyCompactList}\small\item\em get value by node-\/path. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yConfig_a7002cc95e08e8c750651d15fc79951be}{Set\+Value}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&node\+\_\+path\+\_\+, const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&value\+\_\+)
+\begin{DoxyCompactList}\small\item\em get value by node-\/path. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yConfig_a90bd8857e345191563d530f1acde5447}{Add\+Node}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&pos\+\_\+, const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&name\+\_\+, \mbox{\hyperlink{classyLib_1_1yValue_ad30bf06e744fa772021a7cc4936e9be2}{y\+Value\+::y\+Value\+Type}} type\+\_\+, const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&value\+\_\+=\mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}}())
 \end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-libconfig\+::\+Config \& \mbox{\hyperlink{classyLib_1_1yConfig_a8d47690be796f19dba7fcb0197c4cddc}{\+\_\+libconfig\+\_\+config}}
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yConfig_a9a01d2ffd41c92d76b682f68581273a1}{config\+\_\+instance}}
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+This is a tool to parse a cfg-\/file that is like c. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classyLib_1_1yConfig_ac9551c5ce0183bbfd92fc9ab05ff54ef}\label{classyLib_1_1yConfig_ac9551c5ce0183bbfd92fc9ab05ff54ef}} 
 \index{yLib::yConfig@{yLib::yConfig}!yConfig@{yConfig}}
 \index{yConfig@{yConfig}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfig()}{yConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{yConfig()}{yConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Config\+::y\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classyLib_1_1yConfig_a9281679e3bd88192f89223d05aba12be}\label{classyLib_1_1yConfig_a9281679e3bd88192f89223d05aba12be}} 
@@ -62,89 +64,238 @@ libconfig\+::\+Config \& \mbox{\hyperlink{classyLib_1_1yConfig_a8d47690be796f19d
 \doxysubsubsection{\texorpdfstring{$\sim$yConfig()}{~yConfig()}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Config\+::$\sim$y\+Config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_a2b0764070b1eb7e583cecdf83c396b8b}\label{classyLib_1_1yConfig_a2b0764070b1eb7e583cecdf83c396b8b}} 
+\mbox{\Hypertarget{classyLib_1_1yConfig_ad2b115c227214b762f431824b9e19851}\label{classyLib_1_1yConfig_ad2b115c227214b762f431824b9e19851}} 
 \index{yLib::yConfig@{yLib::yConfig}!yConfig@{yConfig}}
 \index{yConfig@{yConfig}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfig()}{yConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily y\+Lib\+::y\+Config\+::y\+Config (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+\doxysubsubsection{\texorpdfstring{yConfig()}{yConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Config\+::y\+Config (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&}]{config\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
+
+
+copy constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+} & a exsited obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this op is disable. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yConfig_a057d77e66c1121a8023bc905434770c7}\label{classyLib_1_1yConfig_a057d77e66c1121a8023bc905434770c7}} 
+\index{yLib::yConfig@{yLib::yConfig}!yConfig@{yConfig}}
+\index{yConfig@{yConfig}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{yConfig()}{yConfig()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily y\+Lib\+::y\+Config\+::y\+Config (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&\&}]{config\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+move constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+} & a exsited obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this op is disable. 
+\end{DoxyWarning}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classyLib_1_1yConfig_aac4652f444efa3c4dde49e71696a9153}\label{classyLib_1_1yConfig_aac4652f444efa3c4dde49e71696a9153}} 
+\mbox{\Hypertarget{classyLib_1_1yConfig_a90bd8857e345191563d530f1acde5447}\label{classyLib_1_1yConfig_a90bd8857e345191563d530f1acde5447}} 
+\index{yLib::yConfig@{yLib::yConfig}!AddNode@{AddNode}}
+\index{AddNode@{AddNode}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{AddNode()}{AddNode()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Config\+::\+Add\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{pos\+\_\+,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{name\+\_\+,  }\item[{\mbox{\hyperlink{classyLib_1_1yValue_ad30bf06e744fa772021a7cc4936e9be2}{y\+Value\+::y\+Value\+Type}}}]{type\+\_\+,  }\item[{const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&}]{value\+\_\+ = {\ttfamily \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}}()} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classyLib_1_1yConfig_acde3da0df3be69fe498953c67cc1b03b}\label{classyLib_1_1yConfig_acde3da0df3be69fe498953c67cc1b03b}} 
+\index{yLib::yConfig@{yLib::yConfig}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} y\+Lib\+::y\+Config\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{node\+\_\+path\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+get value by node-\/path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+path\+\_\+} & the path of node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the value of node-\/path. 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yConfig_aa58607ff6fb45235cff11a09cc951b5c}\label{classyLib_1_1yConfig_aa58607ff6fb45235cff11a09cc951b5c}} 
 \index{yLib::yConfig@{yLib::yConfig}!operator=@{operator=}}
 \index{operator=@{operator=}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}}\& y\+Lib\+::y\+Config\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \& y\+Lib\+::y\+Config\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&\&}]{config\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_a0d29a5284919fa7deca2334cb8f6afaf}\label{classyLib_1_1yConfig_a0d29a5284919fa7deca2334cb8f6afaf}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigAddNode@{yConfigAddNode}}
-\index{yConfigAddNode@{yConfigAddNode}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigAddNode()}{yConfigAddNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Add\+Node (\begin{DoxyParamCaption}\item[{const char $\ast$}]{add\+\_\+node\+\_\+pos,  }\item[{const char $\ast$}]{add\+\_\+node\+\_\+name,  }\item[{\mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}}}]{add\+\_\+node\+\_\+type }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_a8e3c0120de54405aaf6375412d1f3650}\label{classyLib_1_1yConfig_a8e3c0120de54405aaf6375412d1f3650}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigAddNode@{yConfigAddNode}}
-\index{yConfigAddNode@{yConfigAddNode}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigAddNode()}{yConfigAddNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Add\+Node (\begin{DoxyParamCaption}\item[{const char $\ast$}]{add\+\_\+node\+\_\+pos,  }\item[{const char $\ast$}]{add\+\_\+node\+\_\+name,  }\item[{\mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}}}]{add\+\_\+node\+\_\+type,  }\item[{const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&}]{value }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_ad316d34c11687820e4334a285f04f848}\label{classyLib_1_1yConfig_ad316d34c11687820e4334a285f04f848}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigAddNode@{yConfigAddNode}}
-\index{yConfigAddNode@{yConfigAddNode}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigAddNode()}{yConfigAddNode()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Add\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{add\+\_\+node\+\_\+pos,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{add\+\_\+node\+\_\+name,  }\item[{\mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}}}]{add\+\_\+node\+\_\+type }\end{DoxyParamCaption})}
+assignment func 
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_ab31fad7dd769eba30480794ddac5ac46}\label{classyLib_1_1yConfig_ab31fad7dd769eba30480794ddac5ac46}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigAddNode@{yConfigAddNode}}
-\index{yConfigAddNode@{yConfigAddNode}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigAddNode()}{yConfigAddNode()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Add\+Node (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{add\+\_\+node\+\_\+pos,  }\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{add\+\_\+node\+\_\+name,  }\item[{\mbox{\hyperlink{namespaceyLib_a9b25f843a461b3f02e6bdacaab711594}{y\+Config\+Value\+Type}}}]{add\+\_\+node\+\_\+type,  }\item[{const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&}]{value }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_aef6d11b4f67d84a8375740a852b8afa4}\label{classyLib_1_1yConfig_aef6d11b4f67d84a8375740a852b8afa4}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigGetValue@{yConfigGetValue}}
-\index{yConfigGetValue@{yConfigGetValue}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigGetValue()}{yConfigGetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Lib\+::y\+Config\+Value}} y\+Lib\+::y\+Config\+::y\+Config\+Get\+Value (\begin{DoxyParamCaption}\item[{const char $\ast$}]{node\+\_\+path }\end{DoxyParamCaption})}
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+} & a exsited obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the obj of \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this op is disable. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yConfig_aaa543c4ccae607127eade86e8eeaa03e}\label{classyLib_1_1yConfig_aaa543c4ccae607127eade86e8eeaa03e}} 
+\index{yLib::yConfig@{yLib::yConfig}!operator=@{operator=}}
+\index{operator=@{operator=}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \& y\+Lib\+::y\+Config\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} \&}]{config\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_a39c154ac9e48596c3868a0e3bccd5715}\label{classyLib_1_1yConfig_a39c154ac9e48596c3868a0e3bccd5715}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigGetValue@{yConfigGetValue}}
-\index{yConfigGetValue@{yConfigGetValue}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigGetValue()}{yConfigGetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Lib\+::y\+Config\+Value}} y\+Lib\+::y\+Config\+::y\+Config\+Get\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{node\+\_\+path }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_a56f8206683acd07a15bb844537f1f554}\label{classyLib_1_1yConfig_a56f8206683acd07a15bb844537f1f554}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigReadFile@{yConfigReadFile}}
-\index{yConfigReadFile@{yConfigReadFile}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigReadFile()}{yConfigReadFile()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Read\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{file\+\_\+path }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_af1278621856e1c35713efef91154544e}\label{classyLib_1_1yConfig_af1278621856e1c35713efef91154544e}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigSetValue@{yConfigSetValue}}
-\index{yConfigSetValue@{yConfigSetValue}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigSetValue()}{yConfigSetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Set\+Value (\begin{DoxyParamCaption}\item[{const char $\ast$}]{node\+\_\+path,  }\item[{const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&}]{value }\end{DoxyParamCaption})}
+assignment func 
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_a0e03edbe105b819cb244b6cf0b5e29ca}\label{classyLib_1_1yConfig_a0e03edbe105b819cb244b6cf0b5e29ca}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigSetValue@{yConfigSetValue}}
-\index{yConfigSetValue@{yConfigSetValue}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigSetValue()}{yConfigSetValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Set\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{node\+\_\+path,  }\item[{const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&}]{value }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yConfig_a8a0d872701164707561d25e91394802c}\label{classyLib_1_1yConfig_a8a0d872701164707561d25e91394802c}} 
-\index{yLib::yConfig@{yLib::yConfig}!yConfigWriteFile@{yConfigWriteFile}}
-\index{yConfigWriteFile@{yConfigWriteFile}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{yConfigWriteFile()}{yConfigWriteFile()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::y\+Config\+Write\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{file\+\_\+path }\end{DoxyParamCaption})}
+\begin{DoxyParams}{Parameters}
+{\em config\+\_\+} & a exsited obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the obj of \mbox{\hyperlink{classyLib_1_1yConfig}{y\+Config}} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+this op is disable. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yConfig_aa1cb8bb7d528ac2979aa7a2cbecac6e0}\label{classyLib_1_1yConfig_aa1cb8bb7d528ac2979aa7a2cbecac6e0}} 
+\index{yLib::yConfig@{yLib::yConfig}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Config\+::\+Read\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{file\+\_\+path\+\_\+ }\end{DoxyParamCaption})}
 
+
+
+read cfg-\/file from disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path\+\_\+} & the path of cfg-\/file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the op status 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yConfig_a7002cc95e08e8c750651d15fc79951be}\label{classyLib_1_1yConfig_a7002cc95e08e8c750651d15fc79951be}} 
+\index{yLib::yConfig@{yLib::yConfig}!SetValue@{SetValue}}
+\index{SetValue@{SetValue}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{SetValue()}{SetValue()}}
+{\footnotesize\ttfamily int y\+Lib\+::y\+Config\+::\+Set\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{node\+\_\+path\+\_\+,  }\item[{const \mbox{\hyperlink{classyLib_1_1yConfigValue}{y\+Config\+Value}} \&}]{value\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+get value by node-\/path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+\_\+path\+\_\+} & the path of node. \\
+\hline
+{\em value\+\_\+} & the value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of op. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+} & the position of node. \\
+\hline
+{\em name\+\_\+} & the name of node. \\
+\hline
+{\em type\+\_\+} & the type of value.\+we only support int32\+\_\+t/bool/float/std\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{string}}/group. \\
+\hline
+{\em value\+\_\+} & the value to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of op. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+if pos\+\_\+ == \textquotesingle{}.\textquotesingle{} or \char`\"{}\char`\"{}, we will add node to root 
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yConfig_a58efbd759e4f0240d8dcb7583f392421}\label{classyLib_1_1yConfig_a58efbd759e4f0240d8dcb7583f392421}} 
+\index{yLib::yConfig@{yLib::yConfig}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Config\+::\+Write\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{file\+\_\+path\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+write cfg-\/file to disk. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path\+\_\+} & the path of cfg-\/file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the status of op. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classyLib_1_1yConfig_a8d47690be796f19dba7fcb0197c4cddc}\label{classyLib_1_1yConfig_a8d47690be796f19dba7fcb0197c4cddc}} 
-\index{yLib::yConfig@{yLib::yConfig}!\_libconfig\_config@{\_libconfig\_config}}
-\index{\_libconfig\_config@{\_libconfig\_config}!yLib::yConfig@{yLib::yConfig}}
-\doxysubsubsection{\texorpdfstring{\_libconfig\_config}{\_libconfig\_config}}
-{\footnotesize\ttfamily libconfig\+::\+Config\& y\+Lib\+::y\+Config\+::\+\_\+libconfig\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classyLib_1_1yConfig_a9a01d2ffd41c92d76b682f68581273a1}\label{classyLib_1_1yConfig_a9a01d2ffd41c92d76b682f68581273a1}} 
+\index{yLib::yConfig@{yLib::yConfig}!config\_instance@{config\_instance}}
+\index{config\_instance@{config\_instance}!yLib::yConfig@{yLib::yConfig}}
+\doxysubsubsection{\texorpdfstring{config\_instance}{config\_instance}}
+{\footnotesize\ttfamily void$\ast$ y\+Lib\+::y\+Config\+::config\+\_\+instance\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

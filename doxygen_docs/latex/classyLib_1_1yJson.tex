@@ -2,6 +2,11 @@
 \label{classyLib_1_1yJson}\index{yLib::yJson@{yLib::yJson}}
 
 
+This is a tool to parse the json file.  
+
+
+
+
 {\ttfamily \#include $<$yjson.\+hpp$>$}
 
 Inheritance diagram for y\+Lib\+::y\+Json\+:\begin{figure}[H]
@@ -14,42 +19,39 @@ Inheritance diagram for y\+Lib\+::y\+Json\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classyLib_1_1yJson_aa990ccf45d13cb76ace8e563a0115bcc}{y\+Json}} () noexcept
-\item 
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classyLib_1_1yJson_ac49ffef83206df6a9d732ed8150821a4}{$\sim$y\+Json}} ()
-\item 
-int \mbox{\hyperlink{classyLib_1_1yJson_a01048536e5db1f3d61e1bc01fb2fde9a}{y\+Json\+Read\+File}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} file)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yJson_a96750dfbb11cb62e62c63b356d0d6011}{y\+Json\+Read\+Memory}} (const int8\+\_\+t $\ast$mem\+\_\+addr, uint64\+\_\+t mem\+\_\+size)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yJson_a383296b3e0adb87a86ae8559f75e2102}{y\+Json\+Write\+File}} (\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} file)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yJson_a34095dea235b7b228827f19c55ff8ecb}{y\+Json\+Write\+Memory}} (int8\+\_\+t $\ast$mem\+\_\+addr, uint64\+\_\+t mem\+\_\+max\+\_\+size)
-\item 
-\+\_\+\+\_\+\+Y\+L\+I\+B\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+ \mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \mbox{\hyperlink{classyLib_1_1yJson_a9198e4af1ecdd88d5ce9917c9a5c8008}{y\+Json\+Get\+Value}} (void)
-\item 
-\+\_\+\+\_\+\+Y\+L\+I\+B\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+\_\+\+\_\+ int \mbox{\hyperlink{classyLib_1_1yJson_a745de1ed5ac4a5fb02c24f11daa0cef8}{y\+Json\+Write\+Value}} (\mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \&value)
-\item 
-\mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \mbox{\hyperlink{classyLib_1_1yJson_a0d8aca15083def2f76d9bd9251f76c45}{y\+Json\+Get\+Parsed\+Json\+Object}} (void)
-\item 
-int \mbox{\hyperlink{classyLib_1_1yJson_a9e2c513cbee9ab343dce37880e2ea6c7}{y\+Json\+Set\+Json\+Object}} (\mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \&obj\+\_\+val\+\_\+)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em default destructor \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yJson_abd0ebb650d0fc133a23d48ba31d97108}{Read\+File}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&file\+\_\+path\+\_\+)
+\begin{DoxyCompactList}\small\item\em parse json object from json-\/file. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yJson_afe8d57dab9bf85e3cac905ca4bd6defe}{Read\+Memory}} (const int8\+\_\+t $\ast$addr\+\_\+, uint64\+\_\+t size\+\_\+)
+\begin{DoxyCompactList}\small\item\em parse json object from memory. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yJson_ad1198289ca2478c764e29ca2972e116e}{Write\+File}} (const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&file\+\_\+path\+\_\+)
+\begin{DoxyCompactList}\small\item\em write the str of a json object to a json-\/file. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yJson_a048698d0d9235abac10ecebd71c44b71}{Write\+Memory}} (int8\+\_\+t $\ast$addr\+\_\+, uint64\+\_\+t max\+\_\+size\+\_\+)
+\begin{DoxyCompactList}\small\item\em write the str of a json object to memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \mbox{\hyperlink{classyLib_1_1yJson_a7c15f2467ac12c1c9e81afd1d0de6819}{Get\+Root\+Object}} (void)
+\begin{DoxyCompactList}\small\item\em get the root-\/obj of json to be read. \end{DoxyCompactList}\item 
+int8\+\_\+t \mbox{\hyperlink{classyLib_1_1yJson_ade7da32968ec487619473eb8edb5502a}{Set\+Root\+Object}} (const \mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \&value\+\_\+)
+\begin{DoxyCompactList}\small\item\em set the root-\/obj of json to be written. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Json\+::\+Char\+Reader $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_ada9e318a62df5246867ec910addfc8a5}{\+\_\+json\+\_\+reader}} = nullptr
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_aecffeaac9b19ce7587efbe69f22a7896}{json\+\_\+reader}} = nullptr
 \item 
-Json\+::\+Char\+Reader\+Builder $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_a7c42c781f3b831f58d7ce2fea54380fb}{\+\_\+json\+\_\+reader\+\_\+builder}} = nullptr
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_adb744bcf3e36ee6c687bb69851815088}{json\+\_\+reader\+\_\+builder}} = nullptr
 \item 
-Json\+::\+Stream\+Writer $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_af1297a1a41bad77cea8d8a68397459fa}{\+\_\+json\+\_\+writer}} = nullptr
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_a1ff81f089752d0e05eb6fcc8d90391d8}{json\+\_\+writer}} = nullptr
 \item 
-Json\+::\+Stream\+Writer\+Builder $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_a4b2ae0d249c4173a588f5371c671016f}{\+\_\+json\+\_\+writer\+\_\+builder}} = nullptr
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_aff26cee4fcb5fab8b3b0c5041f05036e}{json\+\_\+writer\+\_\+builder}} = nullptr
 \item 
-Json\+::\+Value $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_a5be7c1868bf3cd416e1a5c62f14786a0}{\+\_\+json\+\_\+root\+\_\+value}} = nullptr
-\item 
-char $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_ae4b5d255476f4be7ee4125c90ba4b857}{\+\_\+json\+\_\+str\+\_\+buf}} = nullptr
+void $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_a8426697f45832a5962babd0a0813a933}{json\+\_\+root\+\_\+value}} = nullptr
 \end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
+
+\doxysubsection{Detailed Description}
+This is a tool to parse the json file. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classyLib_1_1yJson_aa990ccf45d13cb76ace8e563a0115bcc}\label{classyLib_1_1yJson_aa990ccf45d13cb76ace8e563a0115bcc}} 
@@ -58,6 +60,15 @@ char $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_ae4b5d255476f4be7ee4125c90ba4b85
 \doxysubsubsection{\texorpdfstring{yJson()}{yJson()}}
 {\footnotesize\ttfamily y\+Lib\+::y\+Json\+::y\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
 
+
+
+default constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classyLib_1_1yJson_ac49ffef83206df6a9d732ed8150821a4}\label{classyLib_1_1yJson_ac49ffef83206df6a9d732ed8150821a4}} 
 \index{yLib::yJson@{yLib::yJson}!````~yJson@{$\sim$yJson}}
 \index{````~yJson@{$\sim$yJson}!yLib::yJson@{yLib::yJson}}
@@ -66,93 +77,208 @@ char $\ast$ \mbox{\hyperlink{classyLib_1_1yJson_ae4b5d255476f4be7ee4125c90ba4b85
 
 
 
+default destructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classyLib_1_1yJson_a0d8aca15083def2f76d9bd9251f76c45}\label{classyLib_1_1yJson_a0d8aca15083def2f76d9bd9251f76c45}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonGetParsedJsonObject@{yJsonGetParsedJsonObject}}
-\index{yJsonGetParsedJsonObject@{yJsonGetParsedJsonObject}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonGetParsedJsonObject()}{yJsonGetParsedJsonObject()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Lib\+::y\+Json\+Value}} y\+Lib\+::y\+Json\+::y\+Json\+Get\+Parsed\+Json\+Object (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classyLib_1_1yJson_a7c15f2467ac12c1c9e81afd1d0de6819}\label{classyLib_1_1yJson_a7c15f2467ac12c1c9e81afd1d0de6819}} 
+\index{yLib::yJson@{yLib::yJson}!GetRootObject@{GetRootObject}}
+\index{GetRootObject@{GetRootObject}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{GetRootObject()}{GetRootObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} y\+Lib\+::y\+Json\+::\+Get\+Root\+Object (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a9198e4af1ecdd88d5ce9917c9a5c8008}\label{classyLib_1_1yJson_a9198e4af1ecdd88d5ce9917c9a5c8008}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonGetValue@{yJsonGetValue}}
-\index{yJsonGetValue@{yJsonGetValue}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonGetValue()}{yJsonGetValue()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Lib\+::y\+Json\+Value}} y\+Lib\+::y\+Json\+::y\+Json\+Get\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a01048536e5db1f3d61e1bc01fb2fde9a}\label{classyLib_1_1yJson_a01048536e5db1f3d61e1bc01fb2fde9a}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonReadFile@{yJsonReadFile}}
-\index{yJsonReadFile@{yJsonReadFile}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonReadFile()}{yJsonReadFile()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Json\+::y\+Json\+Read\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{file }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a96750dfbb11cb62e62c63b356d0d6011}\label{classyLib_1_1yJson_a96750dfbb11cb62e62c63b356d0d6011}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonReadMemory@{yJsonReadMemory}}
-\index{yJsonReadMemory@{yJsonReadMemory}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonReadMemory()}{yJsonReadMemory()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Json\+::y\+Json\+Read\+Memory (\begin{DoxyParamCaption}\item[{const int8\+\_\+t $\ast$}]{mem\+\_\+addr,  }\item[{uint64\+\_\+t}]{mem\+\_\+size }\end{DoxyParamCaption})}
+get the root-\/obj of json to be read. 
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a9e2c513cbee9ab343dce37880e2ea6c7}\label{classyLib_1_1yJson_a9e2c513cbee9ab343dce37880e2ea6c7}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonSetJsonObject@{yJsonSetJsonObject}}
-\index{yJsonSetJsonObject@{yJsonSetJsonObject}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonSetJsonObject()}{yJsonSetJsonObject()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Json\+::y\+Json\+Set\+Json\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \&}]{obj\+\_\+val\+\_\+ }\end{DoxyParamCaption})}
+\begin{DoxyReturn}{Returns}
+the obj of \mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} 
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a383296b3e0adb87a86ae8559f75e2102}\label{classyLib_1_1yJson_a383296b3e0adb87a86ae8559f75e2102}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonWriteFile@{yJsonWriteFile}}
-\index{yJsonWriteFile@{yJsonWriteFile}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonWriteFile()}{yJsonWriteFile()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Json\+::y\+Json\+Write\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}}}]{file }\end{DoxyParamCaption})}
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yJson_abd0ebb650d0fc133a23d48ba31d97108}\label{classyLib_1_1yJson_abd0ebb650d0fc133a23d48ba31d97108}} 
+\index{yLib::yJson@{yLib::yJson}!ReadFile@{ReadFile}}
+\index{ReadFile@{ReadFile}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{ReadFile()}{ReadFile()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Json\+::\+Read\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{file\+\_\+path\+\_\+ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a34095dea235b7b228827f19c55ff8ecb}\label{classyLib_1_1yJson_a34095dea235b7b228827f19c55ff8ecb}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonWriteMemory@{yJsonWriteMemory}}
-\index{yJsonWriteMemory@{yJsonWriteMemory}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonWriteMemory()}{yJsonWriteMemory()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Json\+::y\+Json\+Write\+Memory (\begin{DoxyParamCaption}\item[{int8\+\_\+t $\ast$}]{mem\+\_\+addr,  }\item[{uint64\+\_\+t}]{mem\+\_\+max\+\_\+size }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a745de1ed5ac4a5fb02c24f11daa0cef8}\label{classyLib_1_1yJson_a745de1ed5ac4a5fb02c24f11daa0cef8}} 
-\index{yLib::yJson@{yLib::yJson}!yJsonWriteValue@{yJsonWriteValue}}
-\index{yJsonWriteValue@{yJsonWriteValue}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{yJsonWriteValue()}{yJsonWriteValue()}}
-{\footnotesize\ttfamily int y\+Lib\+::y\+Json\+::y\+Json\+Write\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \&}]{value }\end{DoxyParamCaption})}
 
+parse json object from json-\/file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path\+\_\+} & the json-\/file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this op\textquotesingle{}s status. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yJson_afe8d57dab9bf85e3cac905ca4bd6defe}\label{classyLib_1_1yJson_afe8d57dab9bf85e3cac905ca4bd6defe}} 
+\index{yLib::yJson@{yLib::yJson}!ReadMemory@{ReadMemory}}
+\index{ReadMemory@{ReadMemory}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{ReadMemory()}{ReadMemory()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Json\+::\+Read\+Memory (\begin{DoxyParamCaption}\item[{const int8\+\_\+t $\ast$}]{addr\+\_\+,  }\item[{uint64\+\_\+t}]{size\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+parse json object from memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr\+\_\+} & the mem\textquotesingle{}s addr to be parsed. \\
+\hline
+{\em size\+\_\+} & the mem\textquotesingle{}s size to be parsed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this op\textquotesingle{}s status. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yJson_ade7da32968ec487619473eb8edb5502a}\label{classyLib_1_1yJson_ade7da32968ec487619473eb8edb5502a}} 
+\index{yLib::yJson@{yLib::yJson}!SetRootObject@{SetRootObject}}
+\index{SetRootObject@{SetRootObject}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{SetRootObject()}{SetRootObject()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Json\+::\+Set\+Root\+Object (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classyLib_1_1yJsonValue}{y\+Json\+Value}} \&}]{val\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+set the root-\/obj of json to be written. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value\+\_\+} & the root-\/obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this op\textquotesingle{}s status. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yJson_ad1198289ca2478c764e29ca2972e116e}\label{classyLib_1_1yJson_ad1198289ca2478c764e29ca2972e116e}} 
+\index{yLib::yJson@{yLib::yJson}!WriteFile@{WriteFile}}
+\index{WriteFile@{WriteFile}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{WriteFile()}{WriteFile()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Json\+::\+Write\+File (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{src_2CMakeLists_8txt_a296644e9ff1d0a602b4703f361406374}{std\+::string}} \&}]{file\+\_\+path\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+write the str of a json object to a json-\/file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+path\+\_\+} & the json-\/file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this op\textquotesingle{}s status. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
+\mbox{\Hypertarget{classyLib_1_1yJson_a048698d0d9235abac10ecebd71c44b71}\label{classyLib_1_1yJson_a048698d0d9235abac10ecebd71c44b71}} 
+\index{yLib::yJson@{yLib::yJson}!WriteMemory@{WriteMemory}}
+\index{WriteMemory@{WriteMemory}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{WriteMemory()}{WriteMemory()}}
+{\footnotesize\ttfamily int8\+\_\+t y\+Lib\+::y\+Json\+::\+Write\+Memory (\begin{DoxyParamCaption}\item[{int8\+\_\+t $\ast$}]{addr\+\_\+,  }\item[{uint64\+\_\+t}]{max\+\_\+size\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+write the str of a json object to memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr\+\_\+} & the mem\textquotesingle{}s addr to be written. \\
+\hline
+{\em max\+\_\+size\+\_\+} & the max mem\textquotesingle{}s size to be written. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this op\textquotesingle{}s status. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em 0} & ok. \\
+\hline
+{\em -\/1} & error. \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyWarning}{Warning}
+
+\end{DoxyWarning}
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classyLib_1_1yJson_ada9e318a62df5246867ec910addfc8a5}\label{classyLib_1_1yJson_ada9e318a62df5246867ec910addfc8a5}} 
-\index{yLib::yJson@{yLib::yJson}!\_json\_reader@{\_json\_reader}}
-\index{\_json\_reader@{\_json\_reader}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{\_json\_reader}{\_json\_reader}}
-{\footnotesize\ttfamily Json\+::\+Char\+Reader$\ast$ y\+Lib\+::y\+Json\+::\+\_\+json\+\_\+reader = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classyLib_1_1yJson_aecffeaac9b19ce7587efbe69f22a7896}\label{classyLib_1_1yJson_aecffeaac9b19ce7587efbe69f22a7896}} 
+\index{yLib::yJson@{yLib::yJson}!json\_reader@{json\_reader}}
+\index{json\_reader@{json\_reader}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{json\_reader}{json\_reader}}
+{\footnotesize\ttfamily void$\ast$ y\+Lib\+::y\+Json\+::json\+\_\+reader = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a7c42c781f3b831f58d7ce2fea54380fb}\label{classyLib_1_1yJson_a7c42c781f3b831f58d7ce2fea54380fb}} 
-\index{yLib::yJson@{yLib::yJson}!\_json\_reader\_builder@{\_json\_reader\_builder}}
-\index{\_json\_reader\_builder@{\_json\_reader\_builder}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{\_json\_reader\_builder}{\_json\_reader\_builder}}
-{\footnotesize\ttfamily Json\+::\+Char\+Reader\+Builder$\ast$ y\+Lib\+::y\+Json\+::\+\_\+json\+\_\+reader\+\_\+builder = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classyLib_1_1yJson_adb744bcf3e36ee6c687bb69851815088}\label{classyLib_1_1yJson_adb744bcf3e36ee6c687bb69851815088}} 
+\index{yLib::yJson@{yLib::yJson}!json\_reader\_builder@{json\_reader\_builder}}
+\index{json\_reader\_builder@{json\_reader\_builder}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{json\_reader\_builder}{json\_reader\_builder}}
+{\footnotesize\ttfamily void$\ast$ y\+Lib\+::y\+Json\+::json\+\_\+reader\+\_\+builder = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_a5be7c1868bf3cd416e1a5c62f14786a0}\label{classyLib_1_1yJson_a5be7c1868bf3cd416e1a5c62f14786a0}} 
-\index{yLib::yJson@{yLib::yJson}!\_json\_root\_value@{\_json\_root\_value}}
-\index{\_json\_root\_value@{\_json\_root\_value}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{\_json\_root\_value}{\_json\_root\_value}}
-{\footnotesize\ttfamily Json\+::\+Value$\ast$ y\+Lib\+::y\+Json\+::\+\_\+json\+\_\+root\+\_\+value = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classyLib_1_1yJson_a8426697f45832a5962babd0a0813a933}\label{classyLib_1_1yJson_a8426697f45832a5962babd0a0813a933}} 
+\index{yLib::yJson@{yLib::yJson}!json\_root\_value@{json\_root\_value}}
+\index{json\_root\_value@{json\_root\_value}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{json\_root\_value}{json\_root\_value}}
+{\footnotesize\ttfamily void$\ast$ y\+Lib\+::y\+Json\+::json\+\_\+root\+\_\+value = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_ae4b5d255476f4be7ee4125c90ba4b857}\label{classyLib_1_1yJson_ae4b5d255476f4be7ee4125c90ba4b857}} 
-\index{yLib::yJson@{yLib::yJson}!\_json\_str\_buf@{\_json\_str\_buf}}
-\index{\_json\_str\_buf@{\_json\_str\_buf}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{\_json\_str\_buf}{\_json\_str\_buf}}
-{\footnotesize\ttfamily char$\ast$ y\+Lib\+::y\+Json\+::\+\_\+json\+\_\+str\+\_\+buf = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classyLib_1_1yJson_a1ff81f089752d0e05eb6fcc8d90391d8}\label{classyLib_1_1yJson_a1ff81f089752d0e05eb6fcc8d90391d8}} 
+\index{yLib::yJson@{yLib::yJson}!json\_writer@{json\_writer}}
+\index{json\_writer@{json\_writer}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{json\_writer}{json\_writer}}
+{\footnotesize\ttfamily void$\ast$ y\+Lib\+::y\+Json\+::json\+\_\+writer = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classyLib_1_1yJson_af1297a1a41bad77cea8d8a68397459fa}\label{classyLib_1_1yJson_af1297a1a41bad77cea8d8a68397459fa}} 
-\index{yLib::yJson@{yLib::yJson}!\_json\_writer@{\_json\_writer}}
-\index{\_json\_writer@{\_json\_writer}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{\_json\_writer}{\_json\_writer}}
-{\footnotesize\ttfamily Json\+::\+Stream\+Writer$\ast$ y\+Lib\+::y\+Json\+::\+\_\+json\+\_\+writer = nullptr\hspace{0.3cm}{\ttfamily [private]}}
-
-\mbox{\Hypertarget{classyLib_1_1yJson_a4b2ae0d249c4173a588f5371c671016f}\label{classyLib_1_1yJson_a4b2ae0d249c4173a588f5371c671016f}} 
-\index{yLib::yJson@{yLib::yJson}!\_json\_writer\_builder@{\_json\_writer\_builder}}
-\index{\_json\_writer\_builder@{\_json\_writer\_builder}!yLib::yJson@{yLib::yJson}}
-\doxysubsubsection{\texorpdfstring{\_json\_writer\_builder}{\_json\_writer\_builder}}
-{\footnotesize\ttfamily Json\+::\+Stream\+Writer\+Builder$\ast$ y\+Lib\+::y\+Json\+::\+\_\+json\+\_\+writer\+\_\+builder = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+\mbox{\Hypertarget{classyLib_1_1yJson_aff26cee4fcb5fab8b3b0c5041f05036e}\label{classyLib_1_1yJson_aff26cee4fcb5fab8b3b0c5041f05036e}} 
+\index{yLib::yJson@{yLib::yJson}!json\_writer\_builder@{json\_writer\_builder}}
+\index{json\_writer\_builder@{json\_writer\_builder}!yLib::yJson@{yLib::yJson}}
+\doxysubsubsection{\texorpdfstring{json\_writer\_builder}{json\_writer\_builder}}
+{\footnotesize\ttfamily void$\ast$ y\+Lib\+::y\+Json\+::json\+\_\+writer\+\_\+builder = nullptr\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

@@ -4,7 +4,6 @@ var namespaceyLib =
     [ "yAbstractSocket", "classyLib_1_1yAbstractSocket.html", "classyLib_1_1yAbstractSocket" ],
     [ "yAbstractSocketServer", "classyLib_1_1yAbstractSocketServer.html", "classyLib_1_1yAbstractSocketServer" ],
     [ "yBasicAllocator", "classyLib_1_1yBasicAllocator.html", "classyLib_1_1yBasicAllocator" ],
-    [ "yBasicValue", "classyLib_1_1yBasicValue.html", "classyLib_1_1yBasicValue" ],
     [ "yCommon", "classyLib_1_1yCommon.html", "classyLib_1_1yCommon" ],
     [ "yConfig", "classyLib_1_1yConfig.html", "classyLib_1_1yConfig" ],
     [ "yConfigValue", "classyLib_1_1yConfigValue.html", "classyLib_1_1yConfigValue" ],
@@ -28,6 +27,7 @@ var namespaceyLib =
     [ "yTcpSocket", "classyLib_1_1yTcpSocket.html", "classyLib_1_1yTcpSocket" ],
     [ "yUdpServer", "classyLib_1_1yUdpServer.html", "classyLib_1_1yUdpServer" ],
     [ "yUdpSocket", "classyLib_1_1yUdpSocket.html", "classyLib_1_1yUdpSocket" ],
-    [ "yXml", "classyLib_1_1yXml.html", "classyLib_1_1yXml" ],
-    [ "yXML", "classyLib_1_1yXML.html", "classyLib_1_1yXML" ]
+    [ "yValue", "classyLib_1_1yValue.html", "classyLib_1_1yValue" ],
+    [ "yXML", "classyLib_1_1yXML.html", "classyLib_1_1yXML" ],
+    [ "yXml", "classyLib_1_1yXml.html", "classyLib_1_1yXml" ]
 ];

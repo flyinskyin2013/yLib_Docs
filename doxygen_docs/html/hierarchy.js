@@ -1,7 +1,7 @@
 var hierarchy =
 [
     [ "yLib::__errno_desc_st__", "structyLib_1_1____errno__desc__st____.html", null ],
-    [ "yLib::yBasicValue::__value_container__", "structyLib_1_1yBasicValue_1_1____value__container____.html", null ],
+    [ "yLib::yValue::__value_container__", "structyLib_1_1yValue_1_1____value__container____.html", null ],
     [ "yHttpRequestParam::__yhttp_request_query_kv__", "structyHttpRequestParam_1_1____yhttp__request__query__kv____.html", null ],
     [ "yLib::yBasicAllocator< T >::rebind< U >", "structyLib_1_1yBasicAllocator_1_1rebind.html", null ],
     [ "struct", "structstruct.html", null ],
@@ -27,10 +27,6 @@ var hierarchy =
         [ "yLib::yUdpSocket", "classyLib_1_1yUdpSocket.html", null ]
       ] ],
       [ "yLib::yBasicAllocator< T >", "classyLib_1_1yBasicAllocator.html", null ],
-      [ "yLib::yBasicValue", "classyLib_1_1yBasicValue.html", [
-        [ "yLib::yConfigValue", "classyLib_1_1yConfigValue.html", null ],
-        [ "yLib::yJsonValue", "classyLib_1_1yJsonValue.html", null ]
-      ] ],
       [ "yLib::yCommon", "classyLib_1_1yCommon.html", null ],
       [ "yLib::yConfig", "classyLib_1_1yConfig.html", null ],
       [ "yLib::yCurl", "classyLib_1_1yCurl.html", null ],
@@ -43,6 +39,10 @@ var hierarchy =
       [ "yLib::yQueue< T, Alloc >", "classyLib_1_1yQueue.html", null ],
       [ "yLib::yShell", "classyLib_1_1yShell.html", null ],
       [ "yLib::yStack< T, Alloc >", "classyLib_1_1yStack.html", null ],
+      [ "yLib::yValue", "classyLib_1_1yValue.html", [
+        [ "yLib::yConfigValue", "classyLib_1_1yConfigValue.html", null ],
+        [ "yLib::yJsonValue", "classyLib_1_1yJsonValue.html", null ]
+      ] ],
       [ "yLib::yXML", "classyLib_1_1yXML.html", null ],
       [ "yLib::yXml", "classyLib_1_1yXml.html", null ]
     ] ],

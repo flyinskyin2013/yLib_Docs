@@ -2,17 +2,14 @@ var classyLib_1_1yConfig =
 [
     [ "yConfig", "classyLib_1_1yConfig.html#ac9551c5ce0183bbfd92fc9ab05ff54ef", null ],
     [ "~yConfig", "classyLib_1_1yConfig.html#a9281679e3bd88192f89223d05aba12be", null ],
-    [ "yConfig", "classyLib_1_1yConfig.html#a2b0764070b1eb7e583cecdf83c396b8b", null ],
-    [ "operator=", "classyLib_1_1yConfig.html#aac4652f444efa3c4dde49e71696a9153", null ],
-    [ "yConfigAddNode", "classyLib_1_1yConfig.html#a0d29a5284919fa7deca2334cb8f6afaf", null ],
-    [ "yConfigAddNode", "classyLib_1_1yConfig.html#a8e3c0120de54405aaf6375412d1f3650", null ],
-    [ "yConfigAddNode", "classyLib_1_1yConfig.html#ad316d34c11687820e4334a285f04f848", null ],
-    [ "yConfigAddNode", "classyLib_1_1yConfig.html#ab31fad7dd769eba30480794ddac5ac46", null ],
-    [ "yConfigGetValue", "classyLib_1_1yConfig.html#aef6d11b4f67d84a8375740a852b8afa4", null ],
-    [ "yConfigGetValue", "classyLib_1_1yConfig.html#a39c154ac9e48596c3868a0e3bccd5715", null ],
-    [ "yConfigReadFile", "classyLib_1_1yConfig.html#a56f8206683acd07a15bb844537f1f554", null ],
-    [ "yConfigSetValue", "classyLib_1_1yConfig.html#af1278621856e1c35713efef91154544e", null ],
-    [ "yConfigSetValue", "classyLib_1_1yConfig.html#a0e03edbe105b819cb244b6cf0b5e29ca", null ],
-    [ "yConfigWriteFile", "classyLib_1_1yConfig.html#a8a0d872701164707561d25e91394802c", null ],
-    [ "_libconfig_config", "classyLib_1_1yConfig.html#a8d47690be796f19dba7fcb0197c4cddc", null ]
+    [ "yConfig", "classyLib_1_1yConfig.html#ad2b115c227214b762f431824b9e19851", null ],
+    [ "yConfig", "classyLib_1_1yConfig.html#a057d77e66c1121a8023bc905434770c7", null ],
+    [ "AddNode", "classyLib_1_1yConfig.html#a90bd8857e345191563d530f1acde5447", null ],
+    [ "GetValue", "classyLib_1_1yConfig.html#acde3da0df3be69fe498953c67cc1b03b", null ],
+    [ "operator=", "classyLib_1_1yConfig.html#aa58607ff6fb45235cff11a09cc951b5c", null ],
+    [ "operator=", "classyLib_1_1yConfig.html#aaa543c4ccae607127eade86e8eeaa03e", null ],
+    [ "ReadFile", "classyLib_1_1yConfig.html#aa1cb8bb7d528ac2979aa7a2cbecac6e0", null ],
+    [ "SetValue", "classyLib_1_1yConfig.html#a7002cc95e08e8c750651d15fc79951be", null ],
+    [ "WriteFile", "classyLib_1_1yConfig.html#a58efbd759e4f0240d8dcb7583f392421", null ],
+    [ "config_instance", "classyLib_1_1yConfig.html#a9a01d2ffd41c92d76b682f68581273a1", null ]
 ];

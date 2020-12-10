@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">yLib
-   &#160;<span id="projectnumber">V0.0.8 beta</span>
+   &#160;<span id="projectnumber">V0.0.9 beta</span>
    </div>
   </td>
  </tr>
@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('ybasicvalue_8hpp.html',''); initResiza
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">ybasicvalue.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -99,10 +99,10 @@ $(document).ready(function(){initNavTree('ybasicvalue_8hpp.html',''); initResiza
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html">yLib::yBasicValue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is base-class of the all yXxxValues in <a class="el" href="namespaceyLib.html" title="This is a top namespace in yLib.">yLib</a>.  <a href="classyLib_1_1yBasicValue.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html">yLib::yValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is base-class of the all yXxxValues in <a class="el" href="namespaceyLib.html" title="This is a top namespace in yLib.">yLib</a>.  <a href="classyLib_1_1yValue.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyLib_1_1yBasicValue_1_1____value__container____.html">yLib::yBasicValue::__value_container__</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structyLib_1_1yValue_1_1____value__container____.html">yLib::yValue::__value_container__</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -111,20 +111,10 @@ Namespaces</h2></td></tr>
 <tr class="memdesc:namespaceyLib"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a top namespace in <a class="el" href="namespaceyLib.html" title="This is a top namespace in yLib.">yLib</a>. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:af6bf124ae3645e2246e99f213e569b69"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69">yLib::yBasicValueType</a> : int32_t { <br />
-&#160;&#160;<a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69aac8bf33937f292bee0e38d59f9b6bf0e">yLib::NONE_YBASICVALUE_TYPE</a> = 0, 
-<a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69a184eb836a6fa4eb4fd68262302c9fb3b">yLib::INT64_YBASICVALUE_TYPE</a> = 1, 
-<a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69a9862ed7611ae5dc653a5ffdccd7a8280">yLib::UINT64_YBASICVALUE_TYPE</a> = 2, 
-<a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69a53a5afe4a46c33398dd8b9a082996f74">yLib::BOOL_YBASICVALUE_TYPE</a> = 3, 
-<br />
-&#160;&#160;<a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69aee74212465d975900cb3f606db496d22">yLib::FLOAT_YBASICVALUE_TYPE</a> = 4, 
-<a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69ab44906f4b426d1282e8736115f2246c4">yLib::DOUBLE_YBASICVALUE_TYPE</a> = 5, 
-<a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69a524fe59b9f56d34b68027ffa7489300e">yLib::STRING_YBASICVALUE_TYPE</a> = 6
-<br />
- }</td></tr>
-<tr class="separator:af6bf124ae3645e2246e99f213e569b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a641c8fc729649e478485deafb729d613"><td class="memItemLeft" align="right" valign="top">typedef yValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceyLib.html#a641c8fc729649e478485deafb729d613">yLib::yBasicValue</a></td></tr>
+<tr class="separator:a641c8fc729649e478485deafb729d613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['object_5ftype_1070',['OBJECT_TYPE',['../classyLib_1_1yJsonValue.html#a06c6af4ddaee9a408ca850a5d9ff3103ae5f6eda5d0ed4863c269731b2b2cd52f',1,'yLib::yJsonValue']]]
+  ['pointer_5ftype_1102',['POINTER_TYPE',['../classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a7ca36ea61ad13c570be1184102b64253',1,'yLib::yValue']]]
 ];

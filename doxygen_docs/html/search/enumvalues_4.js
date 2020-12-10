@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_5ftype_1058',['ERROR_TYPE',['../classyLib_1_1yJsonValue.html#a06c6af4ddaee9a408ca850a5d9ff3103a0fc15756f1c99ae49b951664fe4e54f7',1,'yLib::yJsonValue']]]
+  ['float_5ftype_1091',['FLOAT_TYPE',['../classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2aafebdcf6fb9cf2a07b51a30ebe1cdccf',1,'yLib::yValue']]]
 ];

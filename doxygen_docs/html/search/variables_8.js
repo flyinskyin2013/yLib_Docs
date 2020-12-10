@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['ip_5faddr_967',['ip_addr',['../structyCurlParam.html#a40ad06a7a201581a727b23fb5f2e8e9f',1,'yCurlParam']]],
-  ['is_5fbind_5fsuccess_968',['is_bind_success',['../classyLib_1_1yAbstractSocket.html#a7010d3c8c4d18f9db3082e5fc515697d',1,'yLib::yAbstractSocket']]]
+  ['head_978',['head',['../classyLib_1_1yLinkedList.html#afa0c93d9ace1219f6e7f73fa8455f5a5',1,'yLib::yLinkedList']]],
+  ['host_979',['host',['../structyHttpRequestParam.html#aa2212f55e6d17112f49f26a1a5de41cd',1,'yHttpRequestParam']]],
+  ['http_5fheader_5fvec_980',['http_header_vec',['../structyHttpRequestParam.html#ad7af29f39684f55176406f6863274c99',1,'yHttpRequestParam']]]
 ];

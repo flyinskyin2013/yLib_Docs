@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">yLib
-   &#160;<span id="projectnumber">V0.0.8 beta</span>
+   &#160;<span id="projectnumber">V0.0.9 beta</span>
    </div>
   </td>
  </tr>
@@ -84,13 +84,15 @@ $(document).ready(function(){initNavTree('classyLib_1_1yConfigValue.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="classyLib_1_1yConfigValue-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">yLib::yConfigValue Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This is the <a class="el" href="classyLib_1_1yConfig.html" title="This is a tool to parse a cfg-file that is like c.">yConfig</a>'s value-container, it inherits from <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>.  
+ <a href="classyLib_1_1yConfigValue.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="yconfig_8hpp_source.html">yconfig.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -99,7 +101,7 @@ Inheritance diagram for yLib::yConfigValue:</div>
  <div class="center">
   <img src="classyLib_1_1yConfigValue.png" usemap="#yLib::yConfigValue_map" alt=""/>
   <map id="yLib::yConfigValue_map" name="yLib::yConfigValue_map">
-<area href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib." alt="yLib::yBasicValue" shape="rect" coords="0,56,119,80"/>
+<area href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib." alt="yLib::yValue" shape="rect" coords="0,56,119,80"/>
 <area href="classyLib_1_1yObject.html" title="This is base-class of the all object in yLib." alt="yLib::yObject" shape="rect" coords="0,0,119,24"/>
   </map>
 </div></div>
@@ -107,120 +109,170 @@ Inheritance diagram for yLib::yConfigValue:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af42379021fa824ca427a57aaea18bbee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#af42379021fa824ca427a57aaea18bbee">yConfigValue</a> () noexcept</td></tr>
+<tr class="memdesc:af42379021fa824ca427a57aaea18bbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="classyLib_1_1yConfigValue.html#af42379021fa824ca427a57aaea18bbee">More...</a><br /></td></tr>
 <tr class="separator:af42379021fa824ca427a57aaea18bbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae738f1699e653c695862ac207db19f38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#ae738f1699e653c695862ac207db19f38">~yConfigValue</a> () noexcept</td></tr>
+<tr class="memdesc:ae738f1699e653c695862ac207db19f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">default destructor  <a href="classyLib_1_1yConfigValue.html#ae738f1699e653c695862ac207db19f38">More...</a><br /></td></tr>
 <tr class="separator:ae738f1699e653c695862ac207db19f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3ff69aec137174c23b33660fd3dc97d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#ac3ff69aec137174c23b33660fd3dc97d">yConfigValue</a> (int64_t value_) noexcept</td></tr>
-<tr class="separator:ac3ff69aec137174c23b33660fd3dc97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb3248607d5831b46aa82532803f8299"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#aeb3248607d5831b46aa82532803f8299">yConfigValue</a> (uint64_t value_) noexcept</td></tr>
-<tr class="separator:aeb3248607d5831b46aa82532803f8299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26fc1fb908253c198c57e42f483ad3e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a26fc1fb908253c198c57e42f483ad3e9">yConfigValue</a> (int32_t value_) noexcept</td></tr>
+<tr class="memdesc:a26fc1fb908253c198c57e42f483ad3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yConfigValue.html#a26fc1fb908253c198c57e42f483ad3e9">More...</a><br /></td></tr>
+<tr class="separator:a26fc1fb908253c198c57e42f483ad3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c428b182ef0ef450d301a323e2a5618"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a7c428b182ef0ef450d301a323e2a5618">yConfigValue</a> (bool value_) noexcept</td></tr>
+<tr class="memdesc:a7c428b182ef0ef450d301a323e2a5618"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yConfigValue.html#a7c428b182ef0ef450d301a323e2a5618">More...</a><br /></td></tr>
 <tr class="separator:a7c428b182ef0ef450d301a323e2a5618"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a12387581d7bb78ea5e0c2c693b7bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a33a12387581d7bb78ea5e0c2c693b7bf">yConfigValue</a> (float value_) noexcept</td></tr>
+<tr class="memdesc:a33a12387581d7bb78ea5e0c2c693b7bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yConfigValue.html#a33a12387581d7bb78ea5e0c2c693b7bf">More...</a><br /></td></tr>
 <tr class="separator:a33a12387581d7bb78ea5e0c2c693b7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e7cf5865873474701587ee0797a7a0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a2e7cf5865873474701587ee0797a7a0b">yConfigValue</a> (double value_) noexcept</td></tr>
-<tr class="separator:a2e7cf5865873474701587ee0797a7a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ebc4f57e01b46ac174e242a04f69ecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a1ebc4f57e01b46ac174e242a04f69ecf">yConfigValue</a> (<a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;value_) noexcept</td></tr>
-<tr class="separator:a1ebc4f57e01b46ac174e242a04f69ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9836bec72b3e3bf5a22f50fc3ab5f525"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a9836bec72b3e3bf5a22f50fc3ab5f525">yConfigValue</a> (const char *value_) noexcept</td></tr>
-<tr class="separator:a9836bec72b3e3bf5a22f50fc3ab5f525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1addaceeb2c3d14c2c5ae75bfec23db9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a1addaceeb2c3d14c2c5ae75bfec23db9">yConfigValue</a> (const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;config_value) noexcept</td></tr>
-<tr class="separator:a1addaceeb2c3d14c2c5ae75bfec23db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51d140d506d081716e94a690b2f2da9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a51d140d506d081716e94a690b2f2da9c">operator=</a> (const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;config_value) noexcept</td></tr>
-<tr class="separator:a51d140d506d081716e94a690b2f2da9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb33c3fba2991c4348a08aa1339f2703"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#aeb33c3fba2991c4348a08aa1339f2703">yConfigValue</a> (<a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;config_value) noexcept</td></tr>
-<tr class="separator:aeb33c3fba2991c4348a08aa1339f2703"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a455df548f1d2b0c3aaf6021e1e1e4d92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a455df548f1d2b0c3aaf6021e1e1e4d92">operator=</a> (<a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;config_value) noexcept</td></tr>
-<tr class="separator:a455df548f1d2b0c3aaf6021e1e1e4d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7960bc8da91770b97327cec29820ad77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a7960bc8da91770b97327cec29820ad77">GetyConfigValueType</a> (void) const</td></tr>
-<tr class="separator:a7960bc8da91770b97327cec29820ad77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60601abc30bb3375c0e2a8d4b5f604d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a60601abc30bb3375c0e2a8d4b5f604d4">operator=</a> (int value)</td></tr>
-<tr class="separator:a60601abc30bb3375c0e2a8d4b5f604d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a46dbb9d989ea675612f7ad517e585a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a1a46dbb9d989ea675612f7ad517e585a">operator=</a> (bool value)</td></tr>
-<tr class="separator:a1a46dbb9d989ea675612f7ad517e585a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0918891cc07506afd94f5787dacda334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a0918891cc07506afd94f5787dacda334">operator=</a> (float value)</td></tr>
-<tr class="separator:a0918891cc07506afd94f5787dacda334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92480f22c632bbdfa3d85c965eaf1c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a92480f22c632bbdfa3d85c965eaf1c05">operator=</a> (<a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;value)</td></tr>
-<tr class="separator:a92480f22c632bbdfa3d85c965eaf1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad61c12a53cb1db68b7be8cffa90cd49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#aad61c12a53cb1db68b7be8cffa90cd49">operator=</a> (<a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&amp;value)</td></tr>
-<tr class="separator:aad61c12a53cb1db68b7be8cffa90cd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75120fbb9c91eaa171d16e2cb46c1985"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a75120fbb9c91eaa171d16e2cb46c1985">operator=</a> (const char *value)</td></tr>
-<tr class="separator:a75120fbb9c91eaa171d16e2cb46c1985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classyLib_1_1yBasicValue"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classyLib_1_1yBasicValue')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classyLib_1_1yBasicValue.html">yLib::yBasicValue</a></td></tr>
-<tr class="memitem:a1bc575e05a854ac0635b2a220b880926 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a1bc575e05a854ac0635b2a220b880926">yBasicValue</a> () noexcept</td></tr>
-<tr class="memdesc:a1bc575e05a854ac0635b2a220b880926 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="classyLib_1_1yBasicValue.html#a1bc575e05a854ac0635b2a220b880926">More...</a><br /></td></tr>
-<tr class="separator:a1bc575e05a854ac0635b2a220b880926 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1fb670b48cd5234bc22e5e20e9a7362 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#af1fb670b48cd5234bc22e5e20e9a7362">~yBasicValue</a> () noexcept</td></tr>
-<tr class="memdesc:af1fb670b48cd5234bc22e5e20e9a7362 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">default destructor  <a href="classyLib_1_1yBasicValue.html#af1fb670b48cd5234bc22e5e20e9a7362">More...</a><br /></td></tr>
-<tr class="separator:af1fb670b48cd5234bc22e5e20e9a7362 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9e1bd353acebbc7ebdeb3d6c703776 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a1d9e1bd353acebbc7ebdeb3d6c703776">yBasicValue</a> (int64_t value_) noexcept</td></tr>
-<tr class="memdesc:a1d9e1bd353acebbc7ebdeb3d6c703776 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yBasicValue.html#a1d9e1bd353acebbc7ebdeb3d6c703776">More...</a><br /></td></tr>
-<tr class="separator:a1d9e1bd353acebbc7ebdeb3d6c703776 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4f7cd430ad2714fa979d1e996c56e1d inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#ab4f7cd430ad2714fa979d1e996c56e1d">yBasicValue</a> (uint64_t value_) noexcept</td></tr>
-<tr class="memdesc:ab4f7cd430ad2714fa979d1e996c56e1d inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yBasicValue.html#ab4f7cd430ad2714fa979d1e996c56e1d">More...</a><br /></td></tr>
-<tr class="separator:ab4f7cd430ad2714fa979d1e996c56e1d inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f1847ab618ad86e51abb114cd59056b inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a5f1847ab618ad86e51abb114cd59056b">yBasicValue</a> (bool value_) noexcept</td></tr>
-<tr class="memdesc:a5f1847ab618ad86e51abb114cd59056b inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yBasicValue.html#a5f1847ab618ad86e51abb114cd59056b">More...</a><br /></td></tr>
-<tr class="separator:a5f1847ab618ad86e51abb114cd59056b inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9061bcc569aaed2d8aa2ccc81669a934 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a9061bcc569aaed2d8aa2ccc81669a934">yBasicValue</a> (float value_) noexcept</td></tr>
-<tr class="memdesc:a9061bcc569aaed2d8aa2ccc81669a934 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yBasicValue.html#a9061bcc569aaed2d8aa2ccc81669a934">More...</a><br /></td></tr>
-<tr class="separator:a9061bcc569aaed2d8aa2ccc81669a934 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cef6f1aafd8c48d0fcdcb4c6e868ca2 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a1cef6f1aafd8c48d0fcdcb4c6e868ca2">yBasicValue</a> (double value_) noexcept</td></tr>
-<tr class="memdesc:a1cef6f1aafd8c48d0fcdcb4c6e868ca2 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yBasicValue.html#a1cef6f1aafd8c48d0fcdcb4c6e868ca2">More...</a><br /></td></tr>
-<tr class="separator:a1cef6f1aafd8c48d0fcdcb4c6e868ca2 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abddb3651e2c53302cff1a4f11e5e7b02 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#abddb3651e2c53302cff1a4f11e5e7b02">yBasicValue</a> (<a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;value_) noexcept</td></tr>
-<tr class="separator:abddb3651e2c53302cff1a4f11e5e7b02 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b00706ce40de1cfc9be0edd262bb97f inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a5b00706ce40de1cfc9be0edd262bb97f">yBasicValue</a> (const char *value_) noexcept</td></tr>
-<tr class="memdesc:a5b00706ce40de1cfc9be0edd262bb97f inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yBasicValue.html#a5b00706ce40de1cfc9be0edd262bb97f">More...</a><br /></td></tr>
-<tr class="separator:a5b00706ce40de1cfc9be0edd262bb97f inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1259152a1b760ab650066bba489f1ea inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#ab1259152a1b760ab650066bba489f1ea">yBasicValue</a> (const <a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;value_) noexcept</td></tr>
-<tr class="memdesc:ab1259152a1b760ab650066bba489f1ea inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor  <a href="classyLib_1_1yBasicValue.html#ab1259152a1b760ab650066bba489f1ea">More...</a><br /></td></tr>
-<tr class="separator:ab1259152a1b760ab650066bba489f1ea inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd247531be784a3663a283a9a574b9e4 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#abd247531be784a3663a283a9a574b9e4">operator=</a> (const <a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;value_) noexcept</td></tr>
-<tr class="memdesc:abd247531be784a3663a283a9a574b9e4 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment constructor  <a href="classyLib_1_1yBasicValue.html#abd247531be784a3663a283a9a574b9e4">More...</a><br /></td></tr>
-<tr class="separator:abd247531be784a3663a283a9a574b9e4 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0512a7e3d0ba28c29838864bb1af5d65 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a0512a7e3d0ba28c29838864bb1af5d65">operator int64_t</a> () const</td></tr>
-<tr class="memdesc:a0512a7e3d0ba28c29838864bb1af5d65 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a> to int64_t  <a href="classyLib_1_1yBasicValue.html#a0512a7e3d0ba28c29838864bb1af5d65">More...</a><br /></td></tr>
-<tr class="separator:a0512a7e3d0ba28c29838864bb1af5d65 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28696cf03c760252ef7f2c85cab0b3b0 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a28696cf03c760252ef7f2c85cab0b3b0">operator uint64_t</a> () const</td></tr>
-<tr class="memdesc:a28696cf03c760252ef7f2c85cab0b3b0 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a> to uint64_t  <a href="classyLib_1_1yBasicValue.html#a28696cf03c760252ef7f2c85cab0b3b0">More...</a><br /></td></tr>
-<tr class="separator:a28696cf03c760252ef7f2c85cab0b3b0 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067c99d94aefa80abd6f021b5115f4ba inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a067c99d94aefa80abd6f021b5115f4ba">operator bool</a> () const</td></tr>
-<tr class="memdesc:a067c99d94aefa80abd6f021b5115f4ba inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a> to bool  <a href="classyLib_1_1yBasicValue.html#a067c99d94aefa80abd6f021b5115f4ba">More...</a><br /></td></tr>
-<tr class="separator:a067c99d94aefa80abd6f021b5115f4ba inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7060a7edf2f8d0963f8d463c0bbd7b9a inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a7060a7edf2f8d0963f8d463c0bbd7b9a">operator float</a> () const</td></tr>
-<tr class="memdesc:a7060a7edf2f8d0963f8d463c0bbd7b9a inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a> to float  <a href="classyLib_1_1yBasicValue.html#a7060a7edf2f8d0963f8d463c0bbd7b9a">More...</a><br /></td></tr>
-<tr class="separator:a7060a7edf2f8d0963f8d463c0bbd7b9a inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d9ac201fdb13e28416025c0a83624f inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a96d9ac201fdb13e28416025c0a83624f">operator double</a> () const</td></tr>
-<tr class="memdesc:a96d9ac201fdb13e28416025c0a83624f inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a> to double  <a href="classyLib_1_1yBasicValue.html#a96d9ac201fdb13e28416025c0a83624f">More...</a><br /></td></tr>
-<tr class="separator:a96d9ac201fdb13e28416025c0a83624f inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbc9f787589d1e6bf766ae6398b1ddec inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#abbc9f787589d1e6bf766ae6398b1ddec">operator std::string</a> () const</td></tr>
-<tr class="memdesc:abbc9f787589d1e6bf766ae6398b1ddec inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a> to std::string  <a href="classyLib_1_1yBasicValue.html#abbc9f787589d1e6bf766ae6398b1ddec">More...</a><br /></td></tr>
-<tr class="separator:abbc9f787589d1e6bf766ae6398b1ddec inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d815787b038c4b93922062c05867e5e inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a4d815787b038c4b93922062c05867e5e">operator=</a> (int64_t value_)</td></tr>
-<tr class="memdesc:a4d815787b038c4b93922062c05867e5e inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert int64_t to <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a>  <a href="classyLib_1_1yBasicValue.html#a4d815787b038c4b93922062c05867e5e">More...</a><br /></td></tr>
-<tr class="separator:a4d815787b038c4b93922062c05867e5e inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72b565681bce609ea16de1d923b5f98b inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a72b565681bce609ea16de1d923b5f98b">operator=</a> (uint64_t value_)</td></tr>
-<tr class="memdesc:a72b565681bce609ea16de1d923b5f98b inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert uint64_t to <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a>  <a href="classyLib_1_1yBasicValue.html#a72b565681bce609ea16de1d923b5f98b">More...</a><br /></td></tr>
-<tr class="separator:a72b565681bce609ea16de1d923b5f98b inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5feae540dcec8cccb7667500a5771940 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a5feae540dcec8cccb7667500a5771940">operator=</a> (bool value_)</td></tr>
-<tr class="memdesc:a5feae540dcec8cccb7667500a5771940 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert bool to <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a>  <a href="classyLib_1_1yBasicValue.html#a5feae540dcec8cccb7667500a5771940">More...</a><br /></td></tr>
-<tr class="separator:a5feae540dcec8cccb7667500a5771940 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ec16ef752416249c28d7cf7cb50be19 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a6ec16ef752416249c28d7cf7cb50be19">operator=</a> (float value_)</td></tr>
-<tr class="memdesc:a6ec16ef752416249c28d7cf7cb50be19 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert float to <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a>  <a href="classyLib_1_1yBasicValue.html#a6ec16ef752416249c28d7cf7cb50be19">More...</a><br /></td></tr>
-<tr class="separator:a6ec16ef752416249c28d7cf7cb50be19 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a248f04d3bcb53a740f96d73217e43165 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a248f04d3bcb53a740f96d73217e43165">operator=</a> (double value_)</td></tr>
-<tr class="memdesc:a248f04d3bcb53a740f96d73217e43165 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert double to <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a>  <a href="classyLib_1_1yBasicValue.html#a248f04d3bcb53a740f96d73217e43165">More...</a><br /></td></tr>
-<tr class="separator:a248f04d3bcb53a740f96d73217e43165 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab729aabdde41441dc38bcad0a0c07eca inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#ab729aabdde41441dc38bcad0a0c07eca">operator=</a> (<a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;value_)</td></tr>
-<tr class="memdesc:ab729aabdde41441dc38bcad0a0c07eca inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert std::string to <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a>  <a href="classyLib_1_1yBasicValue.html#ab729aabdde41441dc38bcad0a0c07eca">More...</a><br /></td></tr>
-<tr class="separator:ab729aabdde41441dc38bcad0a0c07eca inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad89894ec7e203d273c04d926a67e5470 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yBasicValue.html">yBasicValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#ad89894ec7e203d273c04d926a67e5470">operator=</a> (<a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&amp;value_)</td></tr>
-<tr class="memdesc:ad89894ec7e203d273c04d926a67e5470 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert std::string to yBasicValue(override)  <a href="classyLib_1_1yBasicValue.html#ad89894ec7e203d273c04d926a67e5470">More...</a><br /></td></tr>
-<tr class="separator:ad89894ec7e203d273c04d926a67e5470 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f460160f6007fb9289d8de7acf50665 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69">yBasicValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a8f460160f6007fb9289d8de7acf50665">GetyBasicValueType</a> (void) const</td></tr>
-<tr class="memdesc:a8f460160f6007fb9289d8de7acf50665 inherit pub_methods_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the val-type of obj.  <a href="classyLib_1_1yBasicValue.html#a8f460160f6007fb9289d8de7acf50665">More...</a><br /></td></tr>
-<tr class="separator:a8f460160f6007fb9289d8de7acf50665 inherit pub_methods_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac19f8a8de172e84e13774a841a154e7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#ac19f8a8de172e84e13774a841a154e7f">yConfigValue</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;value_) noexcept</td></tr>
+<tr class="memdesc:ac19f8a8de172e84e13774a841a154e7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yConfigValue.html#ac19f8a8de172e84e13774a841a154e7f">More...</a><br /></td></tr>
+<tr class="separator:ac19f8a8de172e84e13774a841a154e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dd9fc1bc0a869bf0dcbc0e7981e7a00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a7dd9fc1bc0a869bf0dcbc0e7981e7a00">yConfigValue</a> (const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value_) noexcept</td></tr>
+<tr class="memdesc:a7dd9fc1bc0a869bf0dcbc0e7981e7a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor  <a href="classyLib_1_1yConfigValue.html#a7dd9fc1bc0a869bf0dcbc0e7981e7a00">More...</a><br /></td></tr>
+<tr class="separator:a7dd9fc1bc0a869bf0dcbc0e7981e7a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d1730316695c8a2692d158ff89e1c5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a3d1730316695c8a2692d158ff89e1c5b">operator=</a> (const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;value_) noexcept</td></tr>
+<tr class="memdesc:a3d1730316695c8a2692d158ff89e1c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment constructor  <a href="classyLib_1_1yConfigValue.html#a3d1730316695c8a2692d158ff89e1c5b">More...</a><br /></td></tr>
+<tr class="separator:a3d1730316695c8a2692d158ff89e1c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f60818cbafec8ade96d1778d7e09b96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a8f60818cbafec8ade96d1778d7e09b96">yConfigValue</a> (const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;value_) noexcept</td></tr>
+<tr class="memdesc:a8f60818cbafec8ade96d1778d7e09b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">move constructor  <a href="classyLib_1_1yConfigValue.html#a8f60818cbafec8ade96d1778d7e09b96">More...</a><br /></td></tr>
+<tr class="separator:a8f60818cbafec8ade96d1778d7e09b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5860e5de6113cc6225ad22b512bbe6ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a5860e5de6113cc6225ad22b512bbe6ee">operator=</a> (const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;value_) noexcept</td></tr>
+<tr class="memdesc:a5860e5de6113cc6225ad22b512bbe6ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment constructor  <a href="classyLib_1_1yConfigValue.html#a5860e5de6113cc6225ad22b512bbe6ee">More...</a><br /></td></tr>
+<tr class="separator:a5860e5de6113cc6225ad22b512bbe6ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b42fc9a1b59816e5ed891854e08a6eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a2b42fc9a1b59816e5ed891854e08a6eb">operator=</a> (int32_t value_)</td></tr>
+<tr class="memdesc:a2b42fc9a1b59816e5ed891854e08a6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert int32_t to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a>  <a href="classyLib_1_1yConfigValue.html#a2b42fc9a1b59816e5ed891854e08a6eb">More...</a><br /></td></tr>
+<tr class="separator:a2b42fc9a1b59816e5ed891854e08a6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5086af0ecbf53e332bc9cc666e9b472"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#ad5086af0ecbf53e332bc9cc666e9b472">operator=</a> (bool value_)</td></tr>
+<tr class="memdesc:ad5086af0ecbf53e332bc9cc666e9b472"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert bool to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a>  <a href="classyLib_1_1yConfigValue.html#ad5086af0ecbf53e332bc9cc666e9b472">More...</a><br /></td></tr>
+<tr class="separator:ad5086af0ecbf53e332bc9cc666e9b472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b52191101bfc169a3cc4784c0c15a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#ad9b52191101bfc169a3cc4784c0c15a1">operator=</a> (float value_)</td></tr>
+<tr class="memdesc:ad9b52191101bfc169a3cc4784c0c15a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert float to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a>  <a href="classyLib_1_1yConfigValue.html#ad9b52191101bfc169a3cc4784c0c15a1">More...</a><br /></td></tr>
+<tr class="separator:ad9b52191101bfc169a3cc4784c0c15a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2ed4a3fac679850eea9c6dc66c19465"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#ad2ed4a3fac679850eea9c6dc66c19465">operator=</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;value_)</td></tr>
+<tr class="memdesc:ad2ed4a3fac679850eea9c6dc66c19465"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert std::string &amp; to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a>  <a href="classyLib_1_1yConfigValue.html#ad2ed4a3fac679850eea9c6dc66c19465">More...</a><br /></td></tr>
+<tr class="separator:ad2ed4a3fac679850eea9c6dc66c19465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classyLib_1_1yValue"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classyLib_1_1yValue')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classyLib_1_1yValue.html">yLib::yValue</a></td></tr>
+<tr class="memitem:aefc29a5b6b1d97df2a149707fbf992de inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#aefc29a5b6b1d97df2a149707fbf992de">yValue</a> () noexcept</td></tr>
+<tr class="memdesc:aefc29a5b6b1d97df2a149707fbf992de inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor  <a href="classyLib_1_1yValue.html#aefc29a5b6b1d97df2a149707fbf992de">More...</a><br /></td></tr>
+<tr class="separator:aefc29a5b6b1d97df2a149707fbf992de inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8ce6bdf0f3a5da053fbdf5ba1754eb inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a9e8ce6bdf0f3a5da053fbdf5ba1754eb">yValue</a> (const <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;value_) noexcept</td></tr>
+<tr class="memdesc:a9e8ce6bdf0f3a5da053fbdf5ba1754eb inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor  <a href="classyLib_1_1yValue.html#a9e8ce6bdf0f3a5da053fbdf5ba1754eb">More...</a><br /></td></tr>
+<tr class="separator:a9e8ce6bdf0f3a5da053fbdf5ba1754eb inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c7a3a6b2190f593db3f60f183e796ce inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a6c7a3a6b2190f593db3f60f183e796ce">operator=</a> (const <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;value_) noexcept</td></tr>
+<tr class="memdesc:a6c7a3a6b2190f593db3f60f183e796ce inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment constructor  <a href="classyLib_1_1yValue.html#a6c7a3a6b2190f593db3f60f183e796ce">More...</a><br /></td></tr>
+<tr class="separator:a6c7a3a6b2190f593db3f60f183e796ce inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60c02e547e87478bbbe29e124440d523 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a60c02e547e87478bbbe29e124440d523">yValue</a> (const <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&amp;value_) noexcept</td></tr>
+<tr class="memdesc:a60c02e547e87478bbbe29e124440d523 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">move constructor  <a href="classyLib_1_1yValue.html#a60c02e547e87478bbbe29e124440d523">More...</a><br /></td></tr>
+<tr class="separator:a60c02e547e87478bbbe29e124440d523 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a0c067a5ea45fe98d5565687516fa9 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a29a0c067a5ea45fe98d5565687516fa9">operator=</a> (const <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&amp;value_) noexcept</td></tr>
+<tr class="memdesc:a29a0c067a5ea45fe98d5565687516fa9 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment constructor  <a href="classyLib_1_1yValue.html#a29a0c067a5ea45fe98d5565687516fa9">More...</a><br /></td></tr>
+<tr class="separator:a29a0c067a5ea45fe98d5565687516fa9 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfd915659719dae7b477ed801347fe15 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#abfd915659719dae7b477ed801347fe15">~yValue</a> () noexcept</td></tr>
+<tr class="memdesc:abfd915659719dae7b477ed801347fe15 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">default destructor  <a href="classyLib_1_1yValue.html#abfd915659719dae7b477ed801347fe15">More...</a><br /></td></tr>
+<tr class="separator:abfd915659719dae7b477ed801347fe15 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02539949720cff2a356b9b690498d098 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a02539949720cff2a356b9b690498d098">yValue</a> (int8_t value_) noexcept</td></tr>
+<tr class="memdesc:a02539949720cff2a356b9b690498d098 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#a02539949720cff2a356b9b690498d098">More...</a><br /></td></tr>
+<tr class="separator:a02539949720cff2a356b9b690498d098 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad80536dad82af33e555a95fe14a155f7 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ad80536dad82af33e555a95fe14a155f7">yValue</a> (uint8_t value_) noexcept</td></tr>
+<tr class="memdesc:ad80536dad82af33e555a95fe14a155f7 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#ad80536dad82af33e555a95fe14a155f7">More...</a><br /></td></tr>
+<tr class="separator:ad80536dad82af33e555a95fe14a155f7 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7f9d0e98c57ecbb97cbd694866a34b inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#abc7f9d0e98c57ecbb97cbd694866a34b">yValue</a> (int16_t value_) noexcept</td></tr>
+<tr class="memdesc:abc7f9d0e98c57ecbb97cbd694866a34b inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#abc7f9d0e98c57ecbb97cbd694866a34b">More...</a><br /></td></tr>
+<tr class="separator:abc7f9d0e98c57ecbb97cbd694866a34b inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c0548e64ea99ccdc13d5acbb6b6dbc inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ac9c0548e64ea99ccdc13d5acbb6b6dbc">yValue</a> (uint16_t value_) noexcept</td></tr>
+<tr class="memdesc:ac9c0548e64ea99ccdc13d5acbb6b6dbc inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#ac9c0548e64ea99ccdc13d5acbb6b6dbc">More...</a><br /></td></tr>
+<tr class="separator:ac9c0548e64ea99ccdc13d5acbb6b6dbc inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06ab54112210ad8a0627bf16ed04c62 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ae06ab54112210ad8a0627bf16ed04c62">yValue</a> (int32_t value_) noexcept</td></tr>
+<tr class="memdesc:ae06ab54112210ad8a0627bf16ed04c62 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#ae06ab54112210ad8a0627bf16ed04c62">More...</a><br /></td></tr>
+<tr class="separator:ae06ab54112210ad8a0627bf16ed04c62 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0019ff9585fbe7901690a6560ef6fbb3 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a0019ff9585fbe7901690a6560ef6fbb3">yValue</a> (uint32_t value_) noexcept</td></tr>
+<tr class="memdesc:a0019ff9585fbe7901690a6560ef6fbb3 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#a0019ff9585fbe7901690a6560ef6fbb3">More...</a><br /></td></tr>
+<tr class="separator:a0019ff9585fbe7901690a6560ef6fbb3 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab65d5b8bb716e058204c52ba94a0b7be inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ab65d5b8bb716e058204c52ba94a0b7be">yValue</a> (int64_t value_) noexcept</td></tr>
+<tr class="memdesc:ab65d5b8bb716e058204c52ba94a0b7be inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#ab65d5b8bb716e058204c52ba94a0b7be">More...</a><br /></td></tr>
+<tr class="separator:ab65d5b8bb716e058204c52ba94a0b7be inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993277a740dad83094e6dd232ba6b3cd inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a993277a740dad83094e6dd232ba6b3cd">yValue</a> (uint64_t value_) noexcept</td></tr>
+<tr class="memdesc:a993277a740dad83094e6dd232ba6b3cd inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#a993277a740dad83094e6dd232ba6b3cd">More...</a><br /></td></tr>
+<tr class="separator:a993277a740dad83094e6dd232ba6b3cd inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fe481488712d7ecc980447d541ff46 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a16fe481488712d7ecc980447d541ff46">yValue</a> (bool value_) noexcept</td></tr>
+<tr class="memdesc:a16fe481488712d7ecc980447d541ff46 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#a16fe481488712d7ecc980447d541ff46">More...</a><br /></td></tr>
+<tr class="separator:a16fe481488712d7ecc980447d541ff46 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b0defea3c6e2a8a0e2c520605ea60a inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a06b0defea3c6e2a8a0e2c520605ea60a">yValue</a> (float value_) noexcept</td></tr>
+<tr class="memdesc:a06b0defea3c6e2a8a0e2c520605ea60a inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#a06b0defea3c6e2a8a0e2c520605ea60a">More...</a><br /></td></tr>
+<tr class="separator:a06b0defea3c6e2a8a0e2c520605ea60a inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12575fc6cbe28709c960bf07a61dedaa inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a12575fc6cbe28709c960bf07a61dedaa">yValue</a> (double value_) noexcept</td></tr>
+<tr class="memdesc:a12575fc6cbe28709c960bf07a61dedaa inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#a12575fc6cbe28709c960bf07a61dedaa">More...</a><br /></td></tr>
+<tr class="separator:a12575fc6cbe28709c960bf07a61dedaa inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3a486c7911a923bfb67cf6683117ee inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ace3a486c7911a923bfb67cf6683117ee">yValue</a> (const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;value_) noexcept</td></tr>
+<tr class="separator:ace3a486c7911a923bfb67cf6683117ee inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbc0fead2e744a677338ebdb8530dc92 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#abbc0fead2e744a677338ebdb8530dc92">yValue</a> (<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2">yValueType</a> type_, void *value_) noexcept</td></tr>
+<tr class="memdesc:abbc0fead2e744a677338ebdb8530dc92 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">override constructor  <a href="classyLib_1_1yValue.html#abbc0fead2e744a677338ebdb8530dc92">More...</a><br /></td></tr>
+<tr class="separator:abbc0fead2e744a677338ebdb8530dc92 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5835beef50274909753f8f535feb82d1 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a5835beef50274909753f8f535feb82d1">operator int8_t</a> () const</td></tr>
+<tr class="memdesc:a5835beef50274909753f8f535feb82d1 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to int8_t  <a href="classyLib_1_1yValue.html#a5835beef50274909753f8f535feb82d1">More...</a><br /></td></tr>
+<tr class="separator:a5835beef50274909753f8f535feb82d1 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba93a959bc575208532c2ada3cd7529 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a0ba93a959bc575208532c2ada3cd7529">operator uint8_t</a> () const</td></tr>
+<tr class="memdesc:a0ba93a959bc575208532c2ada3cd7529 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to uint8_t  <a href="classyLib_1_1yValue.html#a0ba93a959bc575208532c2ada3cd7529">More...</a><br /></td></tr>
+<tr class="separator:a0ba93a959bc575208532c2ada3cd7529 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c55dc9f71505850b7b7e095e22bfff inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a82c55dc9f71505850b7b7e095e22bfff">operator int16_t</a> () const</td></tr>
+<tr class="memdesc:a82c55dc9f71505850b7b7e095e22bfff inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to int16_t  <a href="classyLib_1_1yValue.html#a82c55dc9f71505850b7b7e095e22bfff">More...</a><br /></td></tr>
+<tr class="separator:a82c55dc9f71505850b7b7e095e22bfff inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff5a10752d1f30a5e3a122818eff595 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a8ff5a10752d1f30a5e3a122818eff595">operator uint16_t</a> () const</td></tr>
+<tr class="memdesc:a8ff5a10752d1f30a5e3a122818eff595 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to uint16_t  <a href="classyLib_1_1yValue.html#a8ff5a10752d1f30a5e3a122818eff595">More...</a><br /></td></tr>
+<tr class="separator:a8ff5a10752d1f30a5e3a122818eff595 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27a5adee9e7f539ffbce0bd4a4e46a0 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ab27a5adee9e7f539ffbce0bd4a4e46a0">operator int32_t</a> () const</td></tr>
+<tr class="memdesc:ab27a5adee9e7f539ffbce0bd4a4e46a0 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to int32_t  <a href="classyLib_1_1yValue.html#ab27a5adee9e7f539ffbce0bd4a4e46a0">More...</a><br /></td></tr>
+<tr class="separator:ab27a5adee9e7f539ffbce0bd4a4e46a0 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4895c1cfce3e2772cb58e16461fcc584 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a4895c1cfce3e2772cb58e16461fcc584">operator uint32_t</a> () const</td></tr>
+<tr class="memdesc:a4895c1cfce3e2772cb58e16461fcc584 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to uint32_t  <a href="classyLib_1_1yValue.html#a4895c1cfce3e2772cb58e16461fcc584">More...</a><br /></td></tr>
+<tr class="separator:a4895c1cfce3e2772cb58e16461fcc584 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1dab07a2ed65953cbbb2af09e7cd076 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#aa1dab07a2ed65953cbbb2af09e7cd076">operator int64_t</a> () const</td></tr>
+<tr class="memdesc:aa1dab07a2ed65953cbbb2af09e7cd076 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to int64_t  <a href="classyLib_1_1yValue.html#aa1dab07a2ed65953cbbb2af09e7cd076">More...</a><br /></td></tr>
+<tr class="separator:aa1dab07a2ed65953cbbb2af09e7cd076 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3607d8479e19f291d509f8b6f3a64f3 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#af3607d8479e19f291d509f8b6f3a64f3">operator uint64_t</a> () const</td></tr>
+<tr class="memdesc:af3607d8479e19f291d509f8b6f3a64f3 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to uint64_t  <a href="classyLib_1_1yValue.html#af3607d8479e19f291d509f8b6f3a64f3">More...</a><br /></td></tr>
+<tr class="separator:af3607d8479e19f291d509f8b6f3a64f3 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9c4e90b07296d76c55bca0e19d9b08a inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ad9c4e90b07296d76c55bca0e19d9b08a">operator bool</a> () const</td></tr>
+<tr class="memdesc:ad9c4e90b07296d76c55bca0e19d9b08a inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to bool  <a href="classyLib_1_1yValue.html#ad9c4e90b07296d76c55bca0e19d9b08a">More...</a><br /></td></tr>
+<tr class="separator:ad9c4e90b07296d76c55bca0e19d9b08a inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ab6b4ff2e28404ca9fd1efeb9b72738 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a0ab6b4ff2e28404ca9fd1efeb9b72738">operator float</a> () const</td></tr>
+<tr class="memdesc:a0ab6b4ff2e28404ca9fd1efeb9b72738 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to float  <a href="classyLib_1_1yValue.html#a0ab6b4ff2e28404ca9fd1efeb9b72738">More...</a><br /></td></tr>
+<tr class="separator:a0ab6b4ff2e28404ca9fd1efeb9b72738 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d426f7fba96b2b23b95c0aa753ca7d inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#af3d426f7fba96b2b23b95c0aa753ca7d">operator double</a> () const</td></tr>
+<tr class="memdesc:af3d426f7fba96b2b23b95c0aa753ca7d inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to double  <a href="classyLib_1_1yValue.html#af3d426f7fba96b2b23b95c0aa753ca7d">More...</a><br /></td></tr>
+<tr class="separator:af3d426f7fba96b2b23b95c0aa753ca7d inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab6b42a3b6ee531076e9eb4b47f85bfb inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#aab6b42a3b6ee531076e9eb4b47f85bfb">operator std::string</a> () const</td></tr>
+<tr class="memdesc:aab6b42a3b6ee531076e9eb4b47f85bfb inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to std::string  <a href="classyLib_1_1yValue.html#aab6b42a3b6ee531076e9eb4b47f85bfb">More...</a><br /></td></tr>
+<tr class="separator:aab6b42a3b6ee531076e9eb4b47f85bfb inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b00d945791e2911810ea6b9157ab66 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a09b00d945791e2911810ea6b9157ab66">operator=</a> (int8_t value_)</td></tr>
+<tr class="memdesc:a09b00d945791e2911810ea6b9157ab66 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert int8_t to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#a09b00d945791e2911810ea6b9157ab66">More...</a><br /></td></tr>
+<tr class="separator:a09b00d945791e2911810ea6b9157ab66 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac321beb036fbd258d6db242f2a53b11b inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ac321beb036fbd258d6db242f2a53b11b">operator=</a> (uint8_t value_)</td></tr>
+<tr class="memdesc:ac321beb036fbd258d6db242f2a53b11b inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert uint8_t to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#ac321beb036fbd258d6db242f2a53b11b">More...</a><br /></td></tr>
+<tr class="separator:ac321beb036fbd258d6db242f2a53b11b inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb872cf1a279c284f787a1e2694384e inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#aaeb872cf1a279c284f787a1e2694384e">operator=</a> (int16_t value_)</td></tr>
+<tr class="memdesc:aaeb872cf1a279c284f787a1e2694384e inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert int16_t to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#aaeb872cf1a279c284f787a1e2694384e">More...</a><br /></td></tr>
+<tr class="separator:aaeb872cf1a279c284f787a1e2694384e inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87d871fe1a7c2b82b8968dfe03b2fae inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ae87d871fe1a7c2b82b8968dfe03b2fae">operator=</a> (uint16_t value_)</td></tr>
+<tr class="memdesc:ae87d871fe1a7c2b82b8968dfe03b2fae inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert uint16_t to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#ae87d871fe1a7c2b82b8968dfe03b2fae">More...</a><br /></td></tr>
+<tr class="separator:ae87d871fe1a7c2b82b8968dfe03b2fae inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6655b11649ad80e7fca5db055e7b839 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ab6655b11649ad80e7fca5db055e7b839">operator=</a> (uint32_t value_)</td></tr>
+<tr class="memdesc:ab6655b11649ad80e7fca5db055e7b839 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert uint32_t to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#ab6655b11649ad80e7fca5db055e7b839">More...</a><br /></td></tr>
+<tr class="separator:ab6655b11649ad80e7fca5db055e7b839 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d455692534e7be7b4c62e22efd24f6 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ac5d455692534e7be7b4c62e22efd24f6">operator=</a> (int64_t value_)</td></tr>
+<tr class="memdesc:ac5d455692534e7be7b4c62e22efd24f6 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert int64_t to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#ac5d455692534e7be7b4c62e22efd24f6">More...</a><br /></td></tr>
+<tr class="separator:ac5d455692534e7be7b4c62e22efd24f6 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae484aa3b2ed5463c73c24f52e607a982 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ae484aa3b2ed5463c73c24f52e607a982">operator=</a> (uint64_t value_)</td></tr>
+<tr class="memdesc:ae484aa3b2ed5463c73c24f52e607a982 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert uint64_t to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#ae484aa3b2ed5463c73c24f52e607a982">More...</a><br /></td></tr>
+<tr class="separator:ae484aa3b2ed5463c73c24f52e607a982 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae78bc4dec97fd4f7fb6ccef87971325 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#aae78bc4dec97fd4f7fb6ccef87971325">operator=</a> (double value_)</td></tr>
+<tr class="memdesc:aae78bc4dec97fd4f7fb6ccef87971325 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert double to exsited obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#aae78bc4dec97fd4f7fb6ccef87971325">More...</a><br /></td></tr>
+<tr class="separator:aae78bc4dec97fd4f7fb6ccef87971325 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a2165ccfe1beb15f9f6e9b4020c164b inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2">yValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a6a2165ccfe1beb15f9f6e9b4020c164b">GetType</a> (void) const</td></tr>
+<tr class="memdesc:a6a2165ccfe1beb15f9f6e9b4020c164b inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the val-type of obj.  <a href="classyLib_1_1yValue.html#a6a2165ccfe1beb15f9f6e9b4020c164b">More...</a><br /></td></tr>
+<tr class="separator:a6a2165ccfe1beb15f9f6e9b4020c164b inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f732d789caf86cf1b3738f2293225f8 inherit pub_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a2f732d789caf86cf1b3738f2293225f8">GetSpecialValue</a> (<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2">yValueType</a> type_) const</td></tr>
+<tr class="memdesc:a2f732d789caf86cf1b3738f2293225f8 inherit pub_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the val-type of obj.  <a href="classyLib_1_1yValue.html#a2f732d789caf86cf1b3738f2293225f8">More...</a><br /></td></tr>
+<tr class="separator:a2f732d789caf86cf1b3738f2293225f8 inherit pub_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classyLib_1_1yObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classyLib_1_1yObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classyLib_1_1yObject.html">yLib::yObject</a></td></tr>
 <tr class="memitem:a4f7523f70c3832ac47812ca5d366adca inherit pub_methods_classyLib_1_1yObject"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yObject.html#a4f7523f70c3832ac47812ca5d366adca">yObject</a> ()</td></tr>
 <tr class="memdesc:a4f7523f70c3832ac47812ca5d366adca inherit pub_methods_classyLib_1_1yObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="classyLib_1_1yObject.html#a4f7523f70c3832ac47812ca5d366adca">More...</a><br /></td></tr>
@@ -244,11 +296,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a19061becef2eb18430987e9024d92a5b inherit pub_methods_classyLib_1_1yObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="classyLib_1_1yObject.html#a19061becef2eb18430987e9024d92a5b">More...</a><br /></td></tr>
 <tr class="separator:a19061becef2eb18430987e9024d92a5b inherit pub_methods_classyLib_1_1yObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a146602e972da5aa38185b3f88c10d7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a146602e972da5aa38185b3f88c10d7c8">_current_data_type_</a> = yConfigValueType::NONE_TYPE</td></tr>
-<tr class="separator:a146602e972da5aa38185b3f88c10d7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a273d3f3ee6b90865cebc3958c400ba53"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yConfigValue.html#a273d3f3ee6b90865cebc3958c400ba53">yConfig</a></td></tr>
@@ -256,20 +303,57 @@ Friends</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_attribs_classyLib_1_1yBasicValue"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classyLib_1_1yBasicValue')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classyLib_1_1yBasicValue.html">yLib::yBasicValue</a></td></tr>
-<tr class="memitem:aa90f661feb15b357b6026504eff4c3ba inherit pub_attribs_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstruct.html">struct</a> <a class="el" href="structyLib_1_1yBasicValue_1_1____value__container____.html">yLib::yBasicValue::__value_container__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#aa90f661feb15b357b6026504eff4c3ba">_value_containter</a></td></tr>
-<tr class="separator:aa90f661feb15b357b6026504eff4c3ba inherit pub_attribs_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98ac491f07f230808bd0a21bbcef9555 inherit pub_attribs_classyLib_1_1yBasicValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceyLib.html#af6bf124ae3645e2246e99f213e569b69">yBasicValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yBasicValue.html#a98ac491f07f230808bd0a21bbcef9555">_cur_basic_value_type</a></td></tr>
-<tr class="memdesc:a98ac491f07f230808bd0a21bbcef9555 inherit pub_attribs_classyLib_1_1yBasicValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">the current val-type of <a class="el" href="classyLib_1_1yBasicValue.html" title="This is base-class of the all yXxxValues in yLib.">yBasicValue</a>  <a href="classyLib_1_1yBasicValue.html#a98ac491f07f230808bd0a21bbcef9555">More...</a><br /></td></tr>
-<tr class="separator:a98ac491f07f230808bd0a21bbcef9555 inherit pub_attribs_classyLib_1_1yBasicValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_types_classyLib_1_1yValue"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classyLib_1_1yValue')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classyLib_1_1yValue.html">yLib::yValue</a></td></tr>
+<tr class="memitem:ad30bf06e744fa772021a7cc4936e9be2 inherit pub_types_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2">yValueType</a> : uint8_t { <br />
+&#160;&#160;<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2afebf621b752807da247e8d67837b0581">NONE_TYPE</a> = 0, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2aee0cb4482e902ade528951927647240f">INT8_TYPE</a> = 1, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a5c1b31f5fc09aed1fa717358ce623dff">UINT8_TYPE</a> = 2, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2abe01b1bef4c7d4142f0295287be07fe4">INT16_TYPE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a9e07abb6f4a230d422ba1e7cf2a723b6">UINT16_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2abe44dd1f066a04382218463da6d6b36a">INT32_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a5fdc7f25081476d10117f7b4f85ebe54">UINT32_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a5f4f927198fa4d5bfcc21a9ae75a1e52">INT64_TYPE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a679e5844cccd84a454e3aad14e961188">UINT64_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2aafebdcf6fb9cf2a07b51a30ebe1cdccf">FLOAT_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2abb9f7995d3135a95438dc0010466a5e7">DOUBLE_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2afc790296687d2706c64d937d4303642e">BOOL_TYPE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a0d00a41f70fc0b2190b4c49f3bb8c89a">STRING_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a2ed2bc9cf592eff41d2c68500e6f232e">OBJECT_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a1b1505e388a9b90ed47ed887980f3f92">ARRAY_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a15d2daa32ba9e81e87d99816b3273c3e">NULL_TYPE</a>, 
+<br />
+&#160;&#160;<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a9b1757323670755dbca5d54c0c650342">GROUP_TYPE</a>, 
+<a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2a7ca36ea61ad13c570be1184102b64253">POINTER_TYPE</a>
+<br />
+ }</td></tr>
+<tr class="separator:ad30bf06e744fa772021a7cc4936e9be2 inherit pub_types_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classyLib_1_1yObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classyLib_1_1yObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classyLib_1_1yObject.html">yLib::yObject</a></td></tr>
 <tr class="memitem:a2db8b0c6fba5a9137092715442866090 inherit pub_attribs_classyLib_1_1yObject"><td class="memItemLeft" align="right" valign="top"><a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yObject.html#a2db8b0c6fba5a9137092715442866090">object_name</a></td></tr>
 <tr class="memdesc:a2db8b0c6fba5a9137092715442866090 inherit pub_attribs_classyLib_1_1yObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">The object-name.  <a href="classyLib_1_1yObject.html#a2db8b0c6fba5a9137092715442866090">More...</a><br /></td></tr>
 <tr class="separator:a2db8b0c6fba5a9137092715442866090 inherit pub_attribs_classyLib_1_1yObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classyLib_1_1yValue"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classyLib_1_1yValue')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classyLib_1_1yValue.html">yLib::yValue</a></td></tr>
+<tr class="memitem:a9c048446038b9bb3810d6c3a39139624 inherit pro_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a9c048446038b9bb3810d6c3a39139624">CleanAllToDefault</a> (void)</td></tr>
+<tr class="memdesc:a9c048446038b9bb3810d6c3a39139624 inherit pro_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">set obj of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a> to default.  <a href="classyLib_1_1yValue.html#a9c048446038b9bb3810d6c3a39139624">More...</a><br /></td></tr>
+<tr class="separator:a9c048446038b9bb3810d6c3a39139624 inherit pro_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classyLib_1_1yValue"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classyLib_1_1yValue')"><img src="closed.png" alt="-"/>&#160;Static Protected Member Functions inherited from <a class="el" href="classyLib_1_1yValue.html">yLib::yValue</a></td></tr>
+<tr class="memitem:a2053d20bcfac10915b35a4bc21ea011f inherit pro_static_methods_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a2053d20bcfac10915b35a4bc21ea011f">CopyValueContainer</a> (const <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;src_, <a class="el" href="classyLib_1_1yValue.html">yValue</a> &amp;dst_)</td></tr>
+<tr class="memdesc:a2053d20bcfac10915b35a4bc21ea011f inherit pro_static_methods_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy src_'s value-container to dst_'s value-container  <a href="classyLib_1_1yValue.html#a2053d20bcfac10915b35a4bc21ea011f">More...</a><br /></td></tr>
+<tr class="separator:a2053d20bcfac10915b35a4bc21ea011f inherit pro_static_methods_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classyLib_1_1yValue"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classyLib_1_1yValue')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classyLib_1_1yValue.html">yLib::yValue</a></td></tr>
+<tr class="memitem:a275414b2034c2f45621d98c1a9d1ae0c inherit pro_attribs_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structstruct.html">struct</a> <a class="el" href="structyLib_1_1yValue_1_1____value__container____.html">yLib::yValue::__value_container__</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a275414b2034c2f45621d98c1a9d1ae0c">value_containter</a></td></tr>
+<tr class="separator:a275414b2034c2f45621d98c1a9d1ae0c inherit pro_attribs_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5cd8d1cb429234304ba7a9fd4ebd18 inherit pro_attribs_classyLib_1_1yValue"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classyLib_1_1yValue.html#ad30bf06e744fa772021a7cc4936e9be2">yValueType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classyLib_1_1yValue.html#a2a5cd8d1cb429234304ba7a9fd4ebd18">cur_value_type</a></td></tr>
+<tr class="memdesc:a2a5cd8d1cb429234304ba7a9fd4ebd18 inherit pro_attribs_classyLib_1_1yValue"><td class="mdescLeft">&#160;</td><td class="mdescRight">the current val-type of <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>  <a href="classyLib_1_1yValue.html#a2a5cd8d1cb429234304ba7a9fd4ebd18">More...</a><br /></td></tr>
+<tr class="separator:a2a5cd8d1cb429234304ba7a9fd4ebd18 inherit pro_attribs_classyLib_1_1yValue"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is the <a class="el" href="classyLib_1_1yConfig.html" title="This is a tool to parse a cfg-file that is like c.">yConfig</a>'s value-container, it inherits from <a class="el" href="classyLib_1_1yValue.html" title="This is base-class of the all yXxxValues in yLib.">yValue</a>. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af42379021fa824ca427a57aaea18bbee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af42379021fa824ca427a57aaea18bbee">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[1/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af42379021fa824ca427a57aaea18bbee">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[1/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,10 +370,18 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>default constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -316,10 +408,18 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>default destructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ac3ff69aec137174c23b33660fd3dc97d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3ff69aec137174c23b33660fd3dc97d">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[2/10]</span></h2>
+<a id="a26fc1fb908253c198c57e42f483ad3e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26fc1fb908253c198c57e42f483ad3e9">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[2/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,7 +430,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">yLib::yConfigValue::yConfigValue </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">int32_t&#160;</td>
           <td class="paramname"><em>value_</em></td><td>)</td>
           <td></td>
         </tr>
@@ -342,36 +442,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="aeb3248607d5831b46aa82532803f8299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb3248607d5831b46aa82532803f8299">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[3/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">yLib::yConfigValue::yConfigValue </td>
-          <td>(</td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>value_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>override constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>the initial val. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
 <a id="a7c428b182ef0ef450d301a323e2a5618"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c428b182ef0ef450d301a323e2a5618">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[4/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c428b182ef0ef450d301a323e2a5618">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -393,11 +476,20 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>override constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>the initial val. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
 <a id="a33a12387581d7bb78ea5e0c2c693b7bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33a12387581d7bb78ea5e0c2c693b7bf">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[5/10]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a33a12387581d7bb78ea5e0c2c693b7bf">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[4/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -420,10 +512,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>override constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>the initial val. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
 </div>
 </div>
-<a id="a2e7cf5865873474701587ee0797a7a0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e7cf5865873474701587ee0797a7a0b">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[6/10]</span></h2>
+<a id="ac19f8a8de172e84e13774a841a154e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac19f8a8de172e84e13774a841a154e7f">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[5/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,7 +535,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">yLib::yConfigValue::yConfigValue </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
           <td class="paramname"><em>value_</em></td><td>)</td>
           <td></td>
         </tr>
@@ -446,62 +547,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a1ebc4f57e01b46ac174e242a04f69ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ebc4f57e01b46ac174e242a04f69ecf">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[7/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">yLib::yConfigValue::yConfigValue </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>value_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>override constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>the initial val. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
-<a id="a9836bec72b3e3bf5a22f50fc3ab5f525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9836bec72b3e3bf5a22f50fc3ab5f525">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[8/10]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">yLib::yConfigValue::yConfigValue </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>value_</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1addaceeb2c3d14c2c5ae75bfec23db9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1addaceeb2c3d14c2c5ae75bfec23db9">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[9/10]</span></h2>
+<a id="a7dd9fc1bc0a869bf0dcbc0e7981e7a00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dd9fc1bc0a869bf0dcbc0e7981e7a00">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +571,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">yLib::yConfigValue::yConfigValue </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>config_value</em></td><td>)</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -524,10 +582,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>copy constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
 </div>
 </div>
-<a id="aeb33c3fba2991c4348a08aa1339f2703"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb33c3fba2991c4348a08aa1339f2703">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[10/10]</span></h2>
+<a id="a8f60818cbafec8ade96d1778d7e09b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f60818cbafec8ade96d1778d7e09b96">&#9670;&nbsp;</a></span>yConfigValue() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -538,8 +605,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">yLib::yConfigValue::yConfigValue </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>config_value</em></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -549,66 +616,58 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>move constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7960bc8da91770b97327cec29820ad77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7960bc8da91770b97327cec29820ad77">&#9670;&nbsp;</a></span>GetyConfigValueType()</h2>
+<a id="ad5086af0ecbf53e332bc9cc666e9b472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5086af0ecbf53e332bc9cc666e9b472">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yLib::yConfigValueType</a> yLib::yConfigValue::GetyConfigValueType </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1a46dbb9d989ea675612f7ad517e585a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a46dbb9d989ea675612f7ad517e585a">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a75120fbb9c91eaa171d16e2cb46c1985"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75120fbb9c91eaa171d16e2cb46c1985">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/8]</span></h2>
+<p>convert bool to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>bool value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Reimplemented from <a class="el" href="classyLib_1_1yValue.html#a2021a916b1804eff438ce07c7019649f">yLib::yValue</a>.</p>
 
 </div>
 </div>
-<a id="a51d140d506d081716e94a690b2f2da9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51d140d506d081716e94a690b2f2da9c">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/8]</span></h2>
+<a id="ad2ed4a3fac679850eea9c6dc66c19465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2ed4a3fac679850eea9c6dc66c19465">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -617,10 +676,82 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert std::string &amp; to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>std::string value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classyLib_1_1yValue.html#a93d8aa2db5a66a332ffe53b54b96777f">yLib::yValue</a>.</p>
+
+</div>
+</div>
+<a id="a5860e5de6113cc6225ad22b512bbe6ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5860e5de6113cc6225ad22b512bbe6ee">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>assignment constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the obj's reference of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </dd></dl>
+
+</div>
+</div>
+<a id="a3d1730316695c8a2692d158ff89e1c5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d1730316695c8a2692d158ff89e1c5b">&#9670;&nbsp;</a></span>operator=() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&#160;</td>
-          <td class="paramname"><em>config_value</em></td><td>)</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -631,82 +762,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a0918891cc07506afd94f5787dacda334"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0918891cc07506afd94f5787dacda334">&#9670;&nbsp;</a></span>operator=() <span class="overload">[4/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>assignment constructor </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>a exsited obj </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the obj's reference of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </dd></dl>
 
 </div>
 </div>
-<a id="a60601abc30bb3375c0e2a8d4b5f604d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60601abc30bb3375c0e2a8d4b5f604d4">&#9670;&nbsp;</a></span>operator=() <span class="overload">[5/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aad61c12a53cb1db68b7be8cffa90cd49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad61c12a53cb1db68b7be8cffa90cd49">&#9670;&nbsp;</a></span>operator=() <span class="overload">[6/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a92480f22c632bbdfa3d85c965eaf1c05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92480f22c632bbdfa3d85c965eaf1c05">&#9670;&nbsp;</a></span>operator=() <span class="overload">[7/8]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="src_2CMakeLists_8txt.html#a296644e9ff1d0a602b4703f361406374">std::string</a> &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a455df548f1d2b0c3aaf6021e1e1e4d92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a455df548f1d2b0c3aaf6021e1e1e4d92">&#9670;&nbsp;</a></span>operator=() <span class="overload">[8/8]</span></h2>
+<a id="ad9b52191101bfc169a3cc4784c0c15a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9b52191101bfc169a3cc4784c0c15a1">&#9670;&nbsp;</a></span>operator=() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -715,19 +783,67 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yLib::yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>config_value</em></td><td>)</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>convert float to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>bool value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classyLib_1_1yValue.html#a672bfba947a1eb0141798fc354ab0e1c">yLib::yValue</a>.</p>
+
+</div>
+</div>
+<a id="a2b42fc9a1b59816e5ed891854e08a6eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b42fc9a1b59816e5ed891854e08a6eb">&#9670;&nbsp;</a></span>operator=() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classyLib_1_1yConfigValue.html">yConfigValue</a> &amp; yLib::yConfigValue::operator= </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>value_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>convert int32_t to exsited obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value_</td><td>int32_t value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>return obj of <a class="el" href="classyLib_1_1yConfigValue.html" title="This is the yConfig&#39;s value-container, it inherits from yValue.">yConfigValue</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="classyLib_1_1yValue.html#a0abbae634b63cb91f914c16b14ab708e">yLib::yValue</a>.</p>
 
 </div>
 </div>
@@ -748,29 +864,6 @@ Additional Inherited Members</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a146602e972da5aa38185b3f88c10d7c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a146602e972da5aa38185b3f88c10d7c8">&#9670;&nbsp;</a></span>_current_data_type_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceyLib.html#a9b25f843a461b3f02e6bdacaab711594">yConfigValueType</a> yLib::yConfigValue::_current_data_type_ = yConfigValueType::NONE_TYPE</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

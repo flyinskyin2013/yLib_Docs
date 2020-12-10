@@ -1,6 +1,9 @@
 var dir_3a4d35156996fb70540e167b84a39bd1 =
 [
-    [ "yconfig.hpp", "yconfig_8hpp.html", "yconfig_8hpp" ],
+    [ "yconfig.hpp", "yconfig_8hpp.html", [
+      [ "yConfigValue", "classyLib_1_1yConfigValue.html", "classyLib_1_1yConfigValue" ],
+      [ "yConfig", "classyLib_1_1yConfig.html", "classyLib_1_1yConfig" ]
+    ] ],
     [ "ycurl.hpp", "ycurl_8hpp.html", "ycurl_8hpp" ],
     [ "yhttp.hpp", "yhttp_8hpp.html", [
       [ "yHttpRequestParam", "structyHttpRequestParam.html", "structyHttpRequestParam" ],
